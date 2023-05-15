@@ -49,17 +49,17 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"/>
       <div className="w-[94%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
         <div className="absolute right-[12%]">
-          <Image src={heroVector} alt="" className="heroVector" 
+          {/* <Image src={heroVector} alt="" className="heroVector" 
           priority
-          />
+          /> */}
         </div>
         <div className="absolute">
-          <Image src={img} alt="fondo" className="heroImg"         
+          {/* <Image src={img} alt="fondo" className="heroImg"         
           priority
-          /> 
+          />  */}
         </div>
         
-        <div className="balls">
+        {/* <div className="balls">
         <div className="absolute left-[15%] top-[54%] hidden xl:block">
           <Ball w={36} h={200} cx={20} cy={80} r={16} cyAnimate={40} duration={4} /> 
         </div>
@@ -99,13 +99,13 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         <div className="absolute left-[6%] hidden xl:block">
           <Ball w={100} h={200} cx={50} cy={80} r={50} cyAnimate={50} duration={4.25} /> 
         </div> 
-        </div>
+        </div> */}
 
         <div className="absolute md:w-full md:h-full ">
-          <Image src={robotHand} alt="fondo" className="robotHand" 
+          {/* <Image src={robotHand} alt="fondo" className="robotHand" 
           priority
           sizes=""
-          />
+          /> */}
         </div>
       </div>
     </div>

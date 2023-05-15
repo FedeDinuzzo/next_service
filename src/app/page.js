@@ -1,28 +1,12 @@
 import styles from "./constants/style"
 import Stats from "./components/Stats"
 import heladeraLavarropas from '../../public/heladera-lavarropas.webp'
-import dynamic from 'next/dynamic'
 import Hero from './components/Hero'
-
-const Features = dynamic(() => import('./components/Features'), {
-  ssr: false,
-});
-
-const Heladeras = dynamic(() => import('./components/Heladeras'), {
-  ssr: false,
-});
-
-const Lavarropas = dynamic(() => import('./components/Lavarropas'), {
-  ssr: false,
-});
-
-const Zones = dynamic(() => import('./components/Zones'), {
-  ssr: false,
-});
-
-const CTA = dynamic(() => import('./components/CTA'), {
-  ssr: false,
-});
+import Features from './components/Features'
+import Heladeras from './components/Heladeras'
+import Lavarropas from './components/Lavarropas'
+import Zones from './components/Zones'
+import CTA from './components/CTA'
 
 function Home() {
   return (
