@@ -84,10 +84,10 @@ function Home() {
           />
         </div>
         <div className="absolute">
-          {/* <Image src={img} alt="fondo" className="heroImg"         
+          <Image src={heladeraLavarropas} alt="fondo" className="heroImg"         
           priority
           sizes=""
-          /> */}
+          /> 
         </div>
         
         <div className="balls">
