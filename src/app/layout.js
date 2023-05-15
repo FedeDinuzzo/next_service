@@ -1,8 +1,7 @@
 import { Poppins } from '@next/font/google'
 import styles from '@/styles/global.css'
 import Head from 'next/head'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+
 
 const font = Poppins({
   subsets: ["latin"],
@@ -26,11 +25,11 @@ export default function RootLayout ({ children }) {
       </Head>
     </html>
     <body className={`${font.variable}`}>
-      <NavBar />
+      
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <main>{children}</main>
-          <Footer />
+      
         </div>
       </div>
     </body>

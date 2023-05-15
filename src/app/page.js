@@ -18,10 +18,13 @@ import Button from './components/Button'
 import lavarropas from '../../public/lavarropas-frente.webp'
 import atencion from '../../public/Atencion.webp'
 import heladeraFrente from '../../public/heladera-frente.webp'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 function Home() {
   return (
     <>
+    <NavBar />
     <div className={`${styles.flexStart}`}> 
       <div className={`${styles.boxWidth}`}>
       <section id="home" class={`flex md:flex-row flex-col ${styles.paddingY} lg:mt-[4px] xl:-mt-16`}>
@@ -224,6 +227,11 @@ function Home() {
     </div>
   </section>
       </div>
+      </div>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer />
+        </div>
       </div>
     </>
   )
