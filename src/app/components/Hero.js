@@ -55,10 +55,10 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
           />
         </div>
         <div className="absolute">
-          <Image src={img} alt="fondo" className="heroImg"         
+          {/* <Image src={img} alt="fondo" className="heroImg"         
           priority
           sizes=""
-          />
+          /> */}
         </div>
         
         <div className="balls">

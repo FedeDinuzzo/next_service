@@ -20,7 +20,7 @@ function Home() {
           titleOne="Service" 
           titleTwo="Electrolux" 
           titleThree="Especializado" 
-          img={heladeraLavarropas}
+          // img={heladeraLavarropas}
         />
       <div className={`${styles.flexStart}`}> 
         <div className={`${styles.boxWidth}`}>
