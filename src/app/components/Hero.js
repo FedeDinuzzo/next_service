@@ -51,14 +51,12 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         <div className="absolute right-[12%]">
           <Image src={heroVector} alt="" className="heroVector" 
           priority
-          sizes=""
           />
         </div>
         <div className="absolute">
-          {/* <Image src={img} alt="fondo" className="heroImg"         
+          <Image src={img} alt="fondo" className="heroImg"         
           priority
-          sizes=""
-          /> */}
+          /> 
         </div>
         
         <div className="balls">
