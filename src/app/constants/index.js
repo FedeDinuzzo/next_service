@@ -143,12 +143,12 @@ export const footerLinks = [
     links: [
       {
         name: "011 4383-8283",
-        link: "011 4383-8283",
+        link: "tel:01143838283",
         id: '',
       },
       {
         name: "011 4382-8369",
-        link: "011 4382-8369",
+        link: "tel:01143828369",
         id: '',
       },
     ],

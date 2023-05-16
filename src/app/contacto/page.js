@@ -24,10 +24,10 @@ function contacto() {
           <section id="product" className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 w-full`}>
             <div className="z-[10] w-[50%]">
               <div className="absolute max-w-[350px] sm:max-w-full">
-                <Image src={ellipse2} alt=""/>
+                <Image src={ellipse2} alt="Frio"/>
               </div>
               <div className="absolute max-w-[350px] sm:max-w-full">
-                <Image src={callUs} alt="" />
+                <Image src={callUs} alt="Call Us" />
               </div>
             </div>
 

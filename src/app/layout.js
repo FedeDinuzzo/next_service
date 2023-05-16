@@ -2,7 +2,12 @@ import { Poppins } from '@next/font/google'
 import styles from '@/styles/global.css'
 import Head from 'next/head'
 import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+import { Suspense } from "react"
+import dynamic from "next/dynamic"
+
+const Footer = dynamic(() => import('./components/Footer'), {
+  suspense: true,
+})
 
 const font = Poppins({
   subsets: ["latin"],
@@ -30,7 +35,9 @@ export default function RootLayout ({ children }) {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <main>{children}</main>
-          <Footer />
+          <Suspense fallback={`Loading...`}>
+            <Footer />
+          </Suspense>
         </div>
       </div>
     </body>

@@ -7,23 +7,23 @@ import dynamic from "next/dynamic"
 
 const Features = dynamic(() => import('./components/Features'), {
   suspense: true,
-});
+})
 
 const Heladeras = dynamic(() => import('./components/Heladeras'), {
   suspense: true,
-});
+})
 
 const Lavarropas = dynamic(() => import('./components/Lavarropas'), {
   suspense: true,
-});
+})
 
 const Zones = dynamic(() => import('./components/Zones'), {
   suspense: true,
-});
+})
 
 const CTA = dynamic(() => import('./components/CTA'), {
   suspense: true,
-});
+})
 
 function Home() {
   return (

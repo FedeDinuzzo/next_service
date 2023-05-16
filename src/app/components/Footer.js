@@ -10,7 +10,7 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-1 flex flex-col justify-start mr-10">
         <div>
-          <Image src={`/logo.svg`} alt="logo" loading="lazy" width={266} height={72} />
+          <Image src={`/logo.svg`} alt="logo" loading="lazy" width="189" height="35" className="w-[266px] h-[72]" />
         </div>
         <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>Bien hecho es mejor que bien dicho. Tu service de confianza.</p>
       </div>
@@ -26,7 +26,7 @@ const Footer = () => (
               {footerLink.links.map((link, id, index) => (
                 <Fragment key={id} >
                 <li className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
-                  {link.name}
+                  <a href={link.link}>{link.name}</a>
                 </li>
                 </Fragment>
               ))}
@@ -39,7 +39,7 @@ const Footer = () => (
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45] md:mb-6 mb-0">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-      Copyright © 2022 | Service-Electrolux
+      Copyright © 2023 | Service-Electrolux
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">

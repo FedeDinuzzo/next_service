@@ -12,7 +12,7 @@ function workForm({ repair, technical }) {
               <Image src={repair} alt="heladera" loading="lazy" />
             </div>
             <div className="absolute">
-              <Image src={technical} alt="" loading="lazy" />
+              <Image src={technical} alt="technical" loading="lazy" />
             </div>
           </div>
         </div>
