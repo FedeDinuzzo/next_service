@@ -46,7 +46,7 @@ const Footer = () => (
         {socialMedia.map((social, index) => (
           <Fragment key={social.id}>
           <div className="w-[21px] h-[21px] mx-1">
-            <Image src={`/${social.icon}.svg`} alt={social.name} width={100} height={100} className={`cursor-pointer ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`} />
+            <Image src={`/${social.icon}.svg`} alt='Social Icon' width={100} height={100} className={`cursor-pointer ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`} />
           </div>
           </Fragment>
         ))}

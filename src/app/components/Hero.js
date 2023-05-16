@@ -10,14 +10,12 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
   return(
     <section id="home" class={`flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:mt-[72px] xl:-mt-16`}>
     <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
-      <div className="fadeTop flex flex-row items-center -mt-9 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-        <Image src={autorizado} alt="autorizado" class="w-[32px] h-[32px]" 
-        blurDataURL={'/img/logo.png'}
-        />
-        <p className={`${styles.paragraph} `}>
-          <span className="text-white">{textOne} </span>
+      <div className="max-h-[40px] fadeTop flex flex-row items-center -mt-9 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+        <Image src={autorizado} alt="autorizado" class="w-[32px] h-[32px] -ml-2" />
+        <p className={`${styles.paragraph} flex`}>
+          <span className="pr-1 text-white">{textOne} </span>
           {textTwo} {" "}
-          <span className="text-white">{textThree}</span>
+          <span className="pl-1 text-white">{textThree}</span>
         </p>
       </div>
       
@@ -48,16 +46,10 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"/>
       <div className="w-[94%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
         <div className="absolute right-[12%]">
-          <Image src={heroVector} alt="hero" className="heroVector" 
-          placeholder="blur"
-          blurDataURL={'/img/logo.png'}
-          />
+          <Image src={heroVector} alt="hero" className="heroVector" priority />
         </div>
         <div className="absolute">
-          <Image src={img} alt="fondo" className="heroImg"         
-          placeholder="blur"
-          blurDataURL={'/img/logo.png'}
-          /> 
+          <Image src={img} alt='heroImg' className="heroImg" priority /> 
         </div>
         
         <div className="balls">
@@ -103,10 +95,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div>
 
         <div className="absolute md:w-full md:h-full ">
-          <Image src={robotHand} alt="fondo" className="robotHand" 
-          placeholder="blur"
-          blurDataURL={'/img/logo.png'}
-          />
+          <Image src={robotHand} alt="fondo" className="robotHand" priority />
         </div>
       </div>
     </div>

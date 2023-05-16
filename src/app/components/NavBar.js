@@ -3,7 +3,6 @@ import logo from '../../../public/logo.svg'
 import wppLogo from '../../../public/wppLogo.svg'
 import { navLinks } from '@/app/constants/index'
 import styles from "@/app/constants/style"
-
 import Link from 'next/link'
 
 const NavBar = () => {
@@ -14,9 +13,7 @@ const NavBar = () => {
           <Image rel="preload" src={logo} width="auto" height="auto" alt="service electrolux" className="w-[160px] h-[100%] -mt-2 md:mt-0" />
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
-              <li key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
-              >
+              <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
                 <Link href={`/${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
