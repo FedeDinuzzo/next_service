@@ -49,13 +49,13 @@ function Home() {
             <Stats />
           </div>
         </div>
-        <Suspense fallback={`Loading...`}>
+        {/* <Suspense fallback={`Loading...`}>
           <Features />
           <Heladeras />
           <Lavarropas />
           <Zones />
           <CTA />
-        </Suspense>
+        </Suspense> */}
       </div>
     </div>
   )
