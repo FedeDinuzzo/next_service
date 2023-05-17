@@ -11,7 +11,7 @@ const NavBar = () => {
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`w-full lg:max-w-[1280px] z-[100]`}>
         <nav className="w-full flex py-6 md:py-6 justify-between items-center navbar">
-          <Image rel="preload" src={logo} width="auto" height="auto" alt="service electrolux" className="w-[160px] h-[100%] -mt-2 md:mt-0" />
+          <Image src={logo} width="auto" height="auto" priority alt="service electrolux" className="w-[160px] h-[100%] -mt-2 md:mt-0" />
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
               <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>

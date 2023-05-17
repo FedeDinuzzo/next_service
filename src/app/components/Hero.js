@@ -5,14 +5,25 @@ import Ball from "./animations/Ball"
 import autorizado from "../../../public/autorizado.svg"
 import robotHand from "../../../public/robot-hand.webp"
 import heroVector from "../../../public/Vector.svg"
+import heladeraLavarropas from "../../../public/heladera-lavarropas.webp"
 
 const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img , ruta }) => { 
   const condcion = 1
   return(
     <section id="home" class={`-m-6 flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:mt-[72px] xl:-mt-16`}>
-      <div class="h-[100vh] w-full bg-black">
+      <div class="h-[100vh] w-full bg-slate-500">
         <h1>RENDIMIENTO</h1>
         <p>PAPUUUUUUU</p>
+        <div className="absolute right-[12%]">
+          <Image src={heroVector} alt="hero" height="767px" width="768px" className="heroVector" priority />
+        </div>
+        <div className="absolute">
+          <Image src={robotHand} alt='heroImg' height="652px" width="674px" className="heroImg" priority /> 
+        </div>
+        <div className="absolute">
+          <Image src={heladeraLavarropas} alt='heroImg' height="6528px" width="674px" className="heroImg" priority /> 
+        </div>
+
       </div>
     {/* <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
       <div className="max-h-[40px] fadeTop flex flex-row items-center -mt-4 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
