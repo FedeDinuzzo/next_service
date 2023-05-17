@@ -15,13 +15,13 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         <h1>RENDIMIENTO</h1>
         <p>PAPUUUUUUU</p>
         <div className="absolute right-[12%]">
-          <Image src={heroVector} alt="hero" height="767px" width="768px" className="heroVector" priority />
+          <Image src={heroVector} alt="hero" className="heroVector" priority />
         </div>
         <div className="absolute">
-          <Image src={robotHand} alt='heroImg' height="652px" width="674px" className="heroImg" priority /> 
+          <Image src={robotHand} alt='heroImg' className="heroImg" priority /> 
         </div>
         <div className="absolute">
-          <Image src={heladeraLavarropas} alt='heroImg' height="6528px" width="674px" className="heroImg" priority /> 
+          <Image src={heladeraLavarropas} alt='heroImg' className="heroImg" priority /> 
         </div>
 
       </div>
