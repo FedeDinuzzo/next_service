@@ -10,7 +10,11 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
   const condcion = 1
   return(
     <section id="home" class={`-m-6 flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:mt-[72px] xl:-mt-16`}>
-    <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
+      <div class="h-[100vh] w-full bg-black">
+        <h1>RENDIMIENTO</h1>
+        <p>PAPUUUUUUU</p>
+      </div>
+    {/* <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
       <div className="max-h-[40px] fadeTop flex flex-row items-center -mt-4 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
         <Image src={autorizado} alt="autorizado" class="w-[32px] h-[32px] -ml-2" />
         <p className={`${styles.paragraph} flex`}>
@@ -106,7 +110,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       <div className={`ss:hidden ${styles.flexCenter}`}>
         <SolicitarTecnico />
       </div>
-    : ""}
+    : ""} */}
   </section>
 )};
 
