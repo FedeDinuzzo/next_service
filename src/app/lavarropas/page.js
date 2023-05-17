@@ -22,6 +22,7 @@ function lavarropas() {
           titleTwo="Lavarropas" 
           titleThree="Electrolux" 
           img={lavarropasHero}
+          ruta={1}
         />
         <WorkForm repair={reparacionLavarropas} technical={tecnicoLavarropas} />
         <Repair gadget="lavarropas" step={step2v}/>

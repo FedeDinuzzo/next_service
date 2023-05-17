@@ -117,23 +117,23 @@ export const footerLinks = [
     title: "Páginas",
     links: [
       {
-        name: "Contacto",
-        link: "https://service-electrolux.ar/",
+        name: "Inicio",
+        link: "",
         id: '',
       },
       {
         name: "Heladeras",
-        link: "https://service-electrolux.ar/heladeras",
+        link: "heladeras",
         id: '',
       },
       {
         name: "Lavarropas",
-        link: "https://service-electrolux.ar/lavarropas",
+        link: "lavarropas",
         id: '',
       },
       {
         name: "Contacto",
-        link: "https://service-electrolux.ar/contacto",
+        link: "contacto",
         id: '',
       },
     ],

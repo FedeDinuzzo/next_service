@@ -1,5 +1,5 @@
 import styles from '@/app/constants/style'
-import Button from './Button'
+import Button from './animations/Button'
 
 const CTA = () => (
   <section className={`${styles.flexCenter} ${styles.marginY} py-8 md:py-0`}>
@@ -9,8 +9,8 @@ const CTA = () => (
       <p className={`${styles.paragraph} max-w-[520px] mt-5`}>Nuestros representantes están disponibles. Cuéntenos su problema y con gusto le ayudaremos.</p>
     </div>
 
-    <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 mb-4 md:mb-0`}>
-      <Button text="Llamada telefónica" link="" />
+    <div id="solicitarTecnico" className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 mb-4 md:mb-0`}>
+      <Button text="Llamada telefónica" link="tel:01143838283" />
     </div>
     </div>
   </section>

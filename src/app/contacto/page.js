@@ -18,6 +18,7 @@ function contacto() {
           titleTwo="Y Resolvemos" 
           titleThree="Tu Problema" 
           img={phone}
+          ruta={0}
         />
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} pb-[320px] sm:pb-[480px] lg:pb-0 xl:pb-[160px]`}>
         <div className={`${styles.boxWidth} flex flex-col items-center`}>

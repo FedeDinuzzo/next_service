@@ -22,6 +22,7 @@ function heladeras() {
           titleTwo="De Heladeras" 
           titleThree="Electrolux" 
           img={heladeraHero}
+          ruta={1}
         />
         <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
         <Repair gadget="heladera" step={step2}/>

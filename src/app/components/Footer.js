@@ -1,7 +1,8 @@
-import styles from "@/app/constants/style";
+import styles from "@/app/constants/style"
 import Image from 'next/image'
-import { footerLinks, socialMedia } from '@/app/constants/index';
-import { Fragment } from "react";
+import { footerLinks, socialMedia } from '@/app/constants/index'
+import { Fragment } from "react"
+import Link from "next/link"
 
 const Footer = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
@@ -26,7 +27,7 @@ const Footer = () => (
               {footerLink.links.map((link, id, index) => (
                 <Fragment key={id} >
                 <li className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
-                  <a href={link.link}>{link.name}</a>
+                <Link href={`/${link.link}`}>{link.name}</Link>
                 </li>
                 </Fragment>
               ))}

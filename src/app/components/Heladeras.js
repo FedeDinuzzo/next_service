@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles, { layout } from "@/app/constants/style"
-import Button from "./Button"
+import Button from "./animations/Button"
 import atencion from '../../../public/Atencion.webp'
 import heladeraFrente from '../../../public/heladera-frente.webp'
 
@@ -20,7 +20,7 @@ const Heladeras = () => (
     <div className="lg:pr-8">
       <h2 className={styles.heading2}>Reparación de <br className="sm:block hidden" />Heladeras Electrolux</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>Servicio Técnico Especializado en Heladeras Familiares, Tropicales, No Frost y Freezers. Repuestos originales</p>
-      <Button styles="mt-6 xl:mt-10" text="Mas Información" link=""/>
+      <Button styles="mt-6 xl:mt-10" text="Mas Información" link="heladeras"/>
     </div>
   </section>
 );
