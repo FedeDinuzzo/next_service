@@ -1,7 +1,7 @@
 import { features } from "@/app/constants";
 import styles, {layout} from "@/app/constants/style"
 import Button from './animations/Button'
-import Image from "next/image";
+import Image from "next/image"
 
 const FeatureCard = ({ icon, title, content, index}) => (
   <div className={`flex flex-row p-6 lg:ml-20 max-w-[470px] rounded-[20px] ${index !== features.length -1 ? "mb-6" : "mb-0"} feature-card ${index === 1 ? 'feature-card-set' : ''}`}>
@@ -11,9 +11,9 @@ const FeatureCard = ({ icon, title, content, index}) => (
       </div>
     </div>
     <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[16px] xl:text-[18px] leading-[23px] mb-1">
+      <div className="font-poppins font-semibold text-white text-[16px] xl:text-[18px] leading-[23px] mb-1">
         {title}
-      </h4>
+      </div>
       <p className="font-poppins font-norma; text-dimWhite text-[15px] xl:text-[16px] leading-[23px] mb-1">
         {content}
       </p>

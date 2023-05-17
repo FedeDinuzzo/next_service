@@ -6,6 +6,11 @@ import ellipse2 from '../../../public/ellipse2.webp'
 import callUs from '../../../public/callUs.webp'
 import Image from "next/image"
 
+export const metadata = {
+  title: 'Contacto Service Electrolux | Agentes Disponibles',
+  description: 'Ingresa y haz tu consulta! Prespuestos SIN CARGO',
+}
+
 function contacto() {
   return (
     <div className={`${styles.flexStart}`}> 

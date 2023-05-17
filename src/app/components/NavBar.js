@@ -19,12 +19,12 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <div className="block fixed bottom-4 left-0 w-[100vw] ">
+          <div className="hidden md:block fixed bottom-4 left-0 w-[100vw] ">
           <a href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20">
               <Image
                 initial={{ scaleX: 1, sclaeY: 1 }}
                 animate={{ scaleX: 1.1, scaleY: 1.1, transition: { duration: 2, delay: 6, ease: "easeIn", repeat: Infinity, repeatType: "reverse" }, }}
-                src={wppLogoDesktop} alt="wppLogo" height="66px" width="66px" priority className="absolute bottom-[12px] right-16 m-auto z-[100]"
+                src={wppLogoDesktop} alt="wppLogo" height="66px" width="66px" priority className="absolute bottom-[4px] right-10 m-auto z-[100]"
               />
             </a>
           </div>

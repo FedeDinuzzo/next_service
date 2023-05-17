@@ -9,6 +9,10 @@ import reparacionLavarropas from '../../../public/reparaciones-lavarropas.webp'
 import tecnicoLavarropas from '../../../public/tecnicoLavarropas.webp'
 import step2v from '../../../public/step2v.webp'
 
+export const metadata = {
+  title: '▷ Service de Lavarropas ❄️ ELECTROLUX | Autorizado',
+  description: 'Se rompio tu lavarropas ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de lavarropas Electrolux',
+}
 
 function lavarropas() {
   return (

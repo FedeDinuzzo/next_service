@@ -27,7 +27,7 @@ const CTA = dynamic(() => import('./components/CTA'), {
 
 export const metadata = {
   title: '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA',
-  description: 'Service autorizado ELECTROLUX? ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!',
+  description: 'Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!',
 }
 
 function Home() {

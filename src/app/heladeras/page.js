@@ -9,6 +9,10 @@ import reparacionHeladeras from '../../../public/reparaciones-heladeras.webp'
 import tecnicoHeladeras from '../../../public/tecnicoHeladeras.webp'
 import step2 from '../../../public/step2.webp'
 
+export const metadata = {
+  title: '▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado',
+  description: 'Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux',
+}
 
 function heladeras() {
   return (
