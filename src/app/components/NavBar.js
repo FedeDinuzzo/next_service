@@ -9,7 +9,7 @@ import Link from 'next/link'
 const NavBar = () => {
   return (
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`w-full lg:max-w-[1280px] z-[100]`}>
+      {/* <div className={`w-full lg:max-w-[1280px] z-[100]`}>
         <nav className="w-full flex py-6 md:py-6 justify-between items-center navbar">
           <Image rel="preload" src={logo} width="auto" height="auto" alt="service electrolux" className="w-[160px] h-[100%] -mt-2 md:mt-0" />
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -55,7 +55,7 @@ const NavBar = () => {
             </div>
           </div>
         </nav>
-      </div>
+      </div> */}
     </div>
   )
 }

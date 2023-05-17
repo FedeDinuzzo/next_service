@@ -33,9 +33,9 @@ export default function RootLayout({ children }) {
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <main className='p-6'>{children}</main>
-                {/* <Suspense fallback={`Loading...`}>
+                <Suspense fallback={`Loading...`}>
                   <Footer />
-                </Suspense> */}
+                </Suspense>
             </div>
           </div>
         </body>
