@@ -54,7 +54,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"/>
         <div className="w-[94%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
           <div className="absolute right-[12%]">
-            <Image src={heroVector} height="767px" width="768px" className="heroVector" alt='hero-bg-effect' />
+            <Image src={heroVector} height="767px" width="768px" priority className="heroVector" alt='hero-bg-effect' />
           </div>
           {/* <div className="absolute">
           <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' /> */}
