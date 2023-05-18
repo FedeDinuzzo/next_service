@@ -19,7 +19,7 @@ const NavBar = () => {
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
               <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
-                <Link href={`/${nav.id}`}>{nav.title}</Link>
+                <Link href={`/${nav.id}`} aria-label={`Ir a la sección ${nav.title}`}>{nav.title}</Link>
               </li>
             ))}
           </ul>
@@ -45,28 +45,28 @@ const NavBar = () => {
             <div className="flex justify-evenly items-center absolute bottom-[30px] px-0 w-[100vw] h-auto">
                 <ul>
                   <li className='flex w-[100vw] justify-evenly'>
-                    <Link href={`/`}>
+                    <Link href={`/`} aria-label="Ir a la sección de inicio">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
                         src={navInicio} height={26} width={26} alt={"navegacion inicio"} priority className={`text-center`}
                       />
                     </Link>
-                    <Link href={`/heladeras`}>
+                    <Link href={`/heladeras`} aria-label="Ir a la sección de heladeras">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
                         src={navHeladera} height={16} width={16} alt={"navegacion heladeras"} priority className={`mr-20 text-center`}
                       />
                     </Link>
-                    <Link href={`/lavarropas`}>
+                    <Link href={`/lavarropas`} aria-label="Ir a la sección de lavarropas">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
                         src={navLavarropas} height={20} width={20} alt={"navegacion lavarropas"} priority className={`text-center`}
                       />
                     </Link>
-                    <Link href={`/contacto`}>
+                    <Link href={`/contacto`} aria-label="Ir a la sección de contacto">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}

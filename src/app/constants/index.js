@@ -54,7 +54,6 @@ export const feedback = [
       "Tenia el Lavarropas roto  Vinieron y lo arreglaron en el día, me dejaron el lavarropas funcionando perfecto.",
     name: "Martina Ramos",
     title: "Recoleta - CABA",
-    img: "people01",
   },
   {
     id: "feedback-2",
@@ -62,7 +61,6 @@ export const feedback = [
       "Vinieron de otro service a reparar mi heladera, pero volvio a fallar, encontré su web y me lo resolvieron en el momento!",
     name: "Augusto Weich",
     title: "Lanus - Buenos Aires",
-    img: "people02",
   },
   {
     id: "feedback-3",
@@ -70,7 +68,6 @@ export const feedback = [
       "Mi heladera no funcionaba, tenia medicamentos que necesitaban refrigeración, me solucionaron el problema en el día.",
     name: "Martin Alvarez",
     title: "Villa Devoto - CABA",
-    img: "people03",
   },
 ];
 
@@ -88,7 +85,7 @@ export const stats = [
   {
     id: "stats-3",
     title: "clientes satisfechos",
-    value: "+9999",
+    value: "6799",
   },
 ];
 
@@ -176,7 +173,7 @@ export const socialMedia = [
     icon: "linkedin",
     link: "https://www.linkedin.com/A&T",
   },
-];
+]
 
 export const zones = [
   {
@@ -194,4 +191,4 @@ export const zones = [
     logo: "zonaNorte",
     width: 249,
   },
-];
+]

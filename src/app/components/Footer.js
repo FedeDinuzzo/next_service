@@ -32,7 +32,7 @@ const Footer = () => (
               {footerLink.links.map((link, id, index) => (
                 <Fragment key={id} >
                 <li className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
-                <Link href={`/${link.link}`}>{link.name}</Link>
+                <Link href={`/${link.link}`} aria-label={`Enlace a ${link.name}`}>{link.name}</Link>
                 </li>
                 </Fragment>
               ))}
