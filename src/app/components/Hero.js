@@ -26,7 +26,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
           </p>
         </div>
       
-        <div className="flex flex-row justify-between items-center w-full">
+        {/* <div className="flex flex-row justify-between items-center w-full">
           <div className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" />
           <h1 className="fadeLeft flex-1 font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px]">
             {titleOne} <br className="sm:block hidden"/> {" "}
@@ -56,13 +56,13 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
           <div className="absolute right-[12%]">
             <Image src={heroVector} height="767px" width="768px" priority className="heroVector" alt='hero-bg-effect' />
           </div>
-          {/* <div className="absolute">
+          <div className="absolute">
             { img == 1 ? <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' />
             : img == 2 ? <Image src={heladeraHero} height="652px" width="674px" priority className="heroImg" alt='heladera electrolux' />
             : img == 3 ? <Image src={lavarropasHero} height="652px" width="674px" priority className="heroImg" alt='lavarropas electrolux' />
             : <Image src={phone} height="652px" width="674px" priority className="heroImg" alt='telefono de contacto' />
             }
-          </div> */}
+          </div>
     
           {/* <div className="balls">
           <div className="absolute left-[15%] top-[54%] hidden xl:block">
@@ -106,9 +106,9 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div> 
         </div> */}
 
-          {/* <div className="absolute md:w-full md:h-full ">
+          <div className="absolute md:w-full md:h-full ">
             <Image src={robotHand} height="652px" width="674px" priority className="robotHand" alt="fondo degradado" />
-          </div> */}
+          </div>
         </div>
       </div>
 
@@ -117,7 +117,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
           <SolicitarTecnico />
         </div>
       : ""}
-    </section>
+    </section> */}
   )
 }
 
