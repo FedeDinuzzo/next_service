@@ -7,7 +7,8 @@ import { lazy, Suspense } from "react"
 
 export const metadata = {
   title: '▷ Service de Lavarropas ❄️ ELECTROLUX | Autorizado',
-  description: 'Se rompio tu lavarropas ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de lavarropas Electrolux',
+  name: "description", 
+  content: "Se rompio tu lavarropas ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de lavarropas Electrolux"
 }
 
 const WorkForm = lazy(() => import('../components/WorkForm'))

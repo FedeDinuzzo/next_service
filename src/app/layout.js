@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='es'>
       <body className={`${font.variable} appear bg-primary`}>
-        {/* <NavBar /> */}
+        <NavBar />
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <main className='p-6'>{children}</main>
