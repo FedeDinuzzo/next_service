@@ -23,6 +23,6 @@ const Heladeras = () => (
       <Button styles="mt-6 xl:mt-10" text="Mas Información" link="heladeras"/>
     </div>
   </section>
-);
+)
 
-export default Heladeras;
+export default Heladeras

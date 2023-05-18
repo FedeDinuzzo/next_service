@@ -182,13 +182,13 @@ export const zones = [
     width: 333,
   },
   {
-    id: "client-2",
-    logo: "zonaSur",
-    width: 207,
-  },
-  {
     id: "client-3",
     logo: "zonaNorte",
     width: 249,
+  },
+  {
+    id: "client-2",
+    logo: "zonaSur",
+    width: 207,
   },
 ]

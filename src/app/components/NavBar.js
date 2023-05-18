@@ -38,7 +38,7 @@ const NavBar = () => {
               <Image
                 initial={{ scaleX: 1, sclaeY: 1 }}
                 animate={{ scaleX: 1.1, scaleY: 1.1, transition: { duration: 2, delay: 6, ease: "easeIn", repeat: Infinity, repeatType: "reverse" }, }}
-                src={wppLogo} alt="wppLogo" height="58px" width="58px" priority className="absolute bottom-[12px] left-0 right-0 m-auto z-[100]"
+                src={wppLogo} alt="wppLogo" height="58px" width="58px" priority className="absolute bottom-[12px] left-0 right-0 m-auto z-[100] cursor-pointer"
               />
             </a>
             <div className="mr-6 flex absolute bottom-6 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
@@ -49,28 +49,28 @@ const NavBar = () => {
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
-                        src={navInicio} height={26} width={26} alt={"navegacion inicio"} priority className={`text-center`}
+                        src={navInicio} height="28px" width="28px" alt={"navegacion inicio"} priority className={`mt-[2px] w-[28px] h-[auto] text-center cursor-pointer`}
                       />
                     </Link>
                     <Link href={`/heladeras`} aria-label="Ir a la sección de heladeras">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
-                        src={navHeladera} height={16} width={16} alt={"navegacion heladeras"} priority className={`mr-20 text-center`}
+                        src={navHeladera} height="18px" width="18px" alt={"navegacion heladeras"} priority className={`w-[18px] h-[auto] mr-20 text-center cursor-pointer`}
                       />
                     </Link>
                     <Link href={`/lavarropas`} aria-label="Ir a la sección de lavarropas">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
-                        src={navLavarropas} height={20} width={20} alt={"navegacion lavarropas"} priority className={`text-center`}
+                        src={navLavarropas} height="23px" width="23px" alt={"navegacion lavarropas"} priority className={`mt-[2px] w-[23px] h-[auto] text-center cursor-pointer`}
                       />
                     </Link>
                     <Link href={`/contacto`} aria-label="Ir a la sección de contacto">
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
-                        src={navContacto} height={18} width={18} alt={"navegacion contacto"} priority className={`text-center`}
+                        src={navContacto} height="20px" width="20px" alt={"navegacion contacto"} priority className={`mt-[3px] w-[20px] h-[auto] text-center cursor-pointer`}
                       />
                     </Link>
                   </li>
