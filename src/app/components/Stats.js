@@ -1,9 +1,7 @@
 import { stats } from '@/app/constants/index'
-import styles from "@/app/constants/style"
-//import Counter from './Counter';
+import styles from "@/app/constants/style";
 
 const Stats = () => (
-  
   <section className={`sm:${styles.flexCenter} flex-row flex-wrap mb-10 md:mb-20 m-6 md:-mt-48 lg:-mt-24 xl:mt-0`}>
     {/* <Counter from={0} to={100} /> */}
     {stats.map((stat) => (

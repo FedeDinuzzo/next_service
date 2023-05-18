@@ -1,7 +1,5 @@
 import styles from "./constants/style"
 import Hero from './components/Hero'
-import Image from "next/image"
-import heladeraLavarropas from '../../public/heladera-lavarropas.webp'
 import Stats from "./components/Stats"
 import { lazy, Suspense } from "react"
 
@@ -27,7 +25,7 @@ function Home() {
           titleOne="Service"
           titleTwo="Electrolux"
           titleThree="Especializado"
-          img={<Image src={heladeraLavarropas} height="652px" width="670px" priority className="heroImg" alt='heroImg' />}
+          img={1}
           ruta={1}
         />
         <div className={`${styles.flexStart}`}>

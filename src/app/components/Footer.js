@@ -1,6 +1,11 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-import { footerLinks, socialMedia } from '@/app/constants/index'
+import logo from '../../public/logo.svg'
+import instagram from '../../public/instagram.svg'
+import linkedin from '../../public/linkedin.svg'
+import mapa from '../../public/mapa.svg'
+import telefono from '../../public/telefono.svg'
+import { footerLinks } from '@/app/constants/index'
 import { Fragment } from "react"
 import Link from "next/link"
 
@@ -11,7 +16,7 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-1 flex flex-col justify-start mr-10">
         <div>
-          <Image src={`/logo.svg`} alt="logo" loading="lazy" width="189" height="35" className="w-[266px] h-[72]" />
+          <Image src={logo} alt="logo" loading="lazy" width="189" height="35" className="w-[266px] h-[72]" />
         </div>
         <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>Bien hecho es mejor que bien dicho. Tu service de confianza.</p>
       </div>
@@ -44,13 +49,18 @@ const Footer = () => (
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
-        {socialMedia.map((social, index) => (
-          <Fragment key={social.id}>
           <div className="w-[21px] h-[21px] mx-1">
-            <Image src={`/${social.icon}.svg`} alt='Social Icon' width={100} height={100} className={`cursor-pointer ${index !== socialMedia.length -1 ? 'mr-6' : 'mr-0'}`} />
+            <Image src={instagram} alt='Social Icon' width={100} height={100} className="cursor-pointer" />
           </div>
-          </Fragment>
-        ))}
+          <div className="w-[21px] h-[21px] mx-1">
+            <Image src={linkedin} alt='Social Icon' width={100} height={100} className="cursor-pointer mr-6" />
+          </div>
+          <div className="w-[21px] h-[21px] mx-1">
+            <Image src={mapa} alt='Social Icon' width={100} height={100} className="cursor-pointer mr-6" />
+          </div>
+          <div className="w-[21px] h-[21px] mx-1">
+            <Image src={telefono} alt='Social Icon' width={100} height={100} className="cursor-pointer mr-6" />
+          </div>
       </div>
     </div>
   </section>

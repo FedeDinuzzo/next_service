@@ -1,7 +1,11 @@
 import Image from 'next/image'
-import logo from '../../../public/logo.svg'
-import wppLogo from '../../../public/wppLogo.svg'
-import wppLogoDesktop from '../../../public/wppLogoDesktop.svg'
+import logo from '../../public/logo.svg'
+import wppLogo from '../../public/wppLogo.svg'
+import wppLogoDesktop from '../../public/wppLogoDesktop.svg'
+import navInicio from '../../public/navInicio.png'
+import navHeladera from '../../public/navHeladera.png'
+import navLavarropas from '../../public/navLavarropas.png'
+import navContacto from '../../public/navContacto.png'
 import { navLinks } from '@/app/constants/index'
 import styles from "@/app/constants/style"
 import Link from 'next/link'
@@ -39,19 +43,38 @@ const NavBar = () => {
             </a>
             <div className="mr-6 flex absolute bottom-6 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
             <div className="flex justify-evenly items-center absolute bottom-[30px] px-0 w-[100vw] h-auto">
-              {navLinks.map((nav, index, title) => (
-                <ul key={nav.id}>
-                  <li>
-                    <Link href={`/${nav.id}`}>
+                <ul>
+                  <li className='flex w-[100vw] justify-evenly'>
+                    <Link href={`/`}>
                       <Image
                         initial={{ rotate: 0 }}
                         animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
-                        src={`/${nav.img}.png`} height={18} width={18} alt={title} priority className={`${index === 2 ? 'ml-20' : ''} text-center`}
+                        src={navInicio} height={26} width={26} alt={"navegacion inicio"} priority className={`text-center`}
+                      />
+                    </Link>
+                    <Link href={`/heladeras`}>
+                      <Image
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
+                        src={navHeladera} height={16} width={16} alt={"navegacion heladeras"} priority className={`mr-20 text-center`}
+                      />
+                    </Link>
+                    <Link href={`/lavarropas`}>
+                      <Image
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
+                        src={navLavarropas} height={20} width={20} alt={"navegacion lavarropas"} priority className={`text-center`}
+                      />
+                    </Link>
+                    <Link href={`/contacto`}>
+                      <Image
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" }, }}
+                        src={navContacto} height={18} width={18} alt={"navegacion contacto"} priority className={`text-center`}
                       />
                     </Link>
                   </li>
                 </ul>
-              ))}
             </div>
           </div>
         </nav>

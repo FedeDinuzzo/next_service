@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import lavarropas from '../../../public/lavarropas-frente.webp'
+import lavarropas from '../../public/lavarropas-frente.webp'
 import styles, { layout } from "@/app/constants/style"
 import Button from "./animations/Button"
 

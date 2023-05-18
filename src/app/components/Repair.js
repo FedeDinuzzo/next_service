@@ -1,10 +1,10 @@
 import styles, { layout } from '@/app/constants/style'
 import Button from "./animations/Button"
 import Image from "next/image"
-import ellipse from "../../../public/ellipse.webp"
-import step1 from "../../../public/step1.webp"
-import step3 from "../../../public/step3.webp"
-import step4 from "../../../public/step4.webp"
+import ellipse from "../../public/ellipse.webp"
+import step1 from "../../public/step1.webp"
+import step3 from "../../public/step3.webp"
+import step4 from "../../public/step4.webp"
 
 const repair = ({ gadget, step }) => (
   <section id="product" className={`${layout.section} mt-12 sm:mt-24 lg:mt-28 lg:-mb-20 xl:-mt-2 xl:-mb-40 md:-mt-8 md:-mb-8`}>

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles, { layout } from "@/app/constants/style"
 import Button from "./animations/Button"
-import atencion from '../../../public/Atencion.webp'
-import heladeraFrente from '../../../public/heladera-frente.webp'
+import atencion from '../../public/Atencion.webp'
+import heladeraFrente from '../../public/heladera-frente.webp'
 
 
 const Heladeras = () => (

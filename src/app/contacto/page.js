@@ -1,10 +1,9 @@
 import Hero from '../components/Hero'
 import styles, { layout } from "@/app/constants/style"
-import phone from '../../../public/phone.webp'
-import callButton from '../../../public/callButton.png'
-import ellipse2 from '../../../public/ellipse2.webp'
-import callUs from '../../../public/callUs.webp'
 import Image from "next/image"
+import callButton from '../../public/callButton.png'
+import ellipse2 from '../../public/ellipse2.webp'
+import callUs from '../../public/callUs.webp'
 
 export const metadata = {
   title: 'Contacto Service Electrolux | Agentes Disponibles',
@@ -22,7 +21,7 @@ function contacto() {
           titleOne="Contactanos" 
           titleTwo="Y Resolvemos" 
           titleThree="Tu Problema" 
-          img={phone}
+          img={''}
           ruta={0}
         />
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} pb-[320px] sm:pb-[480px] lg:pb-0 xl:pb-[160px]`}>

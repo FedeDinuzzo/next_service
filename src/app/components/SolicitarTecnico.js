@@ -1,5 +1,6 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
+import arrow from '../../public/arrow-up.svg'
 // import { useInView } from "react-intersection-observer";
 // import { useEffect } from "react";
 // import { motion, useAnimation } from "framer-motion";
@@ -45,7 +46,7 @@ const SolicitarTecnico = () => {
             <p className="font-poppins font-medium text-[18px] leading-[23px] mr-1">
               <span className="text-gradient">Solicitar</span>
             </p>
-            <Image src="/arrow-up.svg" width="23" height="23" alt="arrow" className="object-contain" />
+            <Image src={arrow} width="23" height="23" alt="arrow" className="object-contain" />
           </div>
           <p className="font-poppins font-medium text-[18px] leading-[23px]">
             <span className="text-gradient">un Técnico</span>

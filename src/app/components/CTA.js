@@ -1,5 +1,4 @@
 import styles from '@/app/constants/style'
-import Button from './animations/Button'
 
 const CTA = () => (
   <section className={`${styles.flexCenter} ${styles.marginY} py-8 md:py-0`}>
@@ -10,10 +9,14 @@ const CTA = () => (
     </div>
 
     <div id="solicitarTecnico" className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 mb-4 md:mb-0`}>
-      <Button text="Llamada telefónica" link="tel:01143838283" />
+      <a href="tel:1143838283">
+        <div type="button" className={`py-4 px-6 bg-blue-gradient font-popins font-medium xs:text-[16px] xl:text-[18px] text-primary outline-none rounded-lg ${styles}`}>
+          Llamada telefónica
+        </div>
+      </a>
     </div>
     </div>
   </section>
-);
+)
 
-export default CTA;
+export default CTA

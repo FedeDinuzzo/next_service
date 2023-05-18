@@ -1,13 +1,18 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import SolicitarTecnico from "./SolicitarTecnico"
-import robotHand from "../../../public/robot-hand.webp"
-import heroVector from "../../../public/Vector.svg"
-import autorizado from "../../../public/autorizado.svg"
+import robotHand from "../../public/robot-hand.webp"
+import heroVector from "../../public/Vector.svg"
+import autorizado from "../../public/autorizado.svg"
+import heladerasLavarropas from "../../public/heladera-lavarropas.webp"
+import heladeraHero from "../../public/heladeraHero.webp"
+import lavarropasHero from "../../public/lavarropasHero.webp"
+import phone from "../../public/phone.webp"
 import Ball from "./animations/Ball"
 
 const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img , ruta }) => { 
   const condcion = 1
+
   return(
     <section id="home" className={`-m-6 flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:mt-[72px] xl:-mt-16`}>
       <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -52,7 +57,11 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
             <Image src={heroVector} height="767px" width="768px" priority className="heroVector" alt='hero-bg-effect' />
           </div>
           <div className="absolute">
-            {img}
+            { img == 1 ? <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' />
+            : img == 2 ? <Image src={heladeraHero} height="652px" width="674px" priority className="heroImg" alt='heladera electrolux' />
+            : img == 3 ? <Image src={lavarropasHero} height="652px" width="674px" priority className="heroImg" alt='lavarropas electrolux' />
+            : <Image src={phone} height="652px" width="674px" priority className="heroImg" alt='telefono de contacto' />
+            }
           </div>
     
           {/* <div className="balls">

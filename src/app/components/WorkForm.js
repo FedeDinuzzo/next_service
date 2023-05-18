@@ -1,6 +1,6 @@
 import styles, { layout } from "@/app/constants/style"
 import Image from "next/image"
-import tick from "../../../public/tick.svg"
+import tick from "../../public/tick.svg"
 
 function workForm({ repair, technical }) {
   return (

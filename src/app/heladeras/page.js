@@ -1,18 +1,19 @@
 import Hero from '../components/Hero'
-import Testimonials from '../components/Testimonials'
-import Repair from '../components/Repair'
-import WorkForm from '../components/WorkForm'
-import CTA from '../components/CTA'
 import styles from "@/app/constants/style"
-import heladeraHero from '../../../public/heladeraHero.webp'
-import reparacionHeladeras from '../../../public/reparaciones-heladeras.webp'
-import tecnicoHeladeras from '../../../public/tecnicoHeladeras.webp'
-import step2 from '../../../public/step2.webp'
+import reparacionHeladeras from '../../public/reparaciones-heladeras.webp'
+import tecnicoHeladeras from '../../public/tecnicoHeladeras.webp'
+import step2 from '../../public/step2.webp'
+import { lazy, Suspense } from "react"
 
 export const metadata = {
   title: '▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado',
   description: 'Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux',
 }
+
+const WorkForm = lazy(() => import('../components/WorkForm'))
+const Repair = lazy(() => import('../components/Repair'))
+const Testimonials = lazy(() => import('../components/Testimonials'))
+const CTA = lazy(() => import('../components/CTA'))
 
 function heladeras() {
   return (
@@ -25,13 +26,15 @@ function heladeras() {
           titleOne="Service De" 
           titleTwo="De Heladeras" 
           titleThree="Electrolux" 
-          img={heladeraHero}
+          img={2}
           ruta={1}
         />
-        <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
-        <Repair gadget="heladera" step={step2}/>
-        <Testimonials />
-        <CTA />
+        <Suspense fallback={`Loading...`}>
+          <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
+          <Repair gadget="heladera" step={step2}/>
+          <Testimonials />
+          <CTA />
+        </Suspense>
       </div>  
     </div>  
 
