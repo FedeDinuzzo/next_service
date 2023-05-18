@@ -7,8 +7,8 @@ import heladeraFrente from '../../public/heladera-frente.webp'
 
 const Heladeras = () => (
   <section id="product" className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0`}>
-    <div className="absolute z-[3] w-[30%] h-[30%] -left-[30%] -mt-[20%] rounded-full white__gradient"/>
-    <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient"/>
+    {/* <div className="absolute z-[3] w-[30%] h-[30%] -left-[30%] -mt-[20%] rounded-full white__gradient"/>
+    <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient"/> */}
     
     <div className={layout.sectionImgReverse}>
       <Image src={heladeraFrente} alt="heladera" loading="lazy" className="w-[280px] md:w-[320px] xl:w-auto lg:mr-36"/>
