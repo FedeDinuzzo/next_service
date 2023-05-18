@@ -10,7 +10,7 @@ import lavarropasHero from "../../public/lavarropasHero.webp"
 import phone from "../../public/phone.webp"
 import Ball from "./animations/Ball"
 
-const Hero = ({  }) => { 
+const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img , ruta }) => { 
   const condcion = 1
 
   return(
@@ -20,27 +20,27 @@ const Hero = ({  }) => {
           <Image src={autorizado} height="32px" width="32px" priority className="-ml-2" alt="autorizado" />
         
           <p className={`${styles.paragraph} flex`}>
-            <span className="pr-1 text-white">service de</span>
-            electrolux {" "}
-            <span className="pl-1 text-white">autorizado</span>
+            <span className="pr-1 text-white">{textOne}</span>
+            {textTwo} {" "}
+            <span className="pl-1 text-white">{textThree}</span>
           </p>
         </div>
       
         <div className="flex flex-row justify-between items-center w-full">
           <div className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" />
           <h1 className="fadeLeft flex-1 font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px]">
-            hola <br className="sm:block hidden"/> {" "}
-            <span className="text-gradient">soy el mejor</span> {" "}
+            {titleOne} <br className="sm:block hidden"/> {" "}
+            <span className="text-gradient">{titleTwo}</span> {" "}
           </h1>
         
-          {/* {condcion === ruta ?
+          {condcion === ruta ?
             <div className="ss:flex hidden md:mr-4 mr-0">
               <SolicitarTecnico />
             </div>
-          : ""} */}
+          : ""}
         </div>
         <h1 className="fadeLeft font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px] w-full">
-          fededi
+          {titleThree}
         </h1>
         <div className="appear2">
           <p className={`${styles.paragraph} max-w-[470px] mt-2 sm:hidden`}>Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux.</p>
@@ -57,12 +57,11 @@ const Hero = ({  }) => {
             <Image src={heroVector} height="767px" width="768px" priority className="heroVector" alt='hero-bg-effect' />
           </div>
           <div className="absolute">
-          <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' />
-            {/* { img == 1 ? <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' />
+            { img == 1 ? <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' />
             : img == 2 ? <Image src={heladeraHero} height="652px" width="674px" priority className="heroImg" alt='heladera electrolux' />
             : img == 3 ? <Image src={lavarropasHero} height="652px" width="674px" priority className="heroImg" alt='lavarropas electrolux' />
             : <Image src={phone} height="652px" width="674px" priority className="heroImg" alt='telefono de contacto' />
-            } */}
+            }
           </div>
     
           {/* <div className="balls">
@@ -113,11 +112,11 @@ const Hero = ({  }) => {
         </div>
       </div>
 
-      {/* {condcion == ruta ?
+      {condcion == ruta ?
         <div className={`ss:hidden ${styles.flexCenter}`}>
           <SolicitarTecnico />
         </div>
-      : ""} */}
+      : ""}
     </section>
   )
 }

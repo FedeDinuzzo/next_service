@@ -19,14 +19,14 @@ function Home() {
     <div className={`${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero
-          // textOne="SERVICIO"
-          // textTwo="TÉCNICO"
-          // textThree="AUTORIZADO"
-          // titleOne="Service"
-          // titleTwo="Electrolux"
-          // titleThree="Especializado"
-          // img={1}
-          // ruta={1}
+          textOne="SERVICIO"
+          textTwo="TÉCNICO"
+          textThree="AUTORIZADO"
+          titleOne="Service"
+          titleTwo="Electrolux"
+          titleThree="Especializado"
+          img={1}
+          ruta={1}
         />
         <div className={`${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
