@@ -22,11 +22,8 @@ function Home() {
   return (
     <div className={`${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <div className="h-[100vh]">
-          <Image src={heladerasLavarropas} height="652px" width="674px" priority className="heroImg" alt='heladera y lavarropas electrolux' />
-          <Image src={heroVector} height="652px" width="674px" priority className="heroImg absolute top-[100px]" alt='heladera y lavarropas electrolux' />
-        </div>
-        {/* <Hero
+         <Hero />
+         {/*
           textOne="SERVICIO"
           textTwo="TÉCNICO"
           textThree="AUTORIZADO"

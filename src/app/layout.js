@@ -8,8 +8,7 @@ export const metadata = {
   meta: 'http-equiv="X-UA-Compatible" content="IE=edge"',
   meta: 'name="viewport"',
   content: 'width=device-width, initial-scale=1.0, user-scalable=no',
-  link: 'rel="icon" href="/favicon.ico"',
-  description: 'Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!'
+  link: 'rel="icon" href="/favicon.ico"'
 }
 
 const font = Poppins({
