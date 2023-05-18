@@ -34,9 +34,9 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
           </h1>
         
           {/* {condcion === ruta ? */}
-            <div className="ss:flex hidden md:mr-4 mr-0">
+            {/* <div className="ss:flex hidden md:mr-4 mr-0">
               <SolicitarTecnico />
-            </div> 
+            </div>  */}
           {/* : ""} */}
         </div>
         <h1 className="fadeLeft font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px] w-full">
@@ -114,9 +114,9 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       </div>
 
       {/* {condcion == ruta ? */}
-        <div className={`ss:hidden ${styles.flexCenter}`}>
+        {/* <div className={`ss:hidden ${styles.flexCenter}`}>
           <SolicitarTecnico />
-        </div> 
+        </div>  */}
       {/* : ""} */}
     </section>
   )
