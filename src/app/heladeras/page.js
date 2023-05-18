@@ -7,8 +7,7 @@ import { lazy, Suspense } from "react"
 
 export const metadata = {
   title: '▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado',
-  name: "description", 
-  content: "Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux"
+  description: 'Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux',
 }
 
 const WorkForm = lazy(() => import('../components/WorkForm'))
