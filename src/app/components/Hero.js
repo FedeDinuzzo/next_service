@@ -51,7 +51,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       {/* <div className="absolute z-[0] w-[40%] h-[70%] top-[0%] right-0 lg:-right-[15%] rounded-full blue__gradient opacity-80" /> */}
       {/* <div className="absolute z-[0] w-[40%] h-[40%] -top-[20%] right-0 rounded-full pink__gradient" /> */}
       <div className={`flex-1 flex ${styles.flexCenter} my-0 md:my-10 mb-10 md:mb-0 relative`}>
-        <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[2%]"/>
+        <div className="w-[6%] sm:w-[34%] md:w-[14%]"/>
         <div className="w-[94%] sm:w-[70%] md:w-[99%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
             <Image src={heroVector} height="767px" width="768px" priority className="absolute right-[12%] heroVector" alt='hero-bg-effect' />
 

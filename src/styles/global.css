@@ -115,17 +115,6 @@ body {
   }
 }
 
-@keyframes popRight {
-  0% {
-    opacity: 0;
-    right: -200%;
-  }
-  100% {
-    opacity: 1;
-    right: 0;
-  }
-}
-
 @keyframes opacity { 
   0% {
     opacity: 0;
@@ -149,7 +138,7 @@ body {
 }
 
 .robotHand {
-  animation: 1.5s popRight, 1.5s turn ease-in-out;
+  animation: 1.5s popRightTurn, 1.5s turn ease-in-out;
 }
 
 .heroVector {
@@ -183,16 +172,28 @@ body {
   }
 }
 
-@keyframes popRight {
+@keyframes popRightTurn {
   0% {
     opacity: 0;
-    right: -200%;
+    transform: translateX(48vw) rotate(90deg);
   }
   100% {
     opacity: 1;
-    right: 0;
+    transform: translateX(0) rotate(0deg);
   }
 }
+
+@keyframes popRight {
+  0% {
+    opacity: 0;
+    transform: translateX(48vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 @keyframes popLeft {
   0% {
@@ -202,16 +203,6 @@ body {
     transform: translateX(0);
   }
 }
-
-@keyframes turn {
-  0% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 
 .feature-card:hover {
   background: var(--black-gradient);
