@@ -30,7 +30,6 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div>
       
         <div className="flex flex-row justify-between items-center w-full">
-        <Image src={whiteGradient} priority className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" alt="white gradient" />
           <h1 className="fadeLeft flex-1 font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px]">
             {titleOne} <br className="sm:block hidden"/> {" "}
             <span className="text-gradient">{titleTwo}</span> {" "}

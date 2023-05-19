@@ -3,9 +3,11 @@ import styles, { layout } from "@/app/constants/style"
 import Link from 'next/link'
 import atencion from '../../public/Atencion.webp'
 import heladeraFrente from '../../public/heladera-frente.webp'
+import whiteGradient from '../../public/whiteGradient.webp'
 
 const Heladeras = () => (
   <section id="product" className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0`}>
+    <Image src={whiteGradient} className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" alt="white gradient" />
     {/* <div className="absolute z-[3] w-[30%] h-[30%] -left-[30%] -mt-[20%] rounded-full white__gradient"/>
     <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient"/> */}
     
