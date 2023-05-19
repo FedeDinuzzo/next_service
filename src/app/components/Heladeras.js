@@ -19,11 +19,11 @@ const Heladeras = () => (
     <div className="lg:pr-8">
       <h2 className={styles.heading2}>Reparación de <br className="sm:block hidden" />Heladeras Electrolux</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>Servicio Técnico Especializado en Heladeras Familiares, Tropicales, No Frost y Freezers. Repuestos originales</p>
-      <Link href="/heladeras" aria-label="Ir a la sección heladeras">
-        <div type="button" className={`mt-6 xl:mt-10 py-4 px-6 bg-blue-gradient font-popins font-medium xs:text-[16px] xl:text-[18px] text-primary outline-none rounded-lg ${styles}`}>
+      <button type="button" className={`py-4 px-6 bg-blue-gradient font-popins font-medium xs:text-[16px] xl:text-[18px] text-primary outline-none rounded-lg mt-6 xl:mt-10`}>
+        <Link href="/heladeras" aria-label="Ir a la sección heladeras">
           Mas Información
-        </div>
-      </Link>
+        </Link>
+      </button>
     </div>
   </section>
 )
