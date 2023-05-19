@@ -5,6 +5,9 @@ import robotHand from "../../public/robot-hand.webp"
 import heroVector from "../../public/Vector.svg"
 import autorizado from "../../public/autorizado.svg"
 import heladerasLavarropas from "../../public/heladera-lavarropas.webp"
+import pinkGradient from "../../public/pinkGradient.svg"
+import whiteGradient from '../../public/whiteGradient.svg'
+import blueGradient from "../../public/blueGradient.svg"
 import heladeraHero from "../../public/heladeraHero.webp"
 import lavarropasHero from "../../public/lavarropasHero.webp"
 import phone from "../../public/phone.webp"
@@ -27,7 +30,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div>
       
         <div className="flex flex-row justify-between items-center w-full">
-          {/* <div className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" /> */}
+        <Image src={whiteGradient} priority className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" alt="white gradient" />
           <h1 className="fadeLeft flex-1 font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px]">
             {titleOne} <br className="sm:block hidden"/> {" "}
             <span className="text-gradient">{titleTwo}</span> {" "}
@@ -48,8 +51,8 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div>
       </div>
     
-      {/* <div className="absolute z-[0] w-[40%] h-[70%] top-[0%] right-0 lg:-right-[15%] rounded-full blue__gradient opacity-80" /> */}
-      {/* <div className="absolute z-[0] w-[40%] h-[40%] -top-[20%] right-0 rounded-full pink__gradient" /> */}
+      <Image src={blueGradient} priority className="absolute z-[0] w-[40%] h-[70%] top-[0%] right-0 lg:-right-[15%] rounded-full blur-[200px]" alt="blue gradient" />
+      <Image src={pinkGradient} priority className="absolute z-[0] w-[100%] h-[100%] -top-[45%] -right-[20%] rounded-full" alt="pink gradient" />
       <div className={`flex-1 flex ${styles.flexCenter} my-0 md:my-10 mb-10 md:mb-0 relative`}>
         <div className="w-[6%] sm:w-[34%] md:w-[14%]"/>
         <div className="w-[94%] sm:w-[70%] md:w-[99%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">

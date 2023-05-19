@@ -11,10 +11,10 @@ export const metadata = {
   category: "Servicio tecnico",
   openGraph: {
     type: "website", 
-    url: "https://service-electrolux.ar/lavarropas", 
+    url: "https://service-electrolux.ar/", 
     title: '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA',
   description: 'Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!',
-    siteName: "Service de Lavarropas Electrolux",
+    siteName: "Service de Heladeras y Lavarropas Electrolux",
     images: [
       {
         url: '/HyLElectrolux.jpg',
