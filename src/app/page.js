@@ -61,8 +61,8 @@ function Home() {
         </div>
         <Suspense fallback={`Loading...`}>
           <Features />
-          <Heladeras />
-          <Lavarropas />
+          {/* <Heladeras />
+          <Lavarropas /> */}
           <Zones />
           <CTA />
         </Suspense>
