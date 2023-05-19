@@ -5,9 +5,9 @@ import robotHand from "../../public/robot-hand.webp"
 import heroVector from "../../public/Vector.svg"
 import autorizado from "../../public/autorizado.svg"
 import heladerasLavarropas from "../../public/heladera-lavarropas.webp"
-import pinkGradient from "../../public/pinkGradient.svg"
-import whiteGradient from '../../public/whiteGradient.svg'
-import blueGradient from "../../public/blueGradient.svg"
+// import pinkGradient from "../../public/pinkGradient.png"
+import whiteGradient from '../../public/whiteGradient.png'
+// import blueGradient from "../../public/blueGradient.png"
 import heladeraHero from "../../public/heladeraHero.webp"
 import lavarropasHero from "../../public/lavarropasHero.webp"
 import phone from "../../public/phone.webp"
@@ -51,8 +51,8 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div>
       </div>
     
-      <Image src={blueGradient} priority className="absolute z-[0] w-[40%] h-[70%] top-[0%] right-0 lg:-right-[15%] rounded-full blur-[200px]" alt="blue gradient" />
-      <Image src={pinkGradient} priority className="absolute z-[0] w-[100%] h-[100%] -top-[45%] -right-[20%] rounded-full" alt="pink gradient" />
+      {/* <Image src={blueGradient} priority className="absolute z-[0] w-[40%] h-[70%] top-[0%] right-0 lg:-right-[15%] rounded-full blur-[200px]" alt="blue gradient" />
+      <Image src={pinkGradient} priority className="absolute z-[0] w-[100%] h-[100%] -top-[45%] -right-[20%] rounded-full" alt="pink gradient" /> */}
       <div className={`flex-1 flex ${styles.flexCenter} my-0 md:my-10 mb-10 md:mb-0 relative`}>
         <div className="w-[6%] sm:w-[34%] md:w-[14%]"/>
         <div className="w-[94%] sm:w-[70%] md:w-[99%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
