@@ -5,7 +5,7 @@ import Button from "./animations/Button"
 
 const Lavarropas = () => (
   <section id="product" className={`${layout.section} -mb-28 -mt-8 md:mt-0 xl:-my-20 xl:-mb-40`}>
-    <div className="absolute z-[0] w-[24%] h-[70%] -right-[0%] rounded-l-full blue__gradient" />
+    {/* <div className="absolute z-[0] w-[24%] h-[70%] -right-[0%] rounded-l-full blue__gradient" /> */}
 
     <div className="lg:pr-8">
       <h2 className={styles.heading2}>Reparación de <br className="sm:block hidden" />Lavarropas Electrolux</h2>

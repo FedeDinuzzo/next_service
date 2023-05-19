@@ -153,24 +153,24 @@ body {
 }
 
 .heroImg {
-  animation: 2s popRight;
+  animation: 1.5s popRight;
 }
 
 .robotHand {
-  animation: 2s popRight, 1.5s turn ease-in-out;
+  animation: 1.5s popRight, 1.5s turn ease-in-out;
 }
 
 
 .heroVector {
-  animation: popBottom 2s linear;
+  animation: popBottom 1.5s linear;
 }
 
 @keyframes popBottom {
   0% {
     opacity: 0;
-    transform: translateY(40vh);
+    transform: translateY(39vh);
   }
-  75% {
+  80% {
     opacity: 0;
   }
   100% {
