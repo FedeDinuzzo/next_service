@@ -12,7 +12,7 @@ const Lavarropas = () => (
       <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>Servicio técnico especializado en Lavarropas de Carga frontal y Carga superior Electrolux. Repuestos originales</p>
       <div className={`w-fit py-4 px-6 bg-blue-gradient font-popins font-medium xs:text-[16px] xl:text-[18px] text-primary outline-none rounded-lg mt-6 xl:mt-10`}>
         <Link href="/lavarropas" aria-label="Ir a la sección lavarropas">
-          <p>Mas Información</p>
+          <p>Lavarropas Info</p>
         </Link>
       </div>
     </div>
