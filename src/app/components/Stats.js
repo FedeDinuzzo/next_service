@@ -1,8 +1,8 @@
 import { stats } from '@/app/constants/index'
-import styles from "@/app/constants/style";
+import styles from "@/app/constants/style"
 
 const Stats = () => (
-  <section className={`sm:${styles.flexCenter} flex-row flex-wrap mb-10 md:mb-20 m-6 md:-mt-48 lg:-mt-24 xl:mt-0`}>
+  <section className={`sm:${styles.flexCenter} flex-row flex-wrap mb-10 md:mb-20 m-6 md:-mt-48 lg:-mt-24 xl:mt-0 lg:mb-40 xl:mb-12`}>
     {/* <Counter from={0} to={100} /> */}
     {stats.map((stat) => (
       <div key={stat.id} className={`sm:flex-1 flex justify-start items-center flex-row m-3 lg:m-0`}>
@@ -11,6 +11,6 @@ const Stats = () => (
       </div>
     ))}
   </section>
-);
+)
 
-export default Stats;
+export default Stats
