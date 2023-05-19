@@ -8,6 +8,8 @@ import callUs from '../../public/callUs.webp'
 export const metadata = {
   title: 'Contacto Service Electrolux | Agentes Disponibles',
   description: 'Ingresa y haz tu consulta! Prespuestos SIN CARGO',
+  index: false,
+  follow: true,
 }
 
 function contacto() {

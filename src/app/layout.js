@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
       <Head>
         <title>▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA</title>
         <meta name="description" content="Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/favicon.ico" /> 
       </Head>
-      <body className={`${font.variable} appear bg-primary`}>
+      <body className={`${font.variable} bg-primary`}>
         <NavBar />
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
