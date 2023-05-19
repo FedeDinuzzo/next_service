@@ -88,33 +88,6 @@ body {
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
-.sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
 @keyframes opacity { 
   0% {
     opacity: 0;
@@ -125,34 +98,10 @@ body {
   }
 }
 
-.fadeTop {
-  animation: 1s popTop;
-}
-
-.fadeLeft {
-  animation: 1s popLeft;
-}
-
-.heroImg {
-  animation: 1.5s popRight;
-}
-
-.robotHand {
-  animation: 1.5s popRightTurn, 1.5s turn ease-in-out;
-}
-
-.heroVector {
-  animation: popBottom 1.5s linear;
-}
-
-.navMobile {
-  animation: popBottom 1.5s ease-in;
-}
-
 @keyframes popBottom {
   0% {
     opacity: 0;
-    transform: translateY(39vh);
+    transform: translateY(37vh);
   }
   80% {
     opacity: 0;
@@ -185,15 +134,12 @@ body {
 
 @keyframes popRight {
   0% {
-    opacity: 0;
     transform: translateX(48vw);
   }
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
-
 
 @keyframes popLeft {
   0% {
@@ -203,6 +149,32 @@ body {
     transform: translateX(0);
   }
 }
+
+.fadeTop {
+  animation: 1s popTop;
+}
+
+.fadeLeft {
+  animation: 1s popLeft;
+}
+
+.heroImg {
+  will-change: transform;
+  animation: 1.3s popRight;
+}
+
+.robotHand {
+  animation: 1.3s popRightTurn;
+}
+
+.heroVector {
+  animation: popBottom 1.5s linear;
+}
+
+.navMobile {
+  animation: popBottom 1.5s ease-in;
+}
+
 
 .feature-card:hover {
   background: var(--black-gradient);
@@ -230,7 +202,7 @@ body {
   background: var(--black-gradient);
 }
 
-.blue__gradient {
+/* .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(123px);
 }
@@ -243,4 +215,4 @@ body {
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
-}
+} */
