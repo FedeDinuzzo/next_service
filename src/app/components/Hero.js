@@ -6,7 +6,7 @@ import heroVector from "../../public/Vector.svg"
 import autorizado from "../../public/autorizado.svg"
 import heladerasLavarropas from "../../public/heladera-lavarropas.webp"
 // import pinkGradient from "../../public/pinkGradient.png"
-import whiteGradient from '../../public/whiteGradient.png'
+import whiteGradient from '../../public/whiteGradient.webp'
 // import blueGradient from "../../public/blueGradient.png"
 import heladeraHero from "../../public/heladeraHero.webp"
 import lavarropasHero from "../../public/lavarropasHero.webp"
