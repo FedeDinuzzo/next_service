@@ -3,7 +3,7 @@ import styles, { layout } from "@/app/constants/style"
 import Link from 'next/link'
 import atencion from '../../public/Atencion.webp'
 import heladeraFrente from '../../public/heladera-frente.webp'
-import whiteGradient from '../../public/whiteGradient.webp'
+import whiteGradient from '../../public/whiteGradient.svg'
 
 const Heladeras = () => (
   <section id="product" className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0`}>
