@@ -3,14 +3,13 @@ import styles, { layout } from "@/app/constants/style"
 import Link from 'next/link'
 import atencion from '../../public/Atencion.webp'
 import heladeraFrente from '../../public/heladera-frente.webp'
-import whiteGradient from '../../public/whiteGradient.webp'
+import whiteGradient from '../../public/whiteGradient.svg'
+import pinkGradient from "../../public/pinkGradient.svg"
 
 const Heladeras = () => (
   <section id="product" className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0`}>
     <Image src={whiteGradient} className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" alt="white gradient" />
-    {/* <div className="absolute z-[3] w-[30%] h-[30%] -left-[30%] -mt-[20%] rounded-full white__gradient"/>
-    <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient"/> */}
-    
+    <Image src={pinkGradient} className="absolute z-[0] w-[30%] h-[100%] -mt-16 left-[0%] rounded-r-full" alt="pink gradient" />
     <div className={layout.sectionImgReverse}>
       <Image src={heladeraFrente} alt="heladera" loading="lazy" className="w-[280px] md:w-[320px] xl:w-auto lg:mr-36"/>
       <div className='absolute pt-52 pl-28 md:pl-32 lg:pl-48 md:w-[86%] xl:w-auto'>
