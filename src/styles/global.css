@@ -150,6 +150,41 @@ body {
   }
 }
 
+@keyframes wppLogo {
+  0% {
+    transform: scaleX(100%) scaleY(100%);
+  }
+  100% {
+    transform: scaleX(97%) scaleY(97%);
+  }
+}
+
+@keyframes navLink {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.navLink { 
+  animation: navLink 1s ease-in 4s 2 reverse;
+}
+
+.wppLogo {
+  animation: wppLogo 2s ease-out 6s infinite alternate;
+}
+
 .fadeTop {
   animation: 1s popTop;
 }
@@ -201,18 +236,3 @@ body {
 .feedback-card-set {
   background: var(--black-gradient);
 }
-
-/* .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
-  filter: blur(123px);
-}
-
-.pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-  filter: blur(900px);
-}
-
-.white__gradient {
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
-} */
