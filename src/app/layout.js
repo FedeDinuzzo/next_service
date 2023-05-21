@@ -39,7 +39,7 @@ export const metadata = {
       follow: true,
     },
   },
-  keywords: "servicio, service, electrolux, heladeras, lavarropas, reparacion, arreglo, tecnicos, asistencia, capital federal, zona norte, zona sur, servicio tecnico de heladeras y lavarropas electrolux, service de lavarropas y heladeras electrolux, reparacion de heladeras y lavarropas electrlux",
+  keywords: ["servicio", "service", "electrolux", "heladeras", "lavarropas", "reparacion", "arreglo", "tecnicos", "asistencia", "capital federal", "zona norte", "zona sur", "servicio tecnico de heladeras y lavarropas electrolux", "service de lavarropas y heladeras electrolux", "reparacion de heladeras y lavarropas electrlux"],
   creator: "Federico Di Nuzzo",
   generator: "Next.js",
   publisher: "Vercel",

@@ -8,7 +8,7 @@ import { lazy, Suspense } from "react"
 export const metadata = {
   title: '▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado',
   description: 'Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux',
-  keywords: "servicio, service, electrolux, heladeras, reparacion, arreglo, tecnicos, asistencia, capital federal, zona norte, zona sur, servicio tecnico de heladeras electrolux, service de heladeras electrolux, reparacion de heladeras electrolux",
+  keywords: ["servicio", "service", "electrolux", "heladeras", "reparacion", "arreglo", "tecnicos", "asistencia", "capital federal", "zona norte", "zona sur", "servicio tecnico de heladeras electrolux", "service de heladeras electrolux", "reparacion de heladeras electrolux"],
   openGraph: {
     type: "website", 
     url: "https://service-electrolux.ar/heladeras", 
