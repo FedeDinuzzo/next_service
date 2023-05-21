@@ -15,14 +15,6 @@ export const metadata = {
     title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado", 
     description: "Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux", 
     siteName: "Service de Heladeras Electrolux",
-    images: [
-      {
-        url: '/service-heladera-electrolux.jpg',
-        width: 600,
-        height: 600,
-        alt: 'heladera electrolux',
-      },
-    ],
   },
 }
 

@@ -15,14 +15,6 @@ export const metadata = {
     title: "▷ Service de Lavarropas❄️ ELECTROLUX | Autorizado",
     description: "Se rompio tu lavarropas ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de lavarropas Electrolux",
     siteName: "Service de Lavarropas Electrolux",
-    images: [
-      {
-        url: '/service-lavarropas-electrolux.jpg',
-        width: 600,
-        height: 600,
-        alt: 'lavarropas electrolux',
-      },
-    ],
   },
 }
 

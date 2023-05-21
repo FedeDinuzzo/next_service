@@ -21,15 +21,6 @@ export const metadata = {
     url: "https://service-electrolux.ar/", 
     title: '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA',
     description: 'Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!',
-    siteName: "Service de Heladeras y Lavarropas Electrolux",
-    images: [
-      {
-        url: '/service-electrolux.jpg',
-        width: 600,
-        height: 600,
-        alt: 'heladera y lavarropas electrolux',
-      },
-    ],
   },
   robots: {
     index: true,
