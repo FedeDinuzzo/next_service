@@ -8,8 +8,29 @@ import callUs from '../../public/callUs.webp'
 export const metadata = {
   title: 'Contacto Service Electrolux | Agentes Disponibles',
   description: 'Ingresa y haz tu consulta! Prespuestos SIN CARGO',
-  index: false,
-  follow: true,
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
+  },
+  openGraph: {
+    type: "website",
+    url: "https://service-electrolux.ar/contacto",
+    title: "▷ Service ELECTROLUX ❄️ Contacto",
+    description: "Ingresa y Contactanos, agentes ELECTROLUX disponibles ✓ EN EL DIA - Servicio Tecnico de Heladeras y lavarropas Electrolux",
+    siteName: "Service Electrolux contacto",
+    images: [
+      {
+        url: '/service-electrolux.jpg',
+        width: 600,
+        height: 600,
+        alt: 'service electrolux contacto',
+      },
+    ],
+  },
 }
 
 function contacto() {

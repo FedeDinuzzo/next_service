@@ -8,9 +8,7 @@ import { lazy, Suspense } from "react"
 export const metadata = {
   title: '▷ Service de Lavarropas ❄️ ELECTROLUX | Autorizado',
   description: 'Se rompio tu lavarropas ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de lavarropas Electrolux',
-  icon: "/favicon.ico",
-  viewport: "width=device-width, initial-scale=1",
-  category: "Servicio tecnico",
+  keywords: "servicio, service, electrolux, lavarropas, reparacion, arreglo, tecnicos, asistencia, capital federal, zona norte, zona sur, servicio tecnico de lavarropas electrolux, service de lavarropas electrolux, reparacion de lavarropas electrolux",
   openGraph: {
     type: "website",
     url: "https://service-electrolux.ar/lavarropas",
@@ -19,21 +17,13 @@ export const metadata = {
     siteName: "Service de Lavarropas Electrolux",
     images: [
       {
-        url: '/lavarropasElectrolux.jpg',
+        url: '/service-lavarropas-electrolux.jpg',
+        width: 600,
+        height: 600,
         alt: 'lavarropas electrolux',
-      },
-      {
-        url: '/tecnicoLavarropas.jpg',
-        alt: 'tecnico reparando lavarropas electrolux',
       },
     ],
   },
-  index: true,
-  follow: true,
-  keywords: "website, responsive, seo friendly, servicio, service, electrolux, lavarropas, reparacion, arreglo, tecnicos, asistencia, capital federal, zona norte, zona sur, servicio tecnico de lavarropas electrolux, service de lavarropas electrolux, reparacion de lavarropas electrlux",
-  creator: "Federico Di Nuzzo",
-  generator: "Next.js",
-  publisher: "Vercel",
 }
 
 const WorkForm = lazy(() => import('../components/WorkForm'))
