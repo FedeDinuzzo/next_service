@@ -10,7 +10,9 @@ const Zones = lazy(() => import('./components/Zones'))
 const CTA = lazy(() => import('./components/CTA'))
 
 export const metadata = {
-  canonical: "https://www.service-electrolux.ar/",
+  alternates: {
+    canonical: "https://service-electrolux.ar/",
+  },
 }
 
 function Home() {
