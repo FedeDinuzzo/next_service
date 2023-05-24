@@ -14,7 +14,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
   const condcion = 1
 
   return(
-    <section id="home" className={`-m-6 flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:mt-[72px] xl:-mt-16`}>
+    <section id="home" className={`-m-6 flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:-mt-[48px] xl:-mt-16`}>
       <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
         <div className="max-h-[40px] fadeTop flex flex-row items-center -mt-4 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <Image src={autorizado} height="32px" width="32px" priority className="-ml-2" alt="autorizado" />

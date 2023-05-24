@@ -37,6 +37,15 @@ const NavBar = () => {
                 <Image src={wppLogo} alt="wppLogo" height="58px" width="58px" priority />
               </a>
             </div>
+          <a href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20">
+              <Image src={wppLogoDesktop} alt="wppLogo" height="66px" width="66px" priority className="wppLogo absolute bottom-[4px] right-10 m-auto z-[100]" />
+            </a>
+          </div>
+          <div className="navMobile block fixed bottom-0 left-0 w-[100vw] sm:hidden">
+            <div className="ml-6 flex absolute bottom-6 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <a href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20">
+              <Image src={wppLogo} alt="wppLogo" height="58px" width="58px" priority className="wppLogo absolute bottom-[12px] left-0 right-0 m-auto z-[100] cursor-pointer" />
+            </a>
             <div className="mr-6 flex absolute bottom-6 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
             <div className="flex justify-evenly items-center absolute bottom-[30px] px-0 w-[100vw] h-auto">
                 <ul>
