@@ -38,8 +38,8 @@ const SolicitarTecnico = () => {
   // }, [inView]);
 
   return (
-    <div className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full border-2 border-[#5ce1e6] p-[2px] cursor-pointer z-[1]`}>
-      <div className={`${styles.flexCenter} flex-col w-[100%] h-[100%] rounded-full`}>
+    <div className={`${styles.flexCenter} opc w-[140px] h-[140px] rounded-full border-2 border-[#5ce1e6] p-[2px] cursor-pointer z-[1]`}>
+      <div className={`${styles.flexCenter} blob flex-col w-[100%] h-[100%] rounded-full`}>
         <a href="#solicitarTecnico">
           <div className={`${styles.flexStart} flex-row`}>
             <p className="font-poppins font-medium text-[18px] leading-[23px] mr-1">

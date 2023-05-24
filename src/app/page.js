@@ -9,6 +9,10 @@ const Lavarropas = lazy(() => import('./components/Lavarropas'))
 const Zones = lazy(() => import('./components/Zones'))
 const CTA = lazy(() => import('./components/CTA'))
 
+export const metadata = {
+  canonical: "https://www.service-electrolux.ar/",
+}
+
 function Home() {
   return (
     <div className={`${styles.flexStart}`}>

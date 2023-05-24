@@ -32,7 +32,7 @@ function heladeras() {
           textTwo="TÉCNICO"
           textThree="AUTORIZADO"
           titleOne="Service De" 
-          titleTwo="De Heladeras" 
+          titleTwo="Heladeras" 
           titleThree="Electrolux" 
           img={2}
           ruta={1}
