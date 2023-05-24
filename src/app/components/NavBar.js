@@ -31,14 +31,14 @@ const NavBar = () => {
             </div>
           </div>
           <div className="navMobile block fixed bottom-0 left-0 w-[100vw] sm:hidden">
-            <div className="ml-6 flex absolute bottom-5 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#1e8794]"></div>
-            <div className="blobWpp rounded-full absolute bottom-[12px] left-0 right-0 m-auto z-[100] cursor-pointer h-[60px] w-[60px]">
+            <div className="ml-6 flex absolute bottom-3 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <div className="blobWpp rounded-full absolute bottom-[6px] left-0 right-0 m-auto z-[100] cursor-pointer h-[60px] w-[60px]">
               <a href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20">
               <Image src={wppLogo} alt="wppLogo" height="60px" width="60px" priority />
               </a>
             </div>
-            <div className="mr-6 flex absolute bottom-5 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
-            <div className="flex justify-evenly items-center absolute bottom-[29px] px-0 w-[100vw] h-auto">
+            <div className="mr-6 flex absolute bottom-3 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <div className="flex justify-evenly items-center absolute bottom-[20px] px-0 w-[100vw] h-auto">
                 <ul>
                   <li className='flex w-[100vw] justify-evenly align-middle'>
                     <Link href={`/`} aria-label="Ir a la sección de inicio">
