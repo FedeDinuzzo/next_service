@@ -4,6 +4,7 @@ import Image from "next/image"
 import callButton from '../../public/callButton.png'
 import ellipse2 from '../../public/ellipse2.webp'
 import callUs from '../../public/callUs.webp'
+import blueGradient from "../../public/blueGradient.svg"
 
 export const metadata = {
   title: 'Contacto Service Electrolux | Agentes Disponibles',
@@ -50,11 +51,12 @@ function contacto() {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} pb-[320px] sm:pb-[480px] lg:pb-0 xl:pb-[160px]`}>
         <div className={`${styles.boxWidth} flex flex-col items-center`}>
           <section id="product" className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 w-full`}>
+            <Image src={blueGradient} className="rotate-180 absolute z-[0] w-[80%] h-[100%] md:w-[50%] -mt-40 -left-[22%] md:-left-[14%] rounded-r-full" alt="pink gradient" />
             <div className="z-[10] w-[50%]">
-              <div className="absolute max-w-[350px] sm:max-w-full">
+              <div className="absolute right-[5%] sm:right-auto max-w-[350px] sm:max-w-full">
                 <Image src={ellipse2} alt="Frio"/>
               </div>
-              <div className="absolute max-w-[350px] sm:max-w-full">
+              <div className="absolute right-[5%] sm:right-auto max-w-[340px] sm:max-w-full">
                 <Image src={callUs} alt="Call Us" />
               </div>
             </div>

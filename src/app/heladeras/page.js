@@ -4,6 +4,9 @@ import reparacionHeladeras from '../../public/reparaciones-heladeras.webp'
 import tecnicoHeladeras from '../../public/tecnicoHeladeras.webp'
 import step2 from '../../public/step2.webp'
 import { lazy, Suspense } from "react"
+import Image from 'next/image'
+import blueGradient from "../../public/blueGradient.svg"
+import pinkGradient from "../../public/pinkGradient.svg"
 
 export const metadata = {
   title: '▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado',
@@ -39,7 +42,9 @@ function heladeras() {
         />
         <Suspense fallback={`Loading...`}>
           <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
+          <Image src={pinkGradient} className="absolute z-[0] w-[80%] h-[120%] md:w-[50%] -mt-96 -left-[12%] rounded-r-full" alt="pink gradient" />
           <Repair gadget="heladera" step={step2}/>
+          <Image src={blueGradient} className="absolute z-[0] w-[60%] h-[100%] -mt-[40px] md:w-[40%] md:h-[120%] md:-mt-[280px] -right-[0%] rounded-l-full" alt="blue gradient" />
           <Testimonials />
           <CTA />
         </Suspense>

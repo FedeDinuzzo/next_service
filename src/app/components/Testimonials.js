@@ -17,7 +17,6 @@ const Testimonials = () => (
         <FeedbackCard key={card.id} {...card} />
       ))}
     </div>
-    <div className="absolute z-[0] w-[60%] h-[120%] -right-[50%] mt-[30%] rounded-full blue__gradient" />
   </section>
 )
 

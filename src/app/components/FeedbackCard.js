@@ -2,6 +2,7 @@ import Image from "next/image"
 import people01 from '../../public/people01.png'
 import people02 from '../../public/people02.png'
 import people03 from '../../public/people03.png'
+import blueGradient from "../../public/blueGradient.svg"
 
 const FeedbackCard = ({ content, name, title, id }) => (
   <div className={`flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card ${id.includes(1) ? 'feedback-card-set' : ''}`}>
