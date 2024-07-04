@@ -253,6 +253,11 @@ body {
   animation: pulse 2.6s infinite 4s;
 }
 
+.conversion {
+  width: 100%;
+  height: 100%;
+}
+
 .blobWpp {
   will-change: transform, box-shadow;
   box-shadow: 0 0 0 0 rgba(92, 225, 230, 1);
