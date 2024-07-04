@@ -19,7 +19,6 @@ const NavBar = () => {
             src={logo}
             width="auto"
             height="auto"
-            priority
             alt="service electrolux"
             className="w-[160px] h-[100%] -mt-2 md:mt-0"
           />
