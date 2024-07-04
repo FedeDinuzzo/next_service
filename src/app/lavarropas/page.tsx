@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import styles from "../../styles/global.css";
+import styles from "../constants/style";
 import reparacionLavarropas from "../../public/reparaciones-lavarropas.webp";
 import tecnicoLavarropas from "../../public/tecnicoLavarropas.webp";
 import step2v from "../../public/step2v.webp";

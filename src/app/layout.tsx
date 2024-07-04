@@ -1,11 +1,19 @@
 import { GoogleTagManager } from "@next/third-parties/google";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "@next/font/google";
-import styles from "../styles/global.css";
+import "../styles/global.css";
+import styles from "./constants/style";
 import NavBar from "./components/NavBar";
 import { lazy, Suspense } from "react";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://service-electrolux.ar"),
   title:
     "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
   description:
@@ -14,11 +22,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
   },
   openGraph: {
     type: "website",
@@ -29,6 +32,16 @@ export const metadata: Metadata = {
       "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
       "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "service-electrolux",
+    title:
+      '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA"',
+    description:
+      "ervice autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+    images:
+      "https://service-electrolux-f4204ruh5-fededinuzzos-projects.vercel.app/opengraph-image.jpg?405fc21523a0661c",
   },
   robots: {
     index: true,
