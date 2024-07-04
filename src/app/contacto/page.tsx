@@ -84,7 +84,7 @@ function contacto() {
                         <Image src={callButton} alt="icon" />
                       </div>
                       <div className="flex-1 flex flex-col ml-2 md:ml-6 pt-2 align-center">
-                        <h2 className="font-poppins font-semibold text-white text-[28px] lg:text-[36px] leading-[23px] mb-1">
+                        <h2 className="whitespace-nowrap font-poppins font-semibold text-white text-[28px] lg:text-[36px] leading-[23px] mb-1">
                           011 4383-8283
                         </h2>
                         <p className="font-poppins font-norma; text-dimWhite text-[15px] xl:text-[16px] leading-[23px] mb-1">
@@ -104,7 +104,7 @@ function contacto() {
                         <Image src={callButton} alt="icon" />
                       </div>
                       <div className="flex-1 flex flex-col ml-2 md:ml-6 pt-2 align-center">
-                        <h2 className="font-poppins font-semibold text-white text-[28px] lg:text-[36px] leading-[23px] mb-1">
+                        <h2 className="whitespace-nowrap font-poppins font-semibold text-white text-[28px] lg:text-[36px] leading-[23px] mb-1">
                           011 4382-8369
                         </h2>
                         <p className="font-poppins font-norma; text-dimWhite text-[15px] xl:text-[16px] leading-[23px] mb-1">

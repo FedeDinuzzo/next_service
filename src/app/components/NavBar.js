@@ -44,6 +44,7 @@ const NavBar = () => {
               <a
                 className="conversion"
                 href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20"
+                target="_blank"
               >
                 <Image
                   src={wppLogoDesktop}
@@ -60,6 +61,7 @@ const NavBar = () => {
               <a
                 className="conversion"
                 href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20"
+                target="_blank"
               >
                 <Image
                   src={wppLogo}

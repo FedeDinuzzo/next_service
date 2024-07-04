@@ -96,17 +96,17 @@ export const footerLinks = [
       {
         name: "Efectivo",
         link: "",
-        id: '',
+        id: "",
       },
       {
         name: "Transferencia",
         link: "",
-        id: '',
+        id: "",
       },
       {
         name: "Mercado Pago",
         link: "",
-        id: '',
+        id: "",
       },
     ],
   },
@@ -115,23 +115,23 @@ export const footerLinks = [
     links: [
       {
         name: "Inicio",
-        link: "",
-        id: '',
+        link: "/",
+        id: "",
       },
       {
         name: "Heladeras",
-        link: "heladeras",
-        id: '',
+        link: "/heladeras",
+        id: "",
       },
       {
         name: "Lavarropas",
-        link: "lavarropas",
-        id: '',
+        link: "/lavarropas",
+        id: "",
       },
       {
         name: "Contacto",
-        link: "contacto",
-        id: '',
+        link: "/contacto",
+        id: "",
       },
     ],
   },
@@ -141,12 +141,12 @@ export const footerLinks = [
       {
         name: "011 4383-8283",
         link: "tel:01143838283",
-        id: '',
+        id: "",
       },
       {
         name: "011 4382-8369",
         link: "tel:01143828369",
-        id: '',
+        id: "",
       },
     ],
   },
@@ -173,7 +173,7 @@ export const socialMedia = [
     icon: "linkedin",
     link: "https://www.linkedin.com/A&T",
   },
-]
+];
 
 export const zones = [
   {
@@ -191,4 +191,4 @@ export const zones = [
     logo: "zonaSur",
     width: 207,
   },
-]
+];

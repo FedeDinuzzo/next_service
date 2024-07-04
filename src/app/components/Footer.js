@@ -51,7 +51,7 @@ const Footer = () => (
                           }`}
                         >
                           <Link
-                            href={`/${link.link}`}
+                            href={`${link.link}`}
                             aria-label={`Enlace a ${link.name}`}
                           >
                             {link.name}
