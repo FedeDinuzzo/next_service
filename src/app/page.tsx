@@ -1,19 +1,20 @@
-import styles from "./constants/style"
-import Hero from './components/Hero'
-import Stats from "./components/Stats"
-import { lazy, Suspense } from "react"
+import styles from "./constants/style";
+import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import { lazy, Suspense } from "react";
+import type { Metadata } from "next";
 
-const Features = lazy(() => import('./components/Features'))
-const Heladeras = lazy(() => import('./components/Heladeras'))
-const Lavarropas = lazy(() => import('./components/Lavarropas'))
-const Zones = lazy(() => import('./components/Zones'))
-const CTA = lazy(() => import('./components/CTA'))
+const Features = lazy(() => import("./components/Features"));
+const Heladeras = lazy(() => import("./components/Heladeras"));
+const Lavarropas = lazy(() => import("./components/Lavarropas"));
+const Zones = lazy(() => import("./components/Zones"));
+const CTA = lazy(() => import("./components/CTA"));
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: {
     canonical: "https://service-electrolux.ar/",
   },
-}
+};
 
 function Home() {
   return (
@@ -43,7 +44,7 @@ function Home() {
         </Suspense>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
