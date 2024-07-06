@@ -9,7 +9,7 @@ import step4 from "../../public/step4.webp";
 const repair = ({ gadget, step }) => (
   <section
     id="product"
-    className={`${layout.section} mt-12 sm:mt-24 lg:mt-28 lg:-mb-20 xl:-mt-2 xl:-mb-40 md:-mt-8 md:-mb-8`}
+    className={`${layout.section} mt-12 sm:mt-24 lg:mt-28 lg:-mb-20 xl:-mt-2 xl:-mb-40 md:-mt-8 md:-mb-8 px-6 xl:px-0`}
   >
     <div className="absolute z-[3] w-[30%] h-[30%] -left-[30%] -mt-[20%] rounded-full white__gradient" />
     <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient" />

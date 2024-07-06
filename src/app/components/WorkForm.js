@@ -7,9 +7,9 @@ function workForm({ repair, technical }) {
     <>
       <section
         id="product"
-        className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 `}
+        className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8`}
       >
-        <div className={layout.sectionImgReverse}>
+        <div className={`${layout.sectionImgReverse} px-6 xl:px-0`}>
           <div className="w-[100%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
             <div className="absolute md:mt-20">
               <Image src={repair} alt="heladera" loading="lazy" />
@@ -20,7 +20,7 @@ function workForm({ repair, technical }) {
           </div>
         </div>
 
-        <div className="lg:pr-20 mt-32">
+        <div className="lg:pr-20 mt-32 px-6 xl:px-0">
           <h2 className={styles.heading2}>Arreglos que Realizamos</h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>
             Todos los arreglos cuentan con Garantia de 1 año y se utilizan los

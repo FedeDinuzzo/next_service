@@ -1,7 +1,9 @@
 import styles from "../constants/style";
 
 const CTA = () => (
-  <section className={`${styles.flexCenter} ${styles.marginY} py-8 md:py-0`}>
+  <section
+    className={`${styles.paddingX} ${styles.flexCenter} ${styles.marginY} py-8 md:py-0`}
+  >
     <div
       id="solicitarTecnico"
       className={`z-[10] ${styles.flexCenter} ${styles.padding} bg-black-gradient-2 rounded-[20px] box-shadow w-full sm:flex-row flex-col`}

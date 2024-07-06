@@ -9,7 +9,7 @@ import Button from "./animations/Button";
 const Heladeras = () => (
   <section
     id="product"
-    className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0`}
+    className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0 px-6 xl:px-0`}
   >
     <Image
       src={whiteGradient}

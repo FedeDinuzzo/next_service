@@ -5,7 +5,7 @@ import FeedbackCard from "./FeedbackCard";
 const Testimonials = () => (
   <section
     id="clients"
-    className={`${styles.flexCenter} flex-col relative lg:mb-40`}
+    className={`${styles.flexCenter} flex-col relative lg:mb-40 px-6 xl:px-0`}
   >
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h1 className={styles.heading2}>

@@ -7,7 +7,7 @@ import blueGradient from "../../public/blueGradient.svg";
 const Lavarropas = () => (
   <section
     id="product"
-    className={`${layout.section} -mb-28 -mt-8 md:mt-0 xl:-my-20 xl:-mb-40`}
+    className={`${layout.section} -mb-28 -mt-8 md:mt-0 xl:-my-20 xl:-mb-40 px-6 xl:px-0`}
   >
     <Image
       src={blueGradient}

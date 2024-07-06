@@ -37,7 +37,7 @@ const FeatureCard = ({ title, content, index, card }) => (
 );
 
 const Features = () => (
-  <section id="features" className={layout.section}>
+  <section id="features" className={`${layout.section} px-6 xl:px-0`}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         ¿Por qué elegirnos? <br className="block" />

@@ -12,9 +12,9 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`w-full lg:max-w-[1280px] z-[100]`}>
-        <nav className="w-full flex py-6 md:py-6 justify-between items-center navbar">
+    <div className={`px-6 ${styles.flexCenter}`}>
+      <div className={`w-full lg:max-w-[1230px] z-[100]`}>
+        <nav className="w-full flex py-6 justify-start items-center">
           <Image
             src={logo}
             width="auto"

@@ -1,14 +1,17 @@
 const styles = {
   boxWidth: "w-full lg:max-w-[1280px]",
 
-  heading2: "font-poppins font-semibold text-[28px] sm:text-[30px] md:text-[36px] lg:text-[40px] xl:text-[44px] text-white ss:leading-[50px] xl:leading-[70px] leading-[30px] w-full",
-  paragraph: "font-poppins font-normal text-dimWhite text-[16x] xl:text-[18px] leading-[30px]",
+  heading2:
+    "font-poppins font-semibold text-[28px] sm:text-[30px] md:text-[36px] lg:text-[40px] xl:text-[44px] text-white ss:leading-[50px] xl:leading-[70px] leading-[30px] w-full",
+  paragraph:
+    "font-poppins font-normal text-dimWhite text-[16x] xl:text-[18px] leading-[30px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
-  flexStartHero: "flex justify-center md:justify-start md:mt-4 xl:mt-0 xl:justify-center items-start",
+  flexStartHero:
+    "flex justify-center md:justify-start md:mt-4 xl:mt-0 xl:justify-center items-start",
 
-  paddingX: "sm:px-16 px-6",
+  paddingX: "sm:px-12 px-6",
   paddingY: "py-6 lg:py-0 xl:py-16",
   padding: "sm:px-16 px-6 sm:py-12 py-4",
 

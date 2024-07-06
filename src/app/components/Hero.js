@@ -25,10 +25,10 @@ const Hero = ({
   return (
     <section
       id="home"
-      className={`-m-6 flex md:flex-row flex-col ${styles.paddingY} md:mt-[56px] lg:-mt-[48px] xl:-mt-16`}
+      className={`flex md:flex-row flex-col md:pl-6 xl:px-6 ${styles.paddingY} md:mt-[56px] lg:-mt-[24px] xl:-mt-16`}
     >
       <div
-        className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`flex-1 px-6 md:px-0  ${styles.flexStartHero} flex-col xl:px-0 sm:px-1`}
       >
         <div className="max-h-[40px] fadeTop flex flex-row items-center -mt-4 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <Image
@@ -79,7 +79,7 @@ const Hero = ({
         className={`flex-1 flex ${styles.flexCenter} my-0 md:my-10 mb-10 md:mb-0 relative`}
       >
         <div className="w-[6%] sm:w-[34%] md:w-[14%]" />
-        <div className="w-[94%] sm:w-[70%] md:w-[99%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
+        <div className="w-[94%] sm:w-[70%] md:w-[98%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
           <Image
             src={heroVector}
             height="767px"
@@ -95,7 +95,7 @@ const Hero = ({
               height="652px"
               width="674px"
               priority
-              className="absolute heroImg md:-mt-4"
+              className="absolute heroImg md:-mt-12 xl:mt-0"
               alt="heladera y lavarropas electrolux"
             />
           ) : img == 2 ? (
@@ -104,7 +104,7 @@ const Hero = ({
               height="652px"
               width="674px"
               priority
-              className="absolute heroImg"
+              className="absolute heroImg md:-mt-12 xl:mt-0"
               alt="heladera electrolux"
             />
           ) : img == 3 ? (
@@ -113,7 +113,7 @@ const Hero = ({
               height="652px"
               width="674px"
               priority
-              className="absolute heroImg"
+              className="absolute heroImg md:-mt-12 xl:mt-0"
               alt="lavarropas electrolux"
             />
           ) : (
@@ -122,7 +122,7 @@ const Hero = ({
               height="652px"
               width="674px"
               priority
-              className="absolute heroImg"
+              className="absolute heroImg md:-mt-12 xl:mt-0"
               alt="telefono de contacto"
             />
           )}
@@ -174,7 +174,7 @@ const Hero = ({
             height="652px"
             width="674px"
             priority
-            className="absolute robotHand"
+            className="absolute robotHand md:-mt-12 xl:mt-0"
             alt="fondo degradado"
           />
         </div>

@@ -94,9 +94,9 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-K9JFL5RV" />
       <body className={`${font.variable} bg-primary`}>
         <NavBar />
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`bg-primary ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
-            <main className="p-6">{children}</main>
+            <main className="py-6">{children}</main>
             <Suspense fallback={`Loading...`}>
               <Footer />
             </Suspense>
