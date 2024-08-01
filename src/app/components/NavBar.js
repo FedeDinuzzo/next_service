@@ -1,7 +1,6 @@
 import Image from "next/image";
 import logo from "../../public/logo.svg";
-import wppLogo from "../../public/wppLogo.svg";
-import wppLogoDesktop from "../../public/wppLogoDesktop.svg";
+import Whatsapp from "./Whatsapp";
 import navInicio from "../../public/navInicio.png";
 import navHeladera from "../../public/navHeladera.png";
 import navLavarropas from "../../public/navLavarropas.png";
@@ -30,50 +29,17 @@ const NavBar = () => {
                   index === navLinks.length - 1 ? "mr-0" : "mr-10"
                 } text-white`}
               >
-                <Link
-                  href={`/${nav.id}`}
-                  aria-label={`Ir a la sección ${nav.title}`}
-                >
+                <Link href={`/${nav.id}`} aria-label={`Ir a la sección ${nav.title}`}>
                   {nav.title}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="hidden md:block fixed bottom-4 left-0 w-[100vw] ">
-            <div className="blobWpp rounded-full absolute bottom-[4px] right-10 m-auto z-[100] h-[66px] w-[66px]">
-              <a
-                className="conversion"
-                href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20"
-                target="_blank"
-              >
-                <Image
-                  src={wppLogoDesktop}
-                  alt="wppLogo"
-                  height="66px"
-                  width="66px"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="navMobile block fixed bottom-0 left-0 w-[100vw] sm:hidden">
-            <div className="ml-6 flex absolute bottom-3 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#1e8794]"></div>
-            <div className="blobWpp rounded-full absolute bottom-[6px] left-0 right-0 m-auto z-[100] cursor-pointer h-[60px] w-[60px]">
-              <a
-                className="conversion"
-                href="https://api.whatsapp.com/send?phone=5491144469930&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20"
-                target="_blank"
-              >
-                <Image
-                  src={wppLogo}
-                  alt="wppLogo"
-                  height="60px"
-                  width="60px"
-                  priority
-                />
-              </a>
-            </div>
-            <div className="mr-6 flex absolute bottom-3 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
-            <div className="flex justify-evenly items-center absolute bottom-[20px] px-0 w-[100vw] h-auto">
+          <div className="navMobile block fixed bottom-0 left-0 w-[100vw] md:bottom-4">
+            <div className="md:hidden ml-6 flex absolute bottom-3 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <Whatsapp />
+            <div className="md:hidden mr-6 flex absolute bottom-3 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <div className="md:hidden flex justify-evenly items-center absolute bottom-[20px] px-0 w-[100vw] h-auto">
               <ul>
                 <li className="flex w-[100vw] justify-evenly align-middle">
                   <Link href={`/`} aria-label="Ir a la sección de inicio">
@@ -86,10 +52,7 @@ const NavBar = () => {
                       className={`w-[28px] h-[auto] text-center cursor-pointer`}
                     />
                   </Link>
-                  <Link
-                    href={`/heladeras`}
-                    aria-label="Ir a la sección de heladeras"
-                  >
+                  <Link href={`/heladeras`} aria-label="Ir a la sección de heladeras">
                     <Image
                       src={navHeladera}
                       height="18px"
@@ -99,10 +62,7 @@ const NavBar = () => {
                       className={`-mb-[10px] w-[18px] h-[auto] mr-20 text-center cursor-pointer`}
                     />
                   </Link>
-                  <Link
-                    href={`/lavarropas`}
-                    aria-label="Ir a la sección de lavarropas"
-                  >
+                  <Link href={`/lavarropas`} aria-label="Ir a la sección de lavarropas">
                     <Image
                       src={navLavarropas}
                       height="23px"
@@ -112,10 +72,7 @@ const NavBar = () => {
                       className={`w-[23px] h-[auto] text-center cursor-pointer`}
                     />
                   </Link>
-                  <Link
-                    href={`/contacto`}
-                    aria-label="Ir a la sección de contacto"
-                  >
+                  <Link href={`/contacto`} aria-label="Ir a la sección de contacto">
                     <Image
                       src={navContacto}
                       height="20px"
