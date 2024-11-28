@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado",
   description:
     "Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux",
+  alternates: {
+    canonical: "https://service-electrolux.ar/heladeras",
+  },
   keywords: [
     "servicio",
     "service",
