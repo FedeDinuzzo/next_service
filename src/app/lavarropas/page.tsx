@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "▷ Service de Lavarropas ❄️ ELECTROLUX | Autorizado",
   description:
     "Se rompio tu lavarropas ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de lavarropas Electrolux",
+  alternates: {
+    canonical: "https://service-electrolux.ar/lavarropas",
+  },
   keywords: [
     "servicio",
     "service",
