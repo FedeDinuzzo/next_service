@@ -79,13 +79,13 @@ export const stats = [
   },
   {
     id: "stats-2",
-    title: "presupuestos sin cargo",
-    value: "$0",
+    title: "Urgencias",
+    value: "en el día",
   },
   {
     id: "stats-3",
     title: "clientes satisfechos",
-    value: "6799",
+    value: "6579",
   },
 ];
 
