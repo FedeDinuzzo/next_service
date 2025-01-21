@@ -33,7 +33,7 @@ function workForm({ repair, technical }) {
             <div className="w-auto mr-2">
               <Image src={tick} alt="tick" loading="lazy" />
             </div>
-            <p className="text-white">Visitas EN EL DÍA Sin Cargo</p>
+            <p className="text-white">Visitas EN EL DÍA</p>
           </button>
         </div>
       </section>
