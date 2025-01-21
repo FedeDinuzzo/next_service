@@ -79,8 +79,8 @@ export const stats = [
   },
   {
     id: "stats-2",
-    title: "Urgencias",
-    value: "en el día",
+    title: "años de trayectoria",
+    value: "+37",
   },
   {
     id: "stats-3",
