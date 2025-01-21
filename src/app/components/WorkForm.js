@@ -28,12 +28,12 @@ function workForm({ repair, technical }) {
           </p>
           <button
             alt="Visitas EN EL DÍA Sin Cargo"
-            className={`mt-6 xl:mt-10 px-4 py-4 bg-visitas w-[280px] text-center rounded-[10px] font-poppins ${styles.flexCenter}`}
+            className={`mt-6 xl:mt-10 px-4 py-4 bg-visitas w-[290px] text-center rounded-[10px] font-poppins ${styles.flexCenter}`}
           >
             <div className="w-auto mr-2">
               <Image src={tick} alt="tick" loading="lazy" />
             </div>
-            <p className="text-white">Visitas EN EL DÍA</p>
+            <p className="text-white">Visitas a domicilio EN EL DÍA</p>
           </button>
         </div>
       </section>
