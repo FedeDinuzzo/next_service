@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado",
   description:
-    "Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux",
+    "Se rompió tu heladera ELECTROLUX? ✓ Nosotros te la reparamos EN EL DÍA - Servicio Técnico de heladeras Electrolux",
   alternates: {
     canonical: "https://service-electrolux.ar/heladeras",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://service-electrolux.ar/heladeras",
     title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado",
     description:
-      "Se rompio tu heladera ELECTROLUX? ✓ nosotros te lo reparamos EN EL DIA - Servicio Tecnico de heladeras Electrolux",
+      "Se rompió tu heladera ELECTROLUX? ✓ Nosotros te la reparamos EN EL DÍA - Servicio Técnico de heladeras Electrolux",
     siteName: "Service de Heladeras Electrolux",
   },
 };
@@ -47,10 +47,25 @@ const Repair = lazy(() => import("../components/Repair"));
 const Testimonials = lazy(() => import("../components/Testimonials"));
 const CTA = lazy(() => import("../components/CTA"));
 
-function heladeras() {
+function Heladeras() {
   return (
     <div className={`${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={styles.boxWidth}>
+        {/* 🔽 Gradientes al fondo */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src={pinkGradient}
+            className="absolute w-[80%] h-[100%] md:w-[50%] -mt-96 -left-[12%] rounded-r-full"
+            alt="pink gradient"
+          />
+          <Image
+            src={blueGradient}
+            className="absolute w-[60%] h-[100%] -mt-[40px] md:w-[40%] md:h-[120%] md:-mt-50 -right-[0%] rounded-l-full"
+            alt="blue gradient"
+          />
+        </div>
+
+        {/* 🔼 Contenido encima */}
         <Hero
           textOne="SERVICIO"
           textTwo="TÉCNICO"
@@ -61,25 +76,18 @@ function heladeras() {
           img={2}
           ruta={1}
         />
+
         <Suspense fallback={`Loading...`}>
-          <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
-          <Image
-            src={pinkGradient}
-            className="absolute z-[0] w-[80%] h-[120%] md:w-[50%] -mt-96 -left-[12%] rounded-r-full"
-            alt="pink gradient"
-          />
-          <Repair gadget="heladera" step={step2} />
-          <Image
-            src={blueGradient}
-            className="absolute z-[0] w-[60%] h-[100%] -mt-[40px] md:w-[40%] md:h-[120%] md:-mt-[280px] -right-[0%] rounded-l-full"
-            alt="blue gradient"
-          />
-          <Testimonials />
-          <CTA />
+          <div className="relative z-10">
+            <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
+            <Repair gadget="heladera" step={step2} />
+            <Testimonials />
+            <CTA />
+          </div>
         </Suspense>
       </div>
     </div>
   );
 }
 
-export default heladeras;
+export default Heladeras;

@@ -112,7 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript>
 
         <NavBar />
-        <div className={`bg-primary ${styles.flexCenter}`}>
+        <div className={`bg-primary ${styles.flexCenter} relative`}>
           <div className={`${styles.boxWidth}`}>
             <main className="py-6">{children}</main>
             <Suspense fallback={`Loading...`}>

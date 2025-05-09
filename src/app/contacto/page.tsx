@@ -53,16 +53,13 @@ function contacto() {
         <div
           className={`bg-primary ${styles.paddingX} ${styles.flexCenter} pb-[320px] sm:pb-[480px] lg:pb-0 xl:pb-[160px]`}
         >
+          <Image
+            src={blueGradient}
+            className="rotate-180 absolute z-[0] w-[80%] h-[80%] left-0 md:-left-80 rounded-r-full"
+            alt="pink gradient"
+          />
           <div className={`${styles.boxWidth} flex flex-col items-center`}>
-            <section
-              id="product"
-              className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 w-full`}
-            >
-              <Image
-                src={blueGradient}
-                className="rotate-180 absolute z-[0] w-[80%] h-[100%] md:w-[50%] -mt-40 -left-[22%] md:-left-[14%] rounded-r-full"
-                alt="pink gradient"
-              />
+            <section id="product" className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 w-full`}>
               <div className="z-[10] w-[50%]">
                 <div className="absolute right-[5%] sm:right-auto max-w-[350px] sm:max-w-full">
                   <Image src={ellipse2} alt="Frio" />
@@ -95,9 +92,7 @@ function contacto() {
                   </a>
 
                   <a href="tel:1143828369">
-                    <div
-                      className={`flex flex-row p-6 lg:ml-12 mt-4 max-w-[470px] rounded-[20px] feature-card-set`}
-                    >
+                    <div className={`flex flex-row p-6 lg:ml-12 mt-4 max-w-[470px] rounded-[20px] feature-card-set`}>
                       <div
                         className={`w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
                       >
@@ -115,8 +110,6 @@ function contacto() {
                   </a>
                 </div>
               </div>
-
-              <div className="absolute z-[0] w-[66%] h-[77%] -left-[50%] rounded-full blue__gradient" />
             </section>
           </div>
         </div>

@@ -12,9 +12,7 @@ const FeatureCard = ({ title, content, index, card }) => (
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card ${index === 1 ? "feature-card-set" : ""}`}
   >
-    <div
-      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
-    >
+    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <div className="w-[50%] h-[50%] object-contain">
         {index == 1 ? (
           <Image src={shield} alt="icon" width={50} height={50} />
@@ -29,9 +27,7 @@ const FeatureCard = ({ title, content, index, card }) => (
       <div className="font-poppins font-semibold text-white text-[16px] xl:text-[18px] leading-[23px] mb-1">
         {title}
       </div>
-      <p className="font-poppins font-norma; text-dimWhite text-[15px] xl:text-[16px] leading-[23px] mb-1">
-        {content}
-      </p>
+      <p className="font-poppins font-norma; text-dimWhite text-[15px] xl:text-[16px] leading-[23px] mb-1">{content}</p>
     </div>
   </div>
 );
@@ -43,10 +39,9 @@ const Features = () => (
         ¿Por qué elegirnos? <br className="block" />
         30 Años de Experiencia
       </h2>
-      <p className={`${styles.paragraph} max-w-[550px] mt-3 xl:mt-5`}>
-        Con mas de 30 años de experiencia en el rubro brindamos una asistencia
-        diferenciada y eficiente respaldada por miles de clientes contentos que
-        ya repararon sus productos.
+      <p className={`${styles.paragraph} max-w-[550px] mt-5`}>
+        Con mas de 30 años de experiencia en el rubro brindamos una asistencia diferenciada y eficiente respaldada por
+        miles de clientes contentos que ya repararon sus productos.
       </p>
 
       <Button styles="mt-6 xl:mt-10" text="Contactanos" link="contacto" />

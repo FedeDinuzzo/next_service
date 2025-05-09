@@ -66,8 +66,8 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
             Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux.
           </p>
           <p className={`${styles.paragraph} max-w-[470px] mt-5 hidden md:block`}>
-            Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux. Desliza e infórmate acerca de nuestra
-            forma de trabajo.
+            Servicio técnico Electrolux en CABA y Buenos Aires. Reparamos heladeras y lavarropas con repuestos
+            originales. Atendemos urgencias en el día.
           </p>
         </div>
       </div>
