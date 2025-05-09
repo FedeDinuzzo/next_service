@@ -51,21 +51,6 @@ function Heladeras() {
   return (
     <div className={`${styles.flexStart}`}>
       <div className={styles.boxWidth}>
-        {/* 🔽 Gradientes al fondo */}
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          <Image
-            src={pinkGradient}
-            className="absolute w-[80%] h-[100%] md:w-[50%] -mt-96 -left-[12%] rounded-r-full"
-            alt="pink gradient"
-          />
-          <Image
-            src={blueGradient}
-            className="absolute w-[60%] h-[100%] -mt-[40px] md:w-[40%] md:h-[120%] md:-mt-50 -right-[0%] rounded-l-full"
-            alt="blue gradient"
-          />
-        </div>
-
-        {/* 🔼 Contenido encima */}
         <Hero
           textOne="SERVICIO"
           textTwo="TÉCNICO"
@@ -76,11 +61,23 @@ function Heladeras() {
           img={2}
           ruta={1}
         />
+        <Image
+          src={pinkGradient}
+          className="absolute w-[80%] h-[38%] md:w-[60%] -left-[12%] rounded-r-full"
+          alt="pink gradient"
+        />
 
         <Suspense fallback={`Loading...`}>
-          <div className="relative z-10">
+          <div className=" z-10">
+            <Image
+              src={blueGradient}
+              className="absolute w-[60%] h-[100%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
+              alt="blue gradient"
+            />
             <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
+
             <Repair gadget="heladera" step={step2} />
+
             <Testimonials />
             <CTA />
           </div>
