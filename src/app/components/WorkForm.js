@@ -6,7 +6,7 @@ import Link from "next/link";
 function workForm({ repair, technical }) {
   return (
     <>
-      <section id="product" className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 `}>
+      <section id="product" className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 relative z-40`}>
         <div className={`${layout.sectionImgReverse} px-6 xl:px-0`}>
           <div className="w-[100%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
             <div className="absolute md:mt-20">

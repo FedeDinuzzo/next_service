@@ -9,7 +9,7 @@ import step4 from "../../public/step4.webp";
 const repair = ({ gadget, step }) => (
   <section
     id="product"
-    className={`${layout.section} mt-12 sm:mt-24 lg:mt-28 lg:-mb-20 xl:-mt-2 xl:-mb-40 md:-mt-8 md:-mb-8 px-6 xl:px-0`}
+    className={`${layout.section} mt-12 sm:mt-24 lg:mt-28 lg:-mb-20 xl:-mt-2 xl:-mb-40 md:-mt-8 md:-mb-8 px-6 xl:px-0 relative z-40`}
   >
     <div className="absolute z-[3] w-[30%] h-[30%] -left-[30%] -mt-[20%] rounded-full white__gradient" />
     <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient" />
@@ -20,15 +20,13 @@ const repair = ({ gadget, step }) => (
         Reparaciones Ideales
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>
-        Arregla tu {gadget} electrolux en el momento con el metodo mas eficáz
-        del mercado. Somos la solución que necesitas.
+        Arregla tu {gadget} electrolux en el momento con el metodo mas eficáz del mercado. Somos la solución que
+        necesitas.
       </p>
       <Button styles="mt-6 xl:mt-10" text="Contactanos" link="contacto" />
     </div>
 
-    <div
-      className={`${layout.sectionImgReverse} mb-[400px] sm:mb-[500px] lg:mb-[640px] md:ml-12`}
-    >
+    <div className={`${layout.sectionImgReverse} mb-[400px] sm:mb-[500px] lg:mb-[640px] md:ml-12`}>
       <div className="absolute mt-96">
         <Image src={ellipse} alt="step4" loading="lazy" />
       </div>

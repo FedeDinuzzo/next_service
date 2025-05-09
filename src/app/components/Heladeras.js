@@ -8,7 +8,6 @@ import Button from "./animations/Button";
 
 const Heladeras = () => (
   <section id="product" className={`${layout.sectionReverse} mt-6 md:mt-20 xl:mt-0 px-6 xl:px-0 `}>
-    {/* 🔽 Gradientes dentro del contexto de la sección */}
     <Image
       src={whiteGradient}
       className="absolute z-0 w-[60%] h-[45%] md:h-[100%] md:w-[0%] md:top-48 left-0 rounded-r-full "
@@ -20,7 +19,6 @@ const Heladeras = () => (
       alt="pink gradient"
     />
 
-    {/* 🔼 Contenido principal */}
     <div className={layout.sectionImgReverse}>
       <Image
         src={heladeraFrente}
