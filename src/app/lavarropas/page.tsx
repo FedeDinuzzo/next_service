@@ -8,6 +8,7 @@ import Image from "next/image";
 import blueGradient from "../../public/blueGradient.svg";
 import pinkGradient from "../../public/pinkGradient.svg";
 import type { Metadata } from "next";
+import LavarropasStructuredData from "../components/structuredData/LavarropasStructuredData";
 
 export const metadata: Metadata = {
   title: "▷ Service de Lavarropas ❄️ ELECTROLUX | Autorizado",
@@ -49,40 +50,44 @@ const CTA = lazy(() => import("../components/CTA"));
 
 function Lavarropas() {
   return (
-    <div className={styles.flexStart}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero
-          textOne="SERVICIO"
-          textTwo="TÉCNICO"
-          textThree="AUTORIZADO"
-          titleOne="Service De"
-          titleTwo="Lavarropas"
-          titleThree="Electrolux"
-          img={3}
-          ruta={1}
-        />
-        <Image
-          src={pinkGradient}
-          className="absolute w-[80%] h-[38%] md:w-[60%] -left-[12%] rounded-r-full"
-          alt="pink gradient"
-        />
+    <>
+      {" "}
+      <LavarropasStructuredData />
+      <div className={styles.flexStart}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero
+            textOne="SERVICIO"
+            textTwo="TÉCNICO"
+            textThree="AUTORIZADO"
+            titleOne="Service De"
+            titleTwo="Lavarropas"
+            titleThree="Electrolux"
+            img={3}
+            ruta={1}
+          />
+          <Image
+            src={pinkGradient}
+            className="absolute w-[80%] h-[38%] md:w-[60%] -left-[12%] rounded-r-full"
+            alt="pink gradient"
+          />
 
-        <Suspense fallback={`Loading...`}>
-          <div className="z-10">
-            <Image
-              src={blueGradient}
-              className="absolute w-[60%] h-[70%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
-              alt="blue gradient"
-            />
-            <WorkForm repair={reparacionLavarropas} technical={tecnicoLavarropas} />
+          <Suspense fallback={`Loading...`}>
+            <div className="z-10">
+              <Image
+                src={blueGradient}
+                className="absolute w-[60%] h-[70%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
+                alt="blue gradient"
+              />
+              <WorkForm repair={reparacionLavarropas} technical={tecnicoLavarropas} />
 
-            <Repair gadget="lavarropas" step={step2v} />
-            <Testimonials />
-            <CTA />
-          </div>
-        </Suspense>
+              <Repair gadget="lavarropas" step={step2v} />
+              <Testimonials />
+              <CTA />
+            </div>
+          </Suspense>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

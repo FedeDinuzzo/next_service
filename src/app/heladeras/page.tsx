@@ -8,6 +8,7 @@ import Image from "next/image";
 import blueGradient from "../../public/blueGradient.svg";
 import pinkGradient from "../../public/pinkGradient.svg";
 import type { Metadata } from "next";
+import HeladerasStructuredData from "../components/structuredData/HeladerasStructuredData";
 
 export const metadata: Metadata = {
   title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado",
@@ -49,41 +50,44 @@ const CTA = lazy(() => import("../components/CTA"));
 
 function Heladeras() {
   return (
-    <div className={`${styles.flexStart}`}>
-      <div className={styles.boxWidth}>
-        <Hero
-          textOne="SERVICIO"
-          textTwo="TÉCNICO"
-          textThree="AUTORIZADO"
-          titleOne="Service De"
-          titleTwo="Heladeras"
-          titleThree="Electrolux"
-          img={2}
-          ruta={1}
-        />
-        <Image
-          src={pinkGradient}
-          className="absolute w-[80%] h-[38%] md:w-[60%] -left-[12%] rounded-r-full"
-          alt="pink gradient"
-        />
+    <>
+      <HeladerasStructuredData />
+      <div className={`${styles.flexStart}`}>
+        <div className={styles.boxWidth}>
+          <Hero
+            textOne="SERVICIO"
+            textTwo="TÉCNICO"
+            textThree="AUTORIZADO"
+            titleOne="Service De"
+            titleTwo="Heladeras"
+            titleThree="Electrolux"
+            img={2}
+            ruta={1}
+          />
+          <Image
+            src={pinkGradient}
+            className="absolute w-[80%] h-[38%] md:w-[60%] -left-[12%] rounded-r-full"
+            alt="pink gradient"
+          />
 
-        <Suspense fallback={`Loading...`}>
-          <div className=" z-10">
-            <Image
-              src={blueGradient}
-              className="absolute w-[60%] h-[70%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
-              alt="blue gradient"
-            />
-            <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
+          <Suspense fallback={`Loading...`}>
+            <div className=" z-10">
+              <Image
+                src={blueGradient}
+                className="absolute w-[60%] h-[70%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
+                alt="blue gradient"
+              />
+              <WorkForm repair={reparacionHeladeras} technical={tecnicoHeladeras} />
 
-            <Repair gadget="heladera" step={step2} />
+              <Repair gadget="heladera" step={step2} />
 
-            <Testimonials />
-            <CTA />
-          </div>
-        </Suspense>
+              <Testimonials />
+              <CTA />
+            </div>
+          </Suspense>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

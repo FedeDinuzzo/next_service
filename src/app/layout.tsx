@@ -25,8 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    images:
-      "https://service-electrolux-f4204ruh5-fededinuzzos-projects.vercel.app/opengraph-image.jpg?405fc21523a0661c",
+    images: "https://service-electrolux.ar/opengraph-image.jpg",
     url: "https://service-electrolux.ar/",
     title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
@@ -38,8 +37,7 @@ export const metadata: Metadata = {
     title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
       "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
-    images:
-      "https://service-electrolux-f4204ruh5-fededinuzzos-projects.vercel.app/opengraph-image.jpg?405fc21523a0661c",
+    images: "https://service-electrolux.ar/opengraph-image.jpg",
   },
   robots: {
     index: true,

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { lazy, Suspense } from "react";
 import styles from "./constants/style";
 import Hero from "./components/Hero";
+import HomeStructuredData from "./components/structuredData/HomeStructuredData";
 
 const Features = lazy(() => import("./components/Features"));
 const Heladeras = lazy(() => import("./components/Heladeras"));
@@ -18,32 +19,35 @@ export const metadata: Metadata = {
 
 function Home() {
   return (
-    <div className={`${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero
-          textOne="SERVICIO"
-          textTwo="TÉCNICO"
-          textThree="AUTORIZADO"
-          titleOne="Service"
-          titleTwo="Electrolux"
-          titleThree="Especializado"
-          img={1}
-          ruta={1}
-        />
-        <div className={`${styles.flexStart}`}>
-          <div className={`${styles.boxWidth}`}>
-            <Stats />
+    <>
+      <HomeStructuredData />
+      <div className={`${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero
+            textOne="SERVICIO"
+            textTwo="TÉCNICO"
+            textThree="AUTORIZADO"
+            titleOne="Service"
+            titleTwo="Electrolux"
+            titleThree="Especializado"
+            img={1}
+            ruta={1}
+          />
+          <div className={`${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Stats />
+            </div>
           </div>
+          <Suspense fallback={`Loading...`}>
+            <Features />
+            <Heladeras />
+            <Lavarropas />
+            <Zones />
+            <CTA />
+          </Suspense>
         </div>
-        <Suspense fallback={`Loading...`}>
-          <Features />
-          <Heladeras />
-          <Lavarropas />
-          <Zones />
-          <CTA />
-        </Suspense>
       </div>
-    </div>
+    </>
   );
 }
 

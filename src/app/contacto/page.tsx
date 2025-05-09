@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Service Electrolux contacto",
     images: [
       {
-        url: "/service-electrolux.jpg",
+        url: "https://service-electrolux.ar/contacto/opengraph-image.jpg",
         width: 600,
         height: 600,
         alt: "service electrolux contacto",
