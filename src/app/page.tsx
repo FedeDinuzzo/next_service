@@ -1,8 +1,8 @@
+import Stats from "./components/Stats";
+import type { Metadata } from "next";
+import { lazy, Suspense } from "react";
 import styles from "./constants/style";
 import Hero from "./components/Hero";
-import Stats from "./components/Stats";
-import { lazy, Suspense } from "react";
-import type { Metadata } from "next";
 
 const Features = lazy(() => import("./components/Features"));
 const Heladeras = lazy(() => import("./components/Heladeras"));

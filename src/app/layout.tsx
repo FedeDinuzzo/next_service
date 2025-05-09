@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google"; // ✅ nuevo
+
 import Script from "next/script";
 import "../styles/global.css";
 import styles from "./constants/style";

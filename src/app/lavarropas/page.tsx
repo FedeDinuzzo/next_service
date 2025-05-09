@@ -71,7 +71,7 @@ function Lavarropas() {
           <div className="z-10">
             <Image
               src={blueGradient}
-              className="absolute w-[60%] h-[100%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
+              className="absolute w-[60%] h-[70%] -mt-[40px] md:w-[40%] md:h-[80%] md:-mt-50 -right-[0%] rounded-l-full"
               alt="blue gradient"
             />
             <WorkForm repair={reparacionLavarropas} technical={tecnicoLavarropas} />
