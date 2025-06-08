@@ -28,22 +28,19 @@ export const features = [
     id: "feature-1",
     icon: "star",
     title: "Calidad",
-    content:
-      "Nos esmeramos cada día para garantizar la plena satisfacción de nuestros clientes",
+    content: "Nos esmeramos cada día para garantizar la plena satisfacción de nuestros clientes",
   },
   {
     id: "feature-2",
     icon: "shield",
     title: "100% Comprometidos",
-    content:
-      "Lo mas importante de brindar un servicio, es que cumplimos con nuestra palabra",
+    content: "Lo mas importante de brindar un servicio, es que cumplimos con nuestra palabra",
   },
   {
     id: "feature-3",
     icon: "like",
     title: "Confianza",
-    content:
-      "La mejor forma de crecer no es vendiendo un servicio, si no fidelizando a nuestros clientes",
+    content: "La mejor forma de crecer no es vendiendo un servicio, si no fidelizando a nuestros clientes",
   },
 ];
 
@@ -51,23 +48,85 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Tenia el Lavarropas roto  Vinieron y lo arreglaron en el día, me dejaron el lavarropas funcionando perfecto.",
+      "Tenía el lavarropas roto. Vinieron y lo arreglaron en el día. Me dejaron el lavarropas funcionando perfecto.",
     name: "Martina Ramos",
-    title: "Recoleta - CABA",
+    title: "Recoleta – CABA",
+    rating: 5,
+    categoria: "lavarropas",
   },
   {
     id: "feedback-2",
     content:
-      "Vinieron de otro service a reparar mi heladera, pero volvio a fallar, encontré su web y me lo resolvieron en el momento!",
+      "Vinieron de otro service a reparar mi heladera pero volvió a fallar. Encontré esta web y me lo solucionaron en el momento.",
     name: "Augusto Weich",
-    title: "Lanus - Buenos Aires",
+    title: "Lanús – Buenos Aires",
+    rating: 5,
+    categoria: "heladera",
   },
   {
     id: "feedback-3",
     content:
-      "Mi heladera no funcionaba, tenia medicamentos que necesitaban refrigeración, me solucionaron el problema en el día.",
-    name: "Martin Alvarez",
-    title: "Villa Devoto - CABA",
+      "Mi heladera no funcionaba, tenía medicamentos que necesitaban refrigeración. Me solucionaron el problema en el día.",
+    name: "Martín Álvarez",
+    title: "Villa Devoto – CABA",
+    rating: 5,
+    categoria: "heladera",
+  },
+  {
+    id: "feedback-4",
+    content: "Muy buen trato y cumplieron en horario. Me explicaron el problema y quedó solucionado en una visita.",
+    name: "Laura Fernández",
+    title: "Palermo – CABA",
+    rating: 4,
+    categoria: "general",
+  },
+  {
+    id: "feedback-5",
+    content: "Técnicos prolijos, rápidos y confiables. Volvería a llamarlos sin duda.",
+    name: "Ricardo C.",
+    title: "Avellaneda – Buenos Aires",
+    rating: 5,
+    categoria: "general",
+  },
+  {
+    id: "feedback-6",
+    content: "Me atendieron rápido y resolvieron todo el mismo día. Muy conforme.",
+    name: "Julieta N.",
+    title: "Caballito – CABA",
+    rating: 5,
+    categoria: "general",
+  },
+  {
+    id: "feedback-7",
+    content: "La atención fue buena aunque llegaron un poco tarde. Igual solucionaron el problema.",
+    name: "Carlos M.",
+    title: "San Fernando – Buenos Aires",
+    rating: 4,
+    categoria: "general",
+  },
+  {
+    id: "feedback-8",
+    content: "Servicio muy profesional. Trajeron los repuestos originales y dejaron todo funcionando.",
+    name: "Sofía A.",
+    title: "Belgrano – CABA",
+    rating: 5,
+    categoria: "general",
+  },
+  {
+    id: "feedback-9",
+    content: "Solucionaron el error en el panel del lavarropas en menos de 1 hora. Gracias!",
+    name: "Matías E.",
+    title: "Quilmes – Buenos Aires",
+    rating: 5,
+    categoria: "lavarropas",
+  },
+  {
+    id: "feedback-10",
+    content: "Mi heladera tenía pérdida. Vinieron el sábado y ya quedó lista. Muy agradecida.",
+    name: "Paula V.",
+    title: "Flores – CABA",
+    rating: 5,
+    categoria: "heladera",
   },
 ];
 

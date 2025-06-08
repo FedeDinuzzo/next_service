@@ -3,12 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(
-    168deg,
-    #ffffff -99%,
-    #6d6d6d -99%,
-    #11101d 90%
-  );
+  --black-gradient: linear-gradient(168deg, #ffffff -99%, #6d6d6d -99%, #11101d 90%);
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
@@ -49,29 +44,15 @@ body {
 }
 
 .bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
 }
 
 .bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
 }
 
 .bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
+  background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%);
 }
 
 .bg-discount-gradient {
@@ -293,5 +274,37 @@ body {
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(92, 225, 230, 0);
+  }
+}
+
+@layer utilities {
+  @keyframes slide-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes slide-vertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  .animate-slide-horizontal {
+    animation: slide-horizontal 45s linear infinite;
+  }
+
+  .animate-slide-vertical {
+    animation: slide-vertical 180s linear infinite;
+  }
+
+  .group-hover\:paused:hover .animate-slide {
+    animation-play-state: paused;
   }
 }

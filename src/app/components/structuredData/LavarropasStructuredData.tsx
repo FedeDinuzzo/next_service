@@ -1,8 +1,13 @@
 "use client";
 
 import React from "react";
+import { feedback } from "../../constants"; // Ajustá si el path cambia
 
 const LavarropasStructuredData = () => {
+  const lavarropasReviews = feedback.filter((f) => f.categoria === "lavarropas");
+
+  const averageRating = lavarropasReviews.reduce((acc, curr) => acc + curr.rating, 0) / lavarropasReviews.length;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -28,119 +33,25 @@ const LavarropasStructuredData = () => {
         addressCountry: "AR",
       },
     },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Servicios de reparación de lavarropas",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de bomba de desagote",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de correas",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de rodamientos",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de plaquetas electrónicas",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de motor o tachos",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Reparación de puerta",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de burletes",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Problemas de centrifugado",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Error en el panel / display",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "No arranca",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "No carga agua",
-          },
-        },
-      ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: averageRating.toFixed(1),
+      bestRating: "5",
+      ratingCount: lavarropasReviews.length.toString(),
     },
-    review: [
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Martina Ramos",
-        },
-        reviewBody:
-          "Tenía el lavarropas roto. Vinieron y lo arreglaron en el día. Me dejaron el lavarropas funcionando perfecto.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
+    review: lavarropasReviews.map((r) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: r.name,
       },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Augusto Weich",
-        },
-        reviewBody:
-          "Vinieron de otro service a reparar mi heladera pero volvió a fallar. Encontré esta web y me lo solucionaron en el momento.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
+      reviewBody: r.content,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating.toString(),
+        bestRating: "5",
       },
-    ],
+    })),
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;

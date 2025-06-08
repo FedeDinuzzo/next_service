@@ -81,7 +81,8 @@ function Heladeras() {
 
               <Repair gadget="heladera" step={step2} />
 
-              <Testimonials />
+              <Testimonials type="heladera" />
+
               <CTA />
             </div>
           </Suspense>

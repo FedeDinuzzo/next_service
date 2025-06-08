@@ -1,8 +1,12 @@
 "use client";
 
 import React from "react";
+import { feedback } from "../../constants"; // Ajustá si está en otro path
 
-const StructuredData = () => {
+const HomeStructuredData = () => {
+  const totalReviews = feedback.length;
+  const averageRating = feedback.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -11,6 +15,7 @@ const StructuredData = () => {
     "@id": "https://www.service-electrolux.ar",
     url: "https://www.service-electrolux.ar",
     telephone: "+54 911 3629-9090",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Montevideo 1083",
@@ -38,33 +43,25 @@ const StructuredData = () => {
         closes: "15:00",
       },
     ],
-
-    serviceType: [
-      {
-        "@type": "Service",
-        name: "Reparación de heladeras Electrolux",
-        areaServed: {
-          "@type": "Place",
-          name: "Buenos Aires",
-        },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: averageRating.toFixed(1),
+      reviewCount: totalReviews.toString(),
+      bestRating: "5",
+    },
+    review: feedback.map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.name },
+      reviewBody: r.content,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating.toString(),
+        bestRating: "5",
       },
-      {
-        "@type": "Service",
-        name: "Reparación de lavarropas Electrolux",
-        areaServed: {
-          "@type": "Place",
-          name: "Buenos Aires",
-        },
-      },
-    ],
-    // aggregateRating: {
-    //   "@type": "AggregateRating",
-    //   ratingValue: "4.8",
-    //   reviewCount: "150",
-    // },
+    })),
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 };
 
-export default StructuredData;
+export default HomeStructuredData;

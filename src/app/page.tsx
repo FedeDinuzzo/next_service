@@ -8,6 +8,7 @@ import HomeStructuredData from "./components/structuredData/HomeStructuredData";
 const Features = lazy(() => import("./components/Features"));
 const Heladeras = lazy(() => import("./components/Heladeras"));
 const Lavarropas = lazy(() => import("./components/Lavarropas"));
+const Testimonials = lazy(() => import("./components/Testimonials"));
 const Zones = lazy(() => import("./components/Zones"));
 const CTA = lazy(() => import("./components/CTA"));
 
@@ -42,7 +43,11 @@ function Home() {
             <Features />
             <Heladeras />
             <Lavarropas />
+            <div className="my-10 md:my-0 md:mt-20">
+              <Testimonials />
+            </div>
             <Zones />
+
             <CTA />
           </Suspense>
         </div>

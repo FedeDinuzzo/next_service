@@ -1,8 +1,13 @@
 "use client";
 
 import React from "react";
+import { feedback } from "../../constants";
 
 const HeladerasStructuredData = () => {
+  const heladeraReviews = feedback.filter((f) => f.categoria === "heladera");
+
+  const averageRating = heladeraReviews.reduce((acc, curr) => acc + curr.rating, 0) / heladeraReviews.length;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -28,147 +33,25 @@ const HeladerasStructuredData = () => {
         addressCountry: "AR",
       },
     },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Servicios de reparación",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Carga de gas",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Sistema No Frost",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de motocompresor",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de termostato",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de resistencia",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de display",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de sensores",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "cambio de ventilador",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "cambio de Plaqueta",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio de termofusibles",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cambio termostato de ambiente",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "arreglo de Puertas",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "cambio de burletes",
-          },
-        },
-      ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: averageRating.toFixed(1),
+      bestRating: "5",
+      ratingCount: heladeraReviews.length.toString(),
     },
-    review: [
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Martina Ramos",
-        },
-        reviewBody:
-          "Tenía el lavarropas roto. Vinieron y lo arreglaron en el día. Me dejaron el lavarropas funcionando perfecto.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
+    review: heladeraReviews.map((r) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: r.name,
       },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Augusto Weich",
-        },
-        reviewBody:
-          "Vinieron de otro service a reparar mi heladera pero volvió a fallar. Encontré esta web y me lo solucionaron en el momento.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
+      reviewBody: r.content,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating.toString(),
+        bestRating: "5",
       },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Martín Álvarez",
-        },
-        reviewBody:
-          "Mi heladera no funcionaba, tenía medicamentos que necesitaban refrigeración. Me solucionaron el problema en el día.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-      },
-    ],
+    })),
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
