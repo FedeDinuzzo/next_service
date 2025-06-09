@@ -43,7 +43,7 @@ function Home() {
             <Features />
             <Heladeras />
             <Lavarropas />
-            <div className="my-10 md:my-0 md:mt-20">
+            <div className="hidden md:block md:my-0 md:mt-20">
               <Testimonials />
             </div>
             <Zones />

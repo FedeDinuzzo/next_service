@@ -81,7 +81,7 @@ function Lavarropas() {
               <WorkForm repair={reparacionLavarropas} technical={tecnicoLavarropas} />
 
               <Repair gadget="lavarropas" step={step2v} />
-              <Testimonials type="lavarropas" />
+              <Testimonials />
               <CTA />
             </div>
           </Suspense>
