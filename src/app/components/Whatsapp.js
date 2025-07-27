@@ -5,7 +5,7 @@ import moment from "moment-timezone";
 import Image from "next/image";
 import wppLogo from "../../public/wppLogo.svg";
 
-const VALID_URLS = ["5491136299090", "5491144469930"]; // Constantes de valores permitidos
+const VALID_URLS = ["5491136299090", "5491144469930", "5491141879748"]; // Constantes de valores permitidos
 
 export default function Whatsapp() {
   const [url, setUrl] = useState("");
@@ -22,7 +22,7 @@ export default function Whatsapp() {
       number = "5491144469930";
     } else {
       // De lunes a viernes
-      number = hour >= 8 && hour < 17 ? "5491136299090" : "5491144469930";
+      number = hour >= 8 && hour < 17 ? "5491136299090" : "5491141879748";
     }
 
     setUrl(number);
