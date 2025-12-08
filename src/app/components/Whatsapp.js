@@ -5,7 +5,7 @@ import moment from "moment-timezone";
 import Image from "next/image";
 import wppLogo from "../../public/wppLogo.svg";
 
-const VALID_URLS = ["5491136299090", "5491144469930", "5491141879748"]; // Constantes de valores permitidos
+const VALID_URLS = ["5491136299090", "5491144469930", "5491141879748", "5491136786082"]; // Constantes de valores permitidos
 
 export default function Whatsapp() {
   const [url, setUrl] = useState("");
