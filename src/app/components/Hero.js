@@ -19,11 +19,11 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
 
   const altSeleccionado =
     img === 1
-      ? "heladera y lavarropas electrolux"
+      ? "heladera y lavarropas drean"
       : img === 2
-      ? "heladera electrolux"
+      ? "heladera drean"
       : img === 3
-      ? "lavarropas electrolux"
+      ? "lavarropas drean"
       : "telefono de contacto";
 
   return (
@@ -63,10 +63,10 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
 
         <div className="appear2">
           <p className={`${styles.paragraph} max-w-[470px] mt-2 sm:hidden`}>
-            Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux.
+            Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Drean.
           </p>
           <p className={`${styles.paragraph} max-w-[470px] mt-5 hidden md:block`}>
-            Servicio técnico Electrolux en CABA y Buenos Aires. Reparamos heladeras y lavarropas con repuestos
+            Servicio técnico Drean en CABA y Buenos Aires. Reparamos heladeras y lavarropas con repuestos
             originales. Atendemos urgencias en el día.
           </p>
         </div>

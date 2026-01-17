@@ -18,7 +18,7 @@ const NavBar = () => {
             src={logo}
             width="auto"
             height="auto"
-            alt="service electrolux"
+            alt="service drean"
             className="w-[160px] h-[100%] -mt-2 md:mt-0"
           />
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -36,9 +36,9 @@ const NavBar = () => {
             ))}
           </ul>
           <div className="navMobile block fixed bottom-0 left-0 w-[100vw] md:bottom-4">
-            <div className="md:hidden ml-6 flex absolute bottom-3 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <div className="md:hidden ml-6 flex absolute bottom-3 w-[40%] h-[42px] bg-primary rounded-tr-[36px] rounded-tl-[36px] rounded-br-[36px] rounded-bl-[36px] shadow-[0_0_5px_#00064F]"></div>
             <Whatsapp />
-            <div className="md:hidden mr-6 flex absolute bottom-3 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#1e8794]"></div>
+            <div className="md:hidden mr-6 flex absolute bottom-3 right-0 w-[40%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[36px] rounded-bl-[36px] rounded-br-[36px] shadow-[0_0_5px_#00064F]"></div>
             <div className="md:hidden flex justify-evenly items-center absolute bottom-[20px] px-0 w-[100vw] h-auto">
               <ul>
                 <li className="flex w-[100vw] justify-evenly align-middle">

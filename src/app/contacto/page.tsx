@@ -4,12 +4,17 @@ import Image from "next/image";
 import callButton from "../../public/callButton.png";
 import ellipse2 from "../../public/ellipse2.webp";
 import callUs from "../../public/callUs.webp";
-import blueGradient from "../../public/blueGradient.svg";
 import type { Metadata } from "next";
+import blueGradient from "../../public/blueGradient.svg";
+import ContactStructuredData from "../components/structuredData/ContactoStructuredData";
+import BreadcrumbStructuredData from "../components/structuredData/BreadcrumbStructuredData";
 
 export const metadata: Metadata = {
-  title: "Contacto Service Electrolux | Agentes Disponibles",
+  title: "Contacto Service Drean | Agentes Disponibles",
   description: "Ingresa y haz tu consulta! Prespuestos SIN CARGO",
+  alternates: {
+    canonical: "https://servicedrean.ar/contacto",
+  },
   robots: {
     index: true,
     follow: true,
@@ -20,17 +25,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://service-electrolux.ar/contacto",
-    title: "▷ Service ELECTROLUX ❄️ Contacto",
+    url: "https://servicedrean.ar/contacto",
+    title: "▷ Service DREAN ❄️ Contacto",
     description:
-      "Ingresa y Contactanos, agentes ELECTROLUX disponibles ✓ EN EL DIA - Servicio Tecnico de Heladeras y lavarropas Electrolux",
-    siteName: "Service Electrolux contacto",
+      "Ingresa y Contactanos, agentes DREAN disponibles ✓ EN EL DIA - Servicio Tecnico de Heladeras y lavarropas Drean",
+    siteName: "Service Drean contacto",
     images: [
       {
-        url: "https://service-electrolux.ar/contacto/opengraph-image.jpg",
+        url: "https://servicedrean.ar/contacto/opengraph-image.jpg",
         width: 600,
         height: 600,
-        alt: "service electrolux contacto",
+        alt: "service drean contacto",
       },
     ],
   },
@@ -39,6 +44,13 @@ export const metadata: Metadata = {
 function contacto() {
   return (
     <div className={`${styles.flexStart}`}>
+      <ContactStructuredData />
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Inicio", item: "https://servicedrean.ar/" },
+          { name: "Contacto", item: "https://servicedrean.ar/contacto" },
+        ]}
+      />
       <div className={`${styles.boxWidth}`}>
         <Hero
           textOne="URGENCIAS"

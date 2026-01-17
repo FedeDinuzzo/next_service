@@ -3,7 +3,6 @@ import lavarropas from "../../public/lavarropas-frente.webp";
 import styles, { layout } from "../constants/style";
 import Button from "./animations/Button";
 import blueGradient from "../../public/blueGradient.svg";
-
 const Lavarropas = () => (
   <section id="product" className={`${layout.section} mt-10 md:mt-0 xl:-my-20 xl:-mb-40 px-6 xl:px-0`}>
     {/* 🔽 Gradiente de fondo contenido dentro del section */}
@@ -17,10 +16,10 @@ const Lavarropas = () => (
     <div className="lg:pr-8 relative z-10">
       <h2 className={styles.heading2}>
         Reparación de <br className="sm:block hidden" />
-        Lavarropas Electrolux
+        Lavarropas Drean
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Servicio técnico especializado en Lavarropas de Carga frontal y Carga superior Electrolux. Repuestos originales
+        Servicio técnico especializado en Lavarropas de Carga frontal y Carga superior Drean. Repuestos originales
       </p>
       <Button link="lavarropas" text="Service Lavarropas" aria-label="Ir a la sección de lavarropas" styles="mt-5" />
     </div>

@@ -1,6 +1,6 @@
 export function GET(): Response {
   const now = new Date().toISOString();
-  const base = "https://www.service-electrolux.ar";
+  const base = "https://servicedrean.ar";
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -14,7 +14,7 @@ export function GET(): Response {
     <priority>1.0</priority>
     <image:image>
       <image:loc>${base}/opengraph-image.jpg</image:loc>
-      <image:title>Service de Heladeras y Lavarropas Electrolux</image:title>
+      <image:title>Service de Heladeras y Lavarropas Drean</image:title>
       <image:caption>Servicio técnico especializado en CABA</image:caption>
     </image:image>
   </url>
@@ -24,9 +24,9 @@ export function GET(): Response {
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>${base}/heladeras/opengraph-image.jpg</image:loc>
-      <image:title>Reparación de Heladeras Electrolux</image:title>
+      <image:image>
+      <image:loc>${base}/heladeras/opengraph-image.jpeg</image:loc>
+      <image:title>Reparación de Heladeras Drean</image:title>
       <image:caption>Reparación urgente de heladeras no frost</image:caption>
     </image:image>
   </url>
@@ -36,9 +36,9 @@ export function GET(): Response {
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>${base}/lavarropas/opengraph-image.jpg</image:loc>
-      <image:title>Reparación de Lavarropas Electrolux</image:title>
+      <image:image>
+      <image:loc>${base}/lavarropas/opengraph-image.jpeg</image:loc>
+      <image:title>Reparación de Lavarropas Drean</image:title>
       <image:caption>Solución en el día para lavarropas que no centrifugan</image:caption>
     </image:image>
   </url>

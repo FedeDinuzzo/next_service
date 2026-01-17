@@ -21,7 +21,7 @@ function workForm({ repair, technical }) {
         <div className="lg:pr-20 mt-32 px-6 xl:px-0">
           <h2 className={styles.heading2}>Arreglos que Realizamos</h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>
-            Todos los arreglos cuentan con Garantia de 1 año y se utilizan los repuestos originales Electrolux.
+            Todos los arreglos cuentan con Garantia de 1 año y se utilizan los repuestos originales Drean.
           </p>
           <Link href="/contacto">
             <button

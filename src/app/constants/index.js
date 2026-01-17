@@ -215,7 +215,7 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: "instagram",
-    link: "https://www.instagram.com/service-electrolux",
+    link: "https://www.instagram.com/service-drean",
   },
   {
     id: "social-media-2",

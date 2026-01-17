@@ -26,9 +26,9 @@ const Testimonials = ({ type }: Props) => {
 
       <div className="overflow-hidden h-[500px] md:h-auto w-full relative group my-10 md:my-0">
         {/* Gradientes */}
-        <div className="hidden md:block absolute h-full w-10 md:w-12 bg-gradient-to-r from-[#00040f] to-transparent z-20" />
-        <div className="md:hidden absolute top-0 h-10 w-full bg-gradient-to-b from-[#00040f] to-transparent z-20" />
-        <div className="md:hidden absolute bottom-0 h-10 w-full bg-gradient-to-t from-[#00040f] to-transparent z-20" />
+        <div className="hidden md:block absolute h-full w-10 md:w-12 bg-gradient-to-r from-[#f8fafc] to-transparent z-20" />
+        <div className="md:hidden absolute top-0 h-10 w-full bg-gradient-to-b from-[#f8fafc] to-transparent z-20" />
+        <div className="md:hidden absolute bottom-0 h-10 w-full bg-gradient-to-t from-[#f8fafc] to-transparent z-20" />
 
         {/* Carrusel */}
         <div className="group-hover:paused flex md:flex-row flex-col md:w-[200%] w-full gap-6 md:animate-slide-horizontal animate-slide-vertical">

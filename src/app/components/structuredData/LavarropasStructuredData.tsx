@@ -1,19 +1,19 @@
-"use client";
-
-import React from "react";
 import { feedback } from "../../constants"; // Ajustá si el path cambia
 
 const LavarropasStructuredData = () => {
+  const baseUrl = "https://servicedrean.ar";
   const lavarropasReviews = feedback.filter((f) => f.categoria === "lavarropas");
 
-  const averageRating = lavarropasReviews.reduce((acc, curr) => acc + curr.rating, 0) / lavarropasReviews.length;
+  const averageRating = lavarropasReviews.length
+    ? lavarropasReviews.reduce((acc, curr) => acc + curr.rating, 0) / lavarropasReviews.length
+    : 5;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Reparación de Lavarropas Electrolux",
+    name: "Reparación de Lavarropas Drean",
     description:
-      "Servicio técnico especializado en reparación de lavarropas Electrolux automáticos, de carga frontal y superior. Repuestos originales y atención en el día.",
+      "Servicio técnico especializado en reparación de lavarropas Drean automáticos, de carga frontal y superior. Repuestos originales y atención en el día.",
     serviceType: "Reparación de lavarropas",
     areaServed: {
       "@type": "Place",
@@ -21,8 +21,8 @@ const LavarropasStructuredData = () => {
     },
     provider: {
       "@type": "LocalBusiness",
-      name: "Service Electrolux",
-      url: "https://www.service-electrolux.ar",
+      name: "Service Drean",
+      url: baseUrl,
       telephone: "+54 911 3629-9090",
       address: {
         "@type": "PostalAddress",

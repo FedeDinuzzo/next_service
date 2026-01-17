@@ -10,10 +10,10 @@ module.exports = {
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
       },
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        primary: "#f8fafc",
+        secondary: "#00064F",
+        dimWhite: "rgba(15, 23, 42, 0.7)",
+        dimBlue: "rgba(0, 6, 79, 0.08)",
       },
     },
     screens: {

@@ -34,7 +34,7 @@ export default function Whatsapp() {
     // Validar el valor de URL antes de usarlo
     if (VALID_URLS.includes(url)) {
       window.open(
-        `https://api.whatsapp.com/send?phone=${url}&text=Hola%20👋%20service%20Electrolux%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20`,
+        `https://api.whatsapp.com/send?phone=${url}&text=Hola%20👋%20service%20Drean%20🛠%EF%B8%8F%20tengo%20una%20consulta%3A%20`,
         "_blank"
       );
     } else {
@@ -43,7 +43,7 @@ export default function Whatsapp() {
   };
 
   return (
-    <div className="blobWpp rounded-full absolute bottom-[6px] md:bottom-[4px] left-0 md:left-auto right-0 md:right-10 m-auto z-[100] cursor-pointer h-[60px] w-[60px] md:h-[66px] md:w-[66px]">
+    <div className="blobWpp rounded-full absolute bottom-[6px] md:bottom-[4px] left-0 md:left-auto right-0 md:right-10 m-auto z-[100] cursor-pointer h-[60px] w-[60px] md:h-[66px] md:w-[66px] bg-white/90 border border-[#00064F]/20 shadow-[0_10px_30px_rgba(0,6,79,0.18)]">
       <a className="conversion" href="#" onClick={handleRedirect}>
         <Image src={wppLogo} alt="wppLogo" height="60px" width="60px" priority />
       </a>
