@@ -34,7 +34,7 @@ const Heladeras = () => (
     <div className="lg:pr-8 relative z-10">
       <h2 className={styles.heading2}>
         Reparación de <br className="sm:block hidden" />
-        Heladeras Drean
+        Heladeras Electrolux
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Servicio Técnico Especializado en Heladeras Familiares, Tropicales, No Frost y Freezers. Repuestos originales

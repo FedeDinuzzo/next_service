@@ -1,22 +1,21 @@
+"use client";
+
+import React from "react";
 import { feedback } from "../../constants"; // Ajustá si está en otro path
 
 const HomeStructuredData = () => {
-  const baseUrl = "https://servicedrean.ar";
   const totalReviews = feedback.length;
-  const averageRating = totalReviews
-    ? feedback.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews
-    : 5;
+  const averageRating = feedback.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Service Drean",
-    image: `${baseUrl}/opengraph-image.jpg`,
-    "@id": baseUrl,
-    url: baseUrl,
+    name: "Service Electrolux",
+    image: "https://www.service-electrolux.ar/opengraph-image.jpg",
+    "@id": "https://www.service-electrolux.ar",
+    url: "https://www.service-electrolux.ar",
     telephone: "+54 911 3629-9090",
     priceRange: "$$",
-    sameAs: ["https://www.instagram.com/service-drean"],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Montevideo 1083",

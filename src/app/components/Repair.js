@@ -20,7 +20,7 @@ const repair = ({ gadget, step }) => (
         Reparaciones Ideales
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-3 xl:mt-5`}>
-        Arregla tu {gadget} drean en el momento con el metodo mas eficáz del mercado. Somos la solución que
+        Arregla tu {gadget} electrolux en el momento con el metodo mas eficáz del mercado. Somos la solución que
         necesitas.
       </p>
       <Button styles="mt-6 xl:mt-10" text="Contactanos" link="contacto" />

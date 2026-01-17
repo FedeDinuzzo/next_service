@@ -39,7 +39,7 @@ const SolicitarTecnico = () => {
 
   return (
     <div
-      className={`${styles.flexCenter} opc w-[140px] h-[140px] rounded-full border-2 border-[#00064F] p-[2px] cursor-pointer z-[1]`}
+      className={`${styles.flexCenter} opc w-[140px] h-[140px] rounded-full border-2 border-[#5ce1e6] p-[2px] cursor-pointer z-[1]`}
     >
       <div
         className={`${styles.flexCenter} blob flex-col w-[100%] h-[100%] rounded-full`}

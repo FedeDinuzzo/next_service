@@ -2,7 +2,7 @@ export function GET() {
   const body = `User-agent: *
 Disallow:
 
-Sitemap: https://servicedrean.ar/sitemap.xml`;
+Sitemap: https://www.service-electrolux.ar/sitemap.xml`;
 
   return new Response(body, {
     headers: {

@@ -5,25 +5,22 @@ import tecnicoHeladeras from "../../public/tecnicoHeladeras.webp";
 import step2 from "../../public/step2.webp";
 import { lazy, Suspense } from "react";
 import Image from "next/image";
-import type { Metadata } from "next";
 import blueGradient from "../../public/blueGradient.svg";
 import pinkGradient from "../../public/pinkGradient.svg";
+import type { Metadata } from "next";
 import HeladerasStructuredData from "../components/structuredData/HeladerasStructuredData";
-import FaqStructuredData from "../components/structuredData/FaqStructuredData";
-import BreadcrumbStructuredData from "../components/structuredData/BreadcrumbStructuredData";
-import FAQ from "../components/FAQ";
 
 export const metadata: Metadata = {
-  title: "▷ Service de Heladeras ❄️ DREAN | Autorizado",
+  title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado",
   description:
-    "Se rompió tu heladera DREAN? ✓ Nosotros te la reparamos EN EL DÍA - Servicio Técnico de heladeras Drean",
+    "Se rompió tu heladera ELECTROLUX? ✓ Nosotros te la reparamos EN EL DÍA - Servicio Técnico de heladeras Electrolux",
   alternates: {
-    canonical: "https://servicedrean.ar/heladeras",
+    canonical: "https://service-electrolux.ar/heladeras",
   },
   keywords: [
     "servicio",
     "service",
-    "drean",
+    "electrolux",
     "heladeras",
     "reparacion",
     "arreglo",
@@ -32,58 +29,19 @@ export const metadata: Metadata = {
     "capital federal",
     "zona norte",
     "zona sur",
-    "servicio tecnico de heladeras drean",
-    "service de heladeras drean",
-    "reparacion de heladeras drean",
+    "servicio tecnico de heladeras electrolux",
+    "service de heladeras electrolux",
+    "reparacion de heladeras electrolux",
   ],
   openGraph: {
     type: "website",
-    url: "https://servicedrean.ar/heladeras",
-    title: "▷ Service de Heladeras ❄️ DREAN | Autorizado",
+    url: "https://service-electrolux.ar/heladeras",
+    title: "▷ Service de Heladeras ❄️ ELECTROLUX | Autorizado",
     description:
-      "Se rompió tu heladera DREAN? ✓ Nosotros te la reparamos EN EL DÍA - Servicio Técnico de heladeras Drean",
-    siteName: "Service de Heladeras Drean",
-    images: [
-      {
-        url: "https://servicedrean.ar/heladeras/opengraph-image.jpeg",
-        alt: "Service de heladeras Drean",
-      },
-    ],
+      "Se rompió tu heladera ELECTROLUX? ✓ Nosotros te la reparamos EN EL DÍA - Servicio Técnico de heladeras Electrolux",
+    siteName: "Service de Heladeras Electrolux",
   },
 };
-
-const faqItems = [
-  {
-    question: "¿Hacen service de heladeras Drean en CABA?",
-    answer:
-      "Si, realizamos service de heladeras Drean en CABA y alrededores con tecnicos especializados.",
-  },
-  {
-    question: "¿Reparan heladeras no frost Drean?",
-    answer:
-      "Si, trabajamos con heladeras no frost, tropicales, familiares y freezers Drean.",
-  },
-  {
-    question: "¿Cuanto tarda la reparacion?",
-    answer:
-      "En la mayoria de los casos resolvemos en el dia, segun disponibilidad de repuestos.",
-  },
-  {
-    question: "¿Tienen repuestos originales?",
-    answer:
-      "Si, usamos repuestos originales o equivalentes de primera calidad para asegurar durabilidad.",
-  },
-  {
-    question: "¿Ofrecen garantia por el service?",
-    answer:
-      "Si, todas las reparaciones incluyen garantia escrita.",
-  },
-  {
-    question: "¿Como solicito una visita tecnica?",
-    answer:
-      "Llamanos o escribinos por WhatsApp y coordinamos la visita tecnica.",
-  },
-];
 
 const WorkForm = lazy(() => import("../components/WorkForm"));
 const Repair = lazy(() => import("../components/Repair"));
@@ -94,13 +52,6 @@ function Heladeras() {
   return (
     <>
       <HeladerasStructuredData />
-      <BreadcrumbStructuredData
-        items={[
-          { name: "Inicio", item: "https://servicedrean.ar/" },
-          { name: "Heladeras", item: "https://servicedrean.ar/heladeras" },
-        ]}
-      />
-      <FaqStructuredData pageUrl="https://servicedrean.ar/heladeras" items={faqItems} />
       <div className={`${styles.flexStart}`}>
         <div className={styles.boxWidth}>
           <Hero
@@ -109,7 +60,7 @@ function Heladeras() {
             textThree="AUTORIZADO"
             titleOne="Service De"
             titleTwo="Heladeras"
-            titleThree="Drean"
+            titleThree="Electrolux"
             img={2}
             ruta={1}
           />
@@ -130,11 +81,6 @@ function Heladeras() {
 
               <Repair gadget="heladera" step={step2} />
 
-              <FAQ
-                title="Preguntas frecuentes sobre heladeras Drean"
-                subtitle="Service, repuestos y garantia para tu heladera"
-                items={faqItems}
-              />
               <Testimonials />
 
               <CTA />

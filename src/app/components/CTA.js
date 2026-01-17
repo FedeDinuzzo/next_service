@@ -17,7 +17,7 @@ const CTA = () => (
         <a href="tel:1143838283">
           <div
             type="button"
-            className={`py-4 px-6 bg-[#00064F]/10 border border-[#00064F]/30 font-popins font-medium xs:text-[16px] xl:text-[18px] text-secondary outline-none rounded-lg transition hover:bg-[#00064F]/15 ${styles}`}
+            className={`py-4 px-6 bg-blue-gradient font-popins font-medium xs:text-[16px] xl:text-[18px] text-primary outline-none rounded-lg ${styles}`}
           >
             Llamada telefónica
           </div>

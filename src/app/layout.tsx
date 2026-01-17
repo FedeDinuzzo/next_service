@@ -14,10 +14,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://servicedrean.ar"),
-  title: "▷ Service de Heladeras y Lavarropas ❄️ DREAN | Arreglos EN EL DÍA",
+  metadataBase: new URL("https://service-electrolux.ar"),
+  title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
   description:
-    "Service autorizado DREAN ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+    "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -25,19 +25,19 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    images: "https://servicedrean.ar/opengraph-image.jpg",
-    url: "https://servicedrean.ar/",
-    title: "▷ Service de Heladeras y Lavarropas ❄️ DREAN | Arreglos EN EL DÍA",
+    images: "https://service-electrolux.ar/opengraph-image.jpg",
+    url: "https://service-electrolux.ar/",
+    title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
-      "Service autorizado DREAN ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+      "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
   },
   twitter: {
     card: "summary_large_image",
-    site: "servicedrean",
-    title: "▷ Service de Heladeras y Lavarropas ❄️ DREAN | Arreglos EN EL DÍA",
+    site: "service-electrolux",
+    title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
-      "Service autorizado DREAN ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
-    images: "https://servicedrean.ar/opengraph-image.jpg",
+      "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+    images: "https://service-electrolux.ar/opengraph-image.jpg",
   },
   robots: {
     index: true,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   keywords: [
     "servicio",
     "service",
-    "drean",
+    "electrolux",
     "heladeras",
     "lavarropas",
     "reparacion",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     "capital federal",
     "zona norte",
     "zona sur",
-    "servicio tecnico de heladeras y lavarropas drean",
-    "service de lavarropas y heladeras drean",
-    "reparacion de heladeras y lavarropas drean",
+    "servicio tecnico de heladeras y lavarropas electrolux",
+    "service de lavarropas y heladeras electrolux",
+    "reparacion de heladeras y lavarropas electrlux",
   ],
   creator: "Federico Di Nuzzo",
   generator: "Next.js",

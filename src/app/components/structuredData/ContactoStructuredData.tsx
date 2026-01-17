@@ -1,21 +1,24 @@
+"use client";
+
+import React from "react";
+
 const ContactStructuredData = () => {
-  const baseUrl = "https://servicedrean.ar";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Contacto - Service Drean",
-    url: `${baseUrl}/contacto`,
+    name: "Contacto - Service Electrolux",
+    url: "https://www.service-electrolux.ar/contacto",
     about: {
       "@type": "LocalBusiness",
-      name: "Service Drean",
-      url: baseUrl,
+      name: "Service Electrolux",
+      url: "https://www.service-electrolux.ar",
     },
     mainEntity: {
       "@type": "ContactPage",
       name: "Contacto",
       description:
-        "Página de contacto autorizado de Service Drean. Solicita una visita técnica o envíanos tu consulta.",
-      url: `${baseUrl}/contacto`,
+        "Página de contacto autorizado de Service Electrolux. Solicita una visita técnica o envíanos tu consulta.",
+      url: "https://www.service-electrolux.ar/contacto",
       contactOption: [
         {
           "@type": "ContactPoint",

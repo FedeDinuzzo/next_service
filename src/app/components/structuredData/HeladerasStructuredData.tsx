@@ -1,19 +1,19 @@
+"use client";
+
+import React from "react";
 import { feedback } from "../../constants";
 
 const HeladerasStructuredData = () => {
-  const baseUrl = "https://servicedrean.ar";
   const heladeraReviews = feedback.filter((f) => f.categoria === "heladera");
 
-  const averageRating = heladeraReviews.length
-    ? heladeraReviews.reduce((acc, curr) => acc + curr.rating, 0) / heladeraReviews.length
-    : 5;
+  const averageRating = heladeraReviews.reduce((acc, curr) => acc + curr.rating, 0) / heladeraReviews.length;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Reparación de Heladeras Drean",
+    name: "Reparación de Heladeras Electrolux",
     description:
-      "Servicio técnico especializado en reparación de heladeras familiares, tropicales, no frost y freezers Drean. Repuestos originales y garantía de 1 año.",
+      "Servicio técnico especializado en reparación de heladeras familiares, tropicales, no frost y freezers Electrolux. Repuestos originales y garantía de 1 año.",
     serviceType: "Reparación de heladeras",
     areaServed: {
       "@type": "Place",
@@ -21,8 +21,8 @@ const HeladerasStructuredData = () => {
     },
     provider: {
       "@type": "LocalBusiness",
-      name: "Service Drean",
-      url: baseUrl,
+      name: "Service Electrolux",
+      url: "https://www.service-electrolux.ar",
       telephone: "+54 911 3629-9090",
       address: {
         "@type": "PostalAddress",

@@ -53,7 +53,7 @@ const Footer = () => (
 
         <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45] md:mb-6 mb-0">
           <p className="font-poppins font-normal text-center text-[16px] leading-[27px] text-white">
-            Copyright © 2025 | A&T drean
+            Copyright © 2025 | A&T electrolux
           </p>
 
           <div className="flex flex-row md:mt-0 mt-6">
