@@ -19,10 +19,10 @@ export default function Whatsapp() {
     let number;
     if (dayOfWeek === 0 || dayOfWeek === 6) {
       // Sábados y domingos
-      number = "5491136299090";
+      number = "5491144469930";
     } else {
       // De lunes a viernes
-      number = hour >= 8 && hour < 17 ? "5491136299090" : "5491136299090";
+      number = hour >= 8 && hour < 17 ? "5491136299090" : "5491141879748";
     }
 
     setUrl(number);
