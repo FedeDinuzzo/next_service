@@ -22,7 +22,7 @@ export default function Whatsapp() {
       number = "5491141879748";
     } else {
       // De lunes a viernes
-      number = hour >= 8 && hour < 17 ? "5491136299090" : "5491141879748";
+      number = hour >= 8 && hour < 17 ? "5491141879748" : "5491141879748";
     }
 
     setUrl(number);
