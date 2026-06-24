@@ -1,6 +1,6 @@
 export function GET(): Response {
   const now = new Date().toISOString();
-  const base = "https://www.service-electrolux.ar";
+  const base = "https://service-electrolux.ar";
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -24,7 +24,7 @@ export function GET(): Response {
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
+      <image:image>
       <image:loc>${base}/heladeras/opengraph-image.jpg</image:loc>
       <image:title>Reparación de Heladeras Electrolux</image:title>
       <image:caption>Reparación urgente de heladeras no frost</image:caption>
@@ -36,7 +36,7 @@ export function GET(): Response {
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
+      <image:image>
       <image:loc>${base}/lavarropas/opengraph-image.jpg</image:loc>
       <image:title>Reparación de Lavarropas Electrolux</image:title>
       <image:caption>Solución en el día para lavarropas que no centrifugan</image:caption>

@@ -1,21 +1,25 @@
-"use client";
-
-import React from "react";
 import { feedback } from "../../constants"; // Ajustá si está en otro path
 
 const HomeStructuredData = () => {
+  const baseUrl = "https://service-electrolux.ar";
   const totalReviews = feedback.length;
-  const averageRating = feedback.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews;
+  const averageRating = totalReviews
+    ? feedback.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews
+    : 5;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Service Electrolux",
-    image: "https://www.service-electrolux.ar/opengraph-image.jpg",
-    "@id": "https://www.service-electrolux.ar",
-    url: "https://www.service-electrolux.ar",
+    image: `${baseUrl}/opengraph-image.jpg`,
+    "@id": baseUrl,
+    url: baseUrl,
     telephone: "+54 911 3629-9090",
     priceRange: "$$",
+    sameAs: [
+      "https://www.instagram.com/atencion.tecnica/",
+      "https://maps.google.com/?q=Montevideo+1083,+C1019+Cdad.+Autónoma+de+Buenos+Aires",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Montevideo 1083",

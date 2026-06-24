@@ -1,23 +1,25 @@
-import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google"; // ✅ nuevo
-
+﻿import type { Metadata, Viewport } from "next";
+import { Poppins } from "next/font/google";
 import Script from "next/script";
 import "../styles/global.css";
 import styles from "./constants/style";
 import NavBar from "./components/NavBar";
-import { lazy, Suspense } from "react";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import TrackingListener from "./components/TrackingListener";
+import LeadTracking from "./components/LeadTracking";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+  themeColor: "#f8fafc",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://service-electrolux.ar"),
-  title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
-  description:
-    "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+  title: "▹ Service Electrolux | Servicio Técnico de Heladeras y Lavarropas",
+  description: "Servicio técnico especializado Electrolux en heladeras y lavarropas. Reparaciones a domicilio en el día con garantía escrita. ¡Consultanos por WhatsApp!",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -25,19 +27,35 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    images: "https://service-electrolux.ar/opengraph-image.jpg",
+    locale: "es_AR",
     url: "https://service-electrolux.ar/",
-    title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
+    title: "▹ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
-      "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+      "Service autorizado ELECTROLUX ✓ Ingresá y contactanos - Servicio Técnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+    images: [
+      {
+        url: "https://service-electrolux.ar/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Service Electrolux",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "service-electrolux",
-    title: "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
+    title: "▹ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
     description:
-      "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
-    images: "https://service-electrolux.ar/opengraph-image.jpg",
+      "Service autorizado ELECTROLUX ✓ Ingresá y contactanos - Servicio Técnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+    images: [
+      {
+        url: "https://service-electrolux.ar/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Service Electrolux",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -62,7 +80,7 @@ export const metadata: Metadata = {
     "zona sur",
     "servicio tecnico de heladeras y lavarropas electrolux",
     "service de lavarropas y heladeras electrolux",
-    "reparacion de heladeras y lavarropas electrlux",
+    "reparacion de heladeras y lavarropas electrolux",
   ],
   creator: "Federico Di Nuzzo",
   generator: "Next.js",
@@ -78,9 +96,11 @@ const font = Poppins({
   weight: ["400", "600"],
 });
 
-const Footer = lazy(() => import("./components/Footer"));
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="es">
       <head>
@@ -99,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className={`${font.variable} bg-primary`}>
+      <body className={`${font.variable} bg-primary`} suppressHydrationWarning>
         {/* GTM fallback para navegadores sin JS */}
         <noscript>
           <iframe
@@ -110,13 +130,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ></iframe>
         </noscript>
 
+        <ScrollToTop />
         <NavBar />
+        <TrackingListener />
+        <LeadTracking />
         <div className={`bg-primary ${styles.flexCenter} relative`}>
           <div className={`${styles.boxWidth}`}>
             <main className="py-6">{children}</main>
-            <Suspense fallback={`Loading...`}>
-              <Footer />
-            </Suspense>
+            <Footer />
           </div>
         </div>
       </body>

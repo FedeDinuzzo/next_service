@@ -1,12 +1,12 @@
-"use client";
-
-import React from "react";
 import { feedback } from "../../constants";
 
 const HeladerasStructuredData = () => {
+  const baseUrl = "https://service-electrolux.ar";
   const heladeraReviews = feedback.filter((f) => f.categoria === "heladera");
 
-  const averageRating = heladeraReviews.reduce((acc, curr) => acc + curr.rating, 0) / heladeraReviews.length;
+  const averageRating = heladeraReviews.length
+    ? heladeraReviews.reduce((acc, curr) => acc + curr.rating, 0) / heladeraReviews.length
+    : 5;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -22,7 +22,7 @@ const HeladerasStructuredData = () => {
     provider: {
       "@type": "LocalBusiness",
       name: "Service Electrolux",
-      url: "https://www.service-electrolux.ar",
+      url: baseUrl,
       telephone: "+54 911 3629-9090",
       address: {
         "@type": "PostalAddress",

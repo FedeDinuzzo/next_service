@@ -1,15 +1,22 @@
-import Hero from "../components/Hero";
+﻿import Hero from "../components/Hero";
 import styles, { layout } from "../constants/style";
 import Image from "next/image";
-import callButton from "../../public/callButton.png";
-import ellipse2 from "../../public/ellipse2.webp";
-import callUs from "../../public/callUs.webp";
-import blueGradient from "../../public/blueGradient.svg";
 import type { Metadata } from "next";
+import blueGradient from "../../public/blueGradient.svg";
+import ContactStructuredData from "../components/structuredData/ContactoStructuredData";
+import BreadcrumbStructuredData from "../components/structuredData/BreadcrumbStructuredData";
+import { FaPhoneAlt } from "react-icons/fa";
+import ImmediateAttentionBadge from "../components/ImmediateAttentionBadge";
+import Link from "next/link";
+import Reveal from "../components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Contacto Service Electrolux | Agentes Disponibles",
-  description: "Ingresa y haz tu consulta! Prespuestos SIN CARGO",
+  title: "Contacto | Servicio Técnico Electrolux | Pedir Presupuesto",
+  description:
+    "Comunicate con nuestro servicio técnico especializado Electrolux. Solicitá tu presupuesto o visita técnica a domicilio por WhatsApp o teléfono hoy mismo.",
+  alternates: {
+    canonical: "https://service-electrolux.ar/contacto",
+  },
   robots: {
     index: true,
     follow: true,
@@ -20,25 +27,53 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    locale: "es_AR",
     url: "https://service-electrolux.ar/contacto",
-    title: "▷ Service ELECTROLUX ❄️ Contacto",
+    title: "▹ Service ELECTROLUX ✓ Contacto",
     description:
-      "Ingresa y Contactanos, agentes ELECTROLUX disponibles ✓ EN EL DIA - Servicio Tecnico de Heladeras y lavarropas Electrolux",
+      "Ingresá y contactanos, agentes ELECTROLUX disponibles ✓ EN EL DÍA - Servicio Técnico de heladeras y lavarropas Electrolux",
     siteName: "Service Electrolux contacto",
     images: [
       {
         url: "https://service-electrolux.ar/contacto/opengraph-image.jpg",
         width: 600,
         height: 600,
-        alt: "service electrolux contacto",
+        type: "image/jpeg",
+        alt: "Service Electrolux contacto",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "service-electrolux",
+    title: "▹ Service ELECTROLUX ✓ Contacto",
+    description:
+      "Ingresá y contactanos, agentes ELECTROLUX disponibles ✓ EN EL DÍA - Servicio Técnico de heladeras y lavarropas Electrolux",
+    images: [
+      {
+        url: "https://service-electrolux.ar/contacto/opengraph-image.jpg",
+        width: 600,
+        height: 600,
+        alt: "Service Electrolux contacto",
       },
     ],
   },
 };
 
+export const viewport = {
+  themeColor: "#f8fafc",
+};
+
 function contacto() {
   return (
-    <div className={`${styles.flexStart}`}>
+    <div className={`${styles.flexStart} contacto-page`}>
+      <ContactStructuredData />
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Inicio", item: "https://service-electrolux.ar/" },
+          { name: "Contacto", item: "https://service-electrolux.ar/contacto" },
+        ]}
+      />
       <div className={`${styles.boxWidth}`}>
         <Hero
           textOne="URGENCIAS"
@@ -47,11 +82,13 @@ function contacto() {
           titleOne="Contactanos"
           titleTwo="Y Resolvemos"
           titleThree="Tu Problema"
+          descriptionMobile="Contactanos para servicio técnico Electrolux en CABA y Buenos Aires."
+          descriptionDesktop="Contactá al servicio técnico Electrolux en CABA y Buenos Aires. Atendemos urgencias en el día y coordinamos visita a domicilio."
           img={""}
           ruta={0}
         />
         <div
-          className={`bg-primary ${styles.paddingX} ${styles.flexCenter} pb-[320px] sm:pb-[480px] lg:pb-0 xl:pb-[160px]`}
+          className={`bg-primary ${styles.paddingX} ${styles.flexCenter} pb-[100px] md:pb-24 lg:pb-0`}
         >
           <Image
             src={blueGradient}
@@ -59,26 +96,56 @@ function contacto() {
             alt="pink gradient"
           />
           <div className={`${styles.boxWidth} flex flex-col items-center`}>
-            <section id="product" className={`${layout.sectionReverse} -mt-20 md:-mt-20 lg:-mt-8 w-full`}>
-              <div className="z-[10] w-[50%]">
-                <div className="absolute right-[5%] sm:right-auto max-w-[350px] sm:max-w-full">
-                  <Image src={ellipse2} alt="Frio" />
-                </div>
-                <div className="absolute right-[5%] sm:right-auto max-w-[340px] sm:max-w-full">
-                  <Image src={callUs} alt="Call Us" />
+            <section
+              id="product"
+              className={`${layout.sectionReverse} -mt-20 md:-mt-4 lg:-mt-8 w-full items-center text-center md:items-start md:text-left`}
+            >
+              <div className="z-[10] flex-1 flex items-center justify-center md:items-start md:justify-start">
+                <div className="relative w-full max-w-[420px] h-[260px] sm:h-[300px] md:h-[360px] pl-2 sm:pl-0">
+                  <div className="contact-orbit contact-orbit-lg" />
+                  <div className="contact-orbit contact-orbit-md" />
+                  <div className="contact-orbit contact-orbit-sm" />
+
+                  <div className="contact-call-card absolute left-1/2 -translate-x-1/2 sm:left-4 sm:translate-x-0 lg:-left-6 top-24 sm:top-6 lg:px-8 lg:py-5 text-center sm:text-left items-center sm:items-start">
+                    <div className="text-[#ffffff] font-poppins font-semibold text-[28px] sm:text-[30px] leading-[34px]">
+                      Llámenos
+                    </div>
+                    <div className="text-[#dfe9ff] font-poppins text-[15px] leading-[22px]">
+                      Líneas disponibles
+                    </div>
+                  </div>
+
+                  <Link
+                    href="/#wpp-form"
+                    className="absolute left-1/2 -translate-x-1/2 sm:left-10 sm:translate-x-0 md:left-28 lg:left-48 bottom-2 sm:bottom-6"
+                  >
+                    <ImmediateAttentionBadge />
+                  </Link>
                 </div>
               </div>
 
-              <div className={layout.sectionImgReverse}>
-                <div className="sm:w-[100%] my-12 md:mb-[300px] xl:mb-0 z-[10]">
-                  <a href="tel:1143838283">
+              <div
+                className={`${layout.sectionImgReverse} items-center md:items-start`}
+              >
+                <Reveal
+                  variant="card"
+                  className="flex flex-col items-center md:items-start sm:w-[100%] my-12 mb-20 lg:mb-44 z-[10]"
+                >
+                  <a
+                    href="tel:1143838283"
+                    className="js-track-call"
+                    data-track-label="contact_phone_1"
+                  >
                     <div
-                      className={`flex flex-row p-6 lg:ml-12 w-[340px] sm:w-auto max-w-[470px] rounded-[20px] feature-card-set`}
+                      className={`flex flex-row p-6 lg:ml-12 w-[340px] sm:w-auto max-w-[470px] rounded-[20px] feature-card-set sm:ml-0`}
                     >
                       <div
-                        className={`w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+                        className={`w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-full ${styles.flexCenter} bg-blue-gradient ring-1 ring-white/20`}
                       >
-                        <Image src={callButton} alt="icon" />
+                        <FaPhoneAlt
+                          className="text-primary text-[22px] md:text-[26px]"
+                          aria-hidden="true"
+                        />
                       </div>
                       <div className="flex-1 flex flex-col ml-2 md:ml-6 pt-2 align-center">
                         <h2 className="whitespace-nowrap font-poppins font-semibold text-white text-[28px] lg:text-[36px] leading-[23px] mb-1">
@@ -91,12 +158,21 @@ function contacto() {
                     </div>
                   </a>
 
-                  <a href="tel:1143828369">
-                    <div className={`flex flex-row p-6 lg:ml-12 mt-4 max-w-[470px] rounded-[20px] feature-card-set`}>
+                  <a
+                    href="tel:1143828369"
+                    className="js-track-call"
+                    data-track-label="contact_phone_2"
+                  >
+                    <div
+                      className={`flex flex-row p-6 lg:ml-12 mt-4 w-[340px] sm:w-auto max-w-[470px] rounded-[20px] feature-card-set sm:ml-0`}
+                    >
                       <div
-                        className={`w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+                        className={`w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-full ${styles.flexCenter} bg-blue-gradient ring-1 ring-white/20`}
                       >
-                        <Image src={callButton} alt="icon" />
+                        <FaPhoneAlt
+                          className="text-primary text-[22px] md:text-[26px]"
+                          aria-hidden="true"
+                        />
                       </div>
                       <div className="flex-1 flex flex-col ml-2 md:ml-6 pt-2 align-center">
                         <h2 className="whitespace-nowrap font-poppins font-semibold text-white text-[28px] lg:text-[36px] leading-[23px] mb-1">
@@ -108,7 +184,7 @@ function contacto() {
                       </div>
                     </div>
                   </a>
-                </div>
+                </Reveal>
               </div>
             </section>
           </div>

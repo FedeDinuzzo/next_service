@@ -1,24 +1,25 @@
-"use client";
-
-import React from "react";
-
 const ContactStructuredData = () => {
+  const baseUrl = "https://service-electrolux.ar";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Contacto - Service Electrolux",
-    url: "https://www.service-electrolux.ar/contacto",
+    url: `${baseUrl}/contacto`,
     about: {
       "@type": "LocalBusiness",
       name: "Service Electrolux",
-      url: "https://www.service-electrolux.ar",
+      url: baseUrl,
+      sameAs: [
+        "https://www.instagram.com/atencion.tecnica/",
+        "https://maps.google.com/?q=Montevideo+1083,+C1019+Cdad.+Autónoma+de+Buenos+Aires",
+      ],
     },
     mainEntity: {
       "@type": "ContactPage",
       name: "Contacto",
       description:
         "Página de contacto autorizado de Service Electrolux. Solicita una visita técnica o envíanos tu consulta.",
-      url: "https://www.service-electrolux.ar/contacto",
+      url: `${baseUrl}/contacto`,
       contactOption: [
         {
           "@type": "ContactPoint",

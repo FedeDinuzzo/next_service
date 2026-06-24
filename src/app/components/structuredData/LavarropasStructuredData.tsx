@@ -1,12 +1,12 @@
-"use client";
-
-import React from "react";
 import { feedback } from "../../constants"; // Ajustá si el path cambia
 
 const LavarropasStructuredData = () => {
+  const baseUrl = "https://service-electrolux.ar";
   const lavarropasReviews = feedback.filter((f) => f.categoria === "lavarropas");
 
-  const averageRating = lavarropasReviews.reduce((acc, curr) => acc + curr.rating, 0) / lavarropasReviews.length;
+  const averageRating = lavarropasReviews.length
+    ? lavarropasReviews.reduce((acc, curr) => acc + curr.rating, 0) / lavarropasReviews.length
+    : 5;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -22,7 +22,7 @@ const LavarropasStructuredData = () => {
     provider: {
       "@type": "LocalBusiness",
       name: "Service Electrolux",
-      url: "https://www.service-electrolux.ar",
+      url: baseUrl,
       telephone: "+54 911 3629-9090",
       address: {
         "@type": "PostalAddress",
