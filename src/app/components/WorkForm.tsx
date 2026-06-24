@@ -35,7 +35,7 @@ function WorkForm({ repair, repairContent, technical }: WorkFormProps) {
                       src={technical}
                       alt="tecnico"
                       loading="lazy"
-                      className="h-[150px] w-[210px] rounded-[18px] object-cover object-top"
+                      className="h-[150px] w-[210px] rounded-[18px] object-cover object-bottom"
                     />
                   </div>
                 </div>

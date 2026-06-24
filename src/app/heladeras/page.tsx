@@ -1,6 +1,6 @@
 ﻿import Hero from "../components/Hero";
 import styles from "../constants/style";
-import tecnicoHeladeras from "../../public/tecnicoHeladeras.webp";
+import tecnicoHeladeras from "../../public/Tecnico-heladeras-electrolux.jpg";
 import step2 from "../../public/step2.webp";
 import Image from "next/image";
 import type { Metadata } from "next";

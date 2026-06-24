@@ -1,6 +1,6 @@
 ﻿import Hero from "../components/Hero";
 import styles from "../constants/style";
-import tecnicoLavarropas from "../../public/tecnicoLavarropas.webp";
+import tecnicoLavarropas from "../../public/Tecnico-de-lavarropas-electrolux.jpg";
 import step2v from "../../public/step2v.webp";
 import Image from "next/image";
 import type { Metadata } from "next";
