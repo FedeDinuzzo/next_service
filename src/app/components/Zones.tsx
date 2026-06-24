@@ -47,16 +47,6 @@ const Zones = () => {
     )}`;
   };
 
-  const handleWhatsAppRedirect = (place: string) => {
-    const targetUrl = getWhatsAppTargetUrl(place);
-    if (!targetUrl) {
-      console.error("Invalid WhatsApp number:", getWhatsAppNumber());
-      return;
-    }
-
-    window.open(targetUrl, "_blank");
-  };
-
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setActiveZoneId(null);
@@ -224,22 +214,29 @@ const Zones = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[320px] overflow-y-auto pr-1 zone-scroll">
-            {activeZone.places.map((place) => (
-              <button
-                key={place}
-                type="button"
-                onClick={() => handleWhatsAppRedirect(place)}
-                className="js-track-whatsapp rounded-[14px] bg-[#11101d] px-2 py-2 text-[14px] text-center font-poppins font-semibold transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
-                aria-label={`Consultar service en ${place}`}
-                data-lead-action="whatsapp"
-                data-lead-clicked-to={getWhatsAppTargetUrl(place)}
-                data-track-label={`zones_barrio_${toSlug(place)}`}
-              >
-                <span className="bg-[linear-gradient(135deg,#5ce1e6_0%,#33bbcf_60%,#2596a8_100%)] text-transparent bg-clip-text">
-                  {place}
-                </span>
-              </button>
-            ))}
+            {activeZone.places.map((place) => {
+              const placeUrl = getWhatsAppTargetUrl(place);
+              return (
+                <a
+                  key={place}
+                  href={placeUrl || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    if (!placeUrl) e.preventDefault();
+                  }}
+                  className="conversion js-track-whatsapp rounded-[14px] bg-[#11101d] px-2 py-2 text-[14px] text-center font-poppins font-semibold transition hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                  aria-label={`Consultar service en ${place}`}
+                  data-lead-action="whatsapp"
+                  data-lead-clicked-to={placeUrl}
+                  data-track-label={`zones_barrio_${toSlug(place)}`}
+                >
+                  <span className="bg-[linear-gradient(135deg,#5ce1e6_0%,#33bbcf_60%,#2596a8_100%)] text-transparent bg-clip-text">
+                    {place}
+                  </span>
+                </a>
+              );
+            })}
           </div>
 
           <p className="font-poppins text-dimWhite text-[13px] mt-4">

@@ -48,7 +48,19 @@ const WhatsappFooterForm = () => {
       formPhone: phone.trim(),
       formProblem: problem.trim(),
     });
-    window.open(targetUrl, "_blank");
+    // Disparamos un <a class="conversion"> real para que el trigger de GTM
+    // (Link Click sobre .conversion) capture la conversión, igual que el resto.
+    const link = document.createElement("a");
+    link.href = targetUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.className = "conversion js-track-whatsapp";
+    link.setAttribute("data-lead-action", "whatsapp");
+    link.setAttribute("data-track-label", "footer_form_wpp");
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

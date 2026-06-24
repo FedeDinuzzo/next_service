@@ -505,10 +505,8 @@ body {
   animation: pulse 2.6s infinite 4s;
 }
 
-.conversion {
-  width: 100%;
-  height: 100%;
-}
+/* .conversion = clase-hook para el trigger de GTM (Link Click). Sin estilos:
+   los elementos que la usan definen su propio tamaño. */
 
 .blobWpp {
   will-change: transform, box-shadow;
