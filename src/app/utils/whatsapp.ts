@@ -18,5 +18,5 @@ export const getWhatsAppNumber = (): WhatsAppNumber => {
     return "5491144469930";
   }
 
-  return hour >= 8 && hour < 17 ? "5491144469930" : "5491144469930";
+  return hour >= 8 && hour < 17 ? "5491136299090" : "5491144469930";
 };
