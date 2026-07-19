@@ -16,7 +16,8 @@ import Heladeras from "../../components/Heladeras";
 import Lavarropas from "../../components/Lavarropas";
 import FAQ from "../../components/FAQ";
 import Testimonials from "../../components/Testimonials";
-import CTA from "../../components/CTA";
+import Reveal from "../../components/Reveal";
+import Button from "../../components/animations/Button";
 import LocationWhatsAppCTA from "../../components/LocationWhatsAppCTA";
 import LocationStructuredData from "../../components/structuredData/LocationStructuredData";
 import FaqStructuredData from "../../components/structuredData/FaqStructuredData";
@@ -163,62 +164,85 @@ export default async function ZonaLocationPage({
             <Testimonials />
           </div>
 
-          <CTA />
-
-          <section className={`${styles.paddingX} py-12`}>
-            <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="feature-card-set rounded-[20px] p-6">
-                <p
-                  className="font-poppins font-semibold text-[16px] mb-4"
-                  style={{ color: SITE.ink }}
+          <Reveal variant="heavy">
+            <section className={`${styles.paddingX} py-12`}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  id="solicitarTecnico"
+                  className={`md:col-span-2 z-[10] ${styles.flexCenter} ${styles.padding} bg-black-gradient-2 rounded-[20px] box-shadow w-full sm:flex-row flex-col`}
                 >
-                  Marcas que atendemos
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Link
-                    href="/"
-                    className="rounded-[12px] px-4 py-2 text-[13px] font-poppins font-semibold text-white transition hover:opacity-90"
-                    style={{ background: SITE.gradient }}
+                  <div className="flex-1 flex flex-col text-center md:text-left mt-5 md:mt-0">
+                    <h2 className={styles.heading2}>Solicita un Service Hoy!</h2>
+                    <p className={`${styles.paragraph} max-w-[520px] mt-5`}>
+                      Nuestros representantes están disponibles. Cuéntenos su
+                      problema y con gusto le ayudaremos.
+                    </p>
+                  </div>
+                  <div
+                    className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 mb-4 md:mb-0`}
                   >
-                    {SITE.legalName}
-                  </Link>
-                  {authorizedServices.map((service) => (
-                    <a
-                      key={service.id}
-                      href={service.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="rounded-[12px] border border-secondary/20 px-4 py-2 text-[13px] font-poppins font-semibold text-secondary transition hover:bg-secondary/5"
-                    >
-                      {service.name}
-                    </a>
-                  ))}
+                    <Button
+                      href={`tel:${SITE.phonePrimaryTel}`}
+                      text="Llamada telefónica"
+                      className="js-track-call"
+                      data-track-label="cta_call"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {nearby.length > 0 ? (
                 <div className="feature-card-set rounded-[20px] p-6">
                   <p
                     className="font-poppins font-semibold text-[16px] mb-4"
                     style={{ color: SITE.ink }}
                   >
-                    Zonas cercanas a {location.name}
+                    Marcas que atendemos
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {nearby.map((nearbyLocation) => (
-                      <Link
-                        key={nearbyLocation.slug}
-                        href={`/zonas/${nearbyLocation.slug}`}
-                        className="rounded-[12px] border border-secondary/20 px-4 py-2 text-[13px] font-poppins font-semibold text-secondary transition hover:bg-secondary/5 hover:scale-[1.02]"
+                  <div className="grid grid-cols-2 gap-2">
+                    <Link
+                      href="/"
+                      className="col-span-2 rounded-[12px] px-4 py-2.5 text-center text-[13px] font-poppins font-semibold text-white transition hover:opacity-90"
+                      style={{ background: SITE.gradient }}
+                    >
+                      {SITE.legalName}
+                    </Link>
+                    {authorizedServices.map((service) => (
+                      <a
+                        key={service.id}
+                        href={service.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-[12px] border border-secondary/20 px-3 py-2.5 text-center text-[13px] font-poppins font-semibold text-secondary transition hover:bg-secondary/5"
                       >
-                        {nearbyLocation.name}
-                      </Link>
+                        {service.name}
+                      </a>
                     ))}
                   </div>
                 </div>
-              ) : null}
-            </div>
-          </section>
+
+                {nearby.length > 0 ? (
+                  <div className="feature-card-set rounded-[20px] p-6">
+                    <p
+                      className="font-poppins font-semibold text-[16px] mb-4"
+                      style={{ color: SITE.ink }}
+                    >
+                      Zonas cercanas a {location.name}
+                    </p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {nearby.map((nearbyLocation) => (
+                        <Link
+                          key={nearbyLocation.slug}
+                          href={`/zonas/${nearbyLocation.slug}`}
+                          className="rounded-[12px] border border-secondary/20 px-3 py-2.5 text-center text-[13px] font-poppins font-semibold text-secondary transition hover:bg-secondary/5 hover:scale-[1.02]"
+                        >
+                          {nearbyLocation.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            </section>
+          </Reveal>
         </div>
       </div>
     </>
