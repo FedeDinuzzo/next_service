@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Location } from "../constants";
@@ -125,6 +125,9 @@ const ZonaCard = ({ location }: { location: Location }) => {
 
 const ZonasSearch = ({ groups }: ZonasSearchProps) => {
   const [query, setQuery] = useState("");
+  const [selectedZone, setSelectedZone] = useState<string>("all");
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const filterRef = useRef<HTMLDivElement>(null);
   const normalizedQuery = toSlugUrl(query);
 
   const allLocations = useMemo(
@@ -133,14 +136,33 @@ const ZonasSearch = ({ groups }: ZonasSearchProps) => {
   );
 
   const filteredLocations = useMemo(() => {
-    if (!normalizedQuery) return allLocations;
+    const byZone =
+      selectedZone === "all"
+        ? allLocations
+        : allLocations.filter((location) => location.zoneId === selectedZone);
 
-    return allLocations.filter(
+    if (!normalizedQuery) return byZone;
+
+    return byZone.filter(
       (location) =>
         location.slug.includes(normalizedQuery) ||
         toSlugUrl(location.zoneTitle).includes(normalizedQuery),
     );
-  }, [allLocations, normalizedQuery]);
+  }, [allLocations, normalizedQuery, selectedZone]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
+        setIsFilterOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const isFiltering = normalizedQuery.length > 0 || selectedZone !== "all";
+  const selectedZoneTitle =
+    groups.find((group) => group.zoneId === selectedZone)?.zoneTitle ?? null;
 
   return (
     <div className={`${styles.paddingX} pb-16`}>
@@ -148,20 +170,116 @@ const ZonasSearch = ({ groups }: ZonasSearchProps) => {
         <label htmlFor="zonas-search" className="sr-only">
           Buscar localidad o zona
         </label>
-        <input
-          id="zonas-search"
-          type="text"
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-          placeholder="Buscá tu barrio o zona (ej: Banfield, Palermo, Zona Sur...)"
-          className="w-full rounded-[16px] feature-card-set px-5 py-4 font-poppins text-[15px] placeholder:text-dimWhite outline-none focus:ring-2"
-          style={{ color: SITE.ink }}
-        />
-        {normalizedQuery ? (
+        <form
+          onSubmit={(event) => event.preventDefault()}
+          className="flex items-center gap-2 rounded-[16px] feature-card-set px-2 py-2"
+        >
+          <input
+            id="zonas-search"
+            type="text"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Buscá tu barrio o zona (ej: Banfield, Palermo, Zona Sur...)"
+            className="flex-1 min-w-0 bg-transparent px-3 py-2 font-poppins text-[15px] placeholder:text-dimWhite outline-none"
+            style={{ color: SITE.ink }}
+          />
+
+          <div className="relative shrink-0" ref={filterRef}>
+            <button
+              type="button"
+              onClick={() => setIsFilterOpen((open) => !open)}
+              aria-haspopup="true"
+              aria-expanded={isFilterOpen}
+              aria-label="Filtrar por zona"
+              title="Filtrar por zona"
+              className="relative flex items-center justify-center w-11 h-11 rounded-[12px] border border-secondary/20 transition hover:bg-secondary/5"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M4 5h16M7 12h10M10 19h4"
+                  stroke={SITE.ink}
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+              {selectedZone !== "all" ? (
+                <span
+                  className="absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-white"
+                  style={{ background: SITE.gradient }}
+                  aria-hidden="true"
+                />
+              ) : null}
+            </button>
+
+            {isFilterOpen ? (
+              <div
+                role="menu"
+                className="absolute right-0 mt-2 w-56 rounded-[12px] feature-card-set p-2 z-10 shadow-[0_10px_24px_rgba(0,0,0,0.15)]"
+              >
+                <button
+                  type="button"
+                  role="menuitemradio"
+                  aria-checked={selectedZone === "all"}
+                  onClick={() => {
+                    setSelectedZone("all");
+                    setIsFilterOpen(false);
+                  }}
+                  className="w-full text-left px-3 py-2 rounded-[8px] font-poppins text-[14px] hover:bg-secondary/5"
+                  style={{
+                    color: SITE.ink,
+                    fontWeight: selectedZone === "all" ? 600 : 400,
+                  }}
+                >
+                  Todas las zonas
+                </button>
+                {groups.map((group) => (
+                  <button
+                    key={group.zoneId}
+                    type="button"
+                    role="menuitemradio"
+                    aria-checked={selectedZone === group.zoneId}
+                    onClick={() => {
+                      setSelectedZone(group.zoneId);
+                      setIsFilterOpen(false);
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-[8px] font-poppins text-[14px] hover:bg-secondary/5"
+                    style={{
+                      color: SITE.ink,
+                      fontWeight: selectedZone === group.zoneId ? 600 : 400,
+                    }}
+                  >
+                    {group.zoneTitle}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+          </div>
+
+          <button
+            type="submit"
+            aria-label="Buscar"
+            title="Buscar"
+            className="shrink-0 flex items-center justify-center w-11 h-11 rounded-[12px] text-white transition hover:opacity-90"
+            style={{ background: SITE.gradient }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm10 2-5.6-5.6"
+                stroke="#fff"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+
+        {isFiltering ? (
           <p className="mt-2 font-poppins text-dimWhite text-[13px]">
             {filteredLocations.length} localidad
             {filteredLocations.length === 1 ? "" : "es"} encontrada
             {filteredLocations.length === 1 ? "" : "s"}
+            {selectedZoneTitle ? ` en ${selectedZoneTitle}` : ""}
           </p>
         ) : null}
       </div>
