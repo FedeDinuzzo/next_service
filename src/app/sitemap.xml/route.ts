@@ -1,6 +1,20 @@
+import { getLocations } from "../constants";
+
 export function GET(): Response {
   const now = new Date().toISOString();
   const base = "https://service-electrolux.ar";
+
+  const zonesUrls = getLocations()
+    .map(
+      (location) => `
+  <url>
+    <loc>${base}/zonas/${location.slug}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`,
+    )
+    .join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -55,6 +69,13 @@ export function GET(): Response {
     </image:image>
   </url>
 
+  <url>
+    <loc>${base}/zonas</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+${zonesUrls}
 </urlset>`;
 
   return new Response(xml, {

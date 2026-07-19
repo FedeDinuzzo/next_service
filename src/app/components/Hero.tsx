@@ -21,6 +21,7 @@ type HeroProps = {
   descriptionDesktop?: string;
   img: number | string;
   ruta: number;
+  showBadge?: boolean;
 };
 
 const Hero = ({
@@ -34,6 +35,7 @@ const Hero = ({
   descriptionDesktop,
   img,
   ruta,
+  showBadge = true,
 }: HeroProps) => {
   const condicion = 1;
 
@@ -63,24 +65,26 @@ const Hero = ({
       <div
         className={`flex-1 px-6 md:px-0 ${styles.flexStartHero} flex-col xl:px-0 sm:px-1`}
       >
-        <div className="h-[36px] lg:h-[38px] fadeTop flex flex-row items-center -mt-4 sm:mt-0 lg:mt-6 xl:-mt-12 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-3 shadow-[0_8px_12px_rgba(0,0,0,0.4)]">
-          <Image
-            src={autorizado}
-            height={26}
-            width={26}
-            priority
-            fetchPriority="high"
-            alt="autorizado"
-            className="-ml-1 mr-2"
-          />
-          <p
-            className={`font-poppins font-normal text-dimWhite text-[14px] md:text-[15px] xl:text-[17px] leading-[30px] flex text-[#ffffff]`}
-          >
-            <span className="pr-1 text-[#ffffff]">{textOne}</span>
-            <span className="text-[#999999]">{textTwo}</span>
-            <span className="pl-1 text-[#ffffff]">{textThree}</span>
-          </p>
-        </div>
+        {showBadge ? (
+          <div className="h-[36px] lg:h-[38px] fadeTop flex flex-row items-center -mt-4 sm:mt-0 lg:mt-6 xl:-mt-12 py-[3px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-3 shadow-[0_8px_12px_rgba(0,0,0,0.4)]">
+            <Image
+              src={autorizado}
+              height={26}
+              width={26}
+              priority
+              fetchPriority="high"
+              alt="autorizado"
+              className="-ml-1 mr-2"
+            />
+            <p
+              className={`font-poppins font-normal text-dimWhite text-[14px] md:text-[15px] xl:text-[17px] leading-[30px] flex text-[#ffffff]`}
+            >
+              <span className="pr-1 text-[#ffffff]">{textOne}</span>
+              <span className="text-[#999999]">{textTwo}</span>
+              <span className="pl-1 text-[#ffffff]">{textThree}</span>
+            </p>
+          </div>
+        ) : null}
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="fadeLeft flex-1 font-poppins font-semibold text-[40px] sm:text-[50px] md:text-[60px] xl:text-[72px] text-white leading-[44px] sm:leading-[58px] md:leading-[68px] xl:leading-[90px]">

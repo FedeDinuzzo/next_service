@@ -1,0 +1,440 @@
+{
+  "agronomia": {
+    "file": "agronomia.jpg",
+    "creditTitle": "Agronomía (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Agronom%C3%ADa_(Buenos_Aires)",
+    "fallback": false
+  },
+  "almagro": {
+    "file": "almagro.jpg",
+    "creditTitle": "Almagro (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Almagro_(Buenos_Aires)",
+    "fallback": false
+  },
+  "balvanera": {
+    "file": "balvanera.jpg",
+    "creditTitle": "Balvanera",
+    "creditUrl": "https://es.wikipedia.org/wiki/Balvanera",
+    "fallback": false
+  },
+  "barracas": {
+    "file": "barracas.jpg",
+    "creditTitle": "Barracas (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Barracas_(Buenos_Aires)",
+    "fallback": false
+  },
+  "belgrano": {
+    "file": "belgrano.jpg",
+    "creditTitle": "Belgrano (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Belgrano_(Buenos_Aires)",
+    "fallback": false
+  },
+  "boca": {
+    "file": "boca.jpg",
+    "creditTitle": "La Boca",
+    "creditUrl": "https://es.wikipedia.org/wiki/La_Boca",
+    "fallback": false
+  },
+  "boedo": {
+    "file": "boedo.jpg",
+    "creditTitle": "Boedo (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Boedo_(Buenos_Aires)",
+    "fallback": false
+  },
+  "caballito": {
+    "file": "caballito.jpg",
+    "creditTitle": "Caballito",
+    "creditUrl": "https://es.wikipedia.org/wiki/Caballito",
+    "fallback": false
+  },
+  "chacarita": {
+    "file": "chacarita.jpg",
+    "creditTitle": "Chacarita (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Chacarita_(Buenos_Aires)",
+    "fallback": false
+  },
+  "coghlan": {
+    "file": "coghlan.jpg",
+    "creditTitle": "Coghlan",
+    "creditUrl": "https://es.wikipedia.org/wiki/Coghlan",
+    "fallback": false
+  },
+  "colegiales": {
+    "file": "colegiales.jpg",
+    "creditTitle": "Colegiales (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Colegiales_(Buenos_Aires)",
+    "fallback": false
+  },
+  "constitucion": {
+    "file": "constitucion.jpg",
+    "creditTitle": "Constitución (subte de Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Constituci%C3%B3n_(subte_de_Buenos_Aires)",
+    "fallback": false
+  },
+  "flores": {
+    "file": "flores.jpg",
+    "creditTitle": "Flores (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Flores_(Buenos_Aires)",
+    "fallback": false
+  },
+  "floresta": {
+    "file": "floresta.jpg",
+    "creditTitle": "Floresta (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Floresta_(Buenos_Aires)",
+    "fallback": false
+  },
+  "la-paternal": {
+    "file": "la-paternal.jpg",
+    "creditTitle": "La Paternal",
+    "creditUrl": "https://es.wikipedia.org/wiki/La_Paternal",
+    "fallback": false
+  },
+  "liniers": {
+    "file": "liniers.jpg",
+    "creditTitle": "Liniers (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Liniers_(Buenos_Aires)",
+    "fallback": false
+  },
+  "mataderos": {
+    "file": "mataderos.jpg",
+    "creditTitle": "Mataderos (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Mataderos_(Buenos_Aires)",
+    "fallback": false
+  },
+  "monte-castro": {
+    "file": "monte-castro.jpg",
+    "creditTitle": "Monte Castro",
+    "creditUrl": "https://es.wikipedia.org/wiki/Monte_Castro",
+    "fallback": false
+  },
+  "monserrat": {
+    "file": "monserrat.jpg",
+    "creditTitle": "Monserrat (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Monserrat_(Buenos_Aires)",
+    "fallback": false
+  },
+  "nueva-pompeya": {
+    "file": "nueva-pompeya.jpg",
+    "creditTitle": "Nueva Pompeya (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Nueva_Pompeya_(Buenos_Aires)",
+    "fallback": false
+  },
+  "nunez": {
+    "file": "nunez.jpg",
+    "creditTitle": "Núñez (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/N%C3%BA%C3%B1ez_(Buenos_Aires)",
+    "fallback": false
+  },
+  "palermo": {
+    "file": "palermo.jpg",
+    "creditTitle": "Palermo (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Palermo_(Buenos_Aires)",
+    "fallback": false
+  },
+  "parque-avellaneda": {
+    "file": "parque-avellaneda.jpg",
+    "creditTitle": "Parque Avellaneda (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Parque_Avellaneda_(Buenos_Aires)",
+    "fallback": false
+  },
+  "parque-chacabuco": {
+    "file": "parque-chacabuco.jpg",
+    "creditTitle": "Parque Chacabuco (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Parque_Chacabuco_(Buenos_Aires)",
+    "fallback": false
+  },
+  "parque-chas": {
+    "file": "parque-chas.jpg",
+    "creditTitle": "De los Incas-Parque Chas (subte de Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/De_los_Incas-Parque_Chas_(subte_de_Buenos_Aires)",
+    "fallback": false
+  },
+  "parque-patricios": {
+    "file": "parque-patricios.jpg",
+    "creditTitle": "Parque Patricios (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Parque_Patricios_(Buenos_Aires)",
+    "fallback": false
+  },
+  "puerto-madero": {
+    "file": "_fallback-client-1.jpg",
+    "creditTitle": "Buenos Aires",
+    "creditUrl": "https://es.wikipedia.org/wiki/Buenos_Aires",
+    "fallback": true
+  },
+  "recoleta": {
+    "file": "recoleta.jpg",
+    "creditTitle": "Recoleta (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Recoleta_(Buenos_Aires)",
+    "fallback": false
+  },
+  "retiro": {
+    "file": "retiro.jpg",
+    "creditTitle": "Retiro (línea C del subte de Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Retiro_(l%C3%ADnea_C_del_subte_de_Buenos_Aires)",
+    "fallback": false
+  },
+  "saavedra": {
+    "file": "saavedra.jpg",
+    "creditTitle": "Saavedra (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Saavedra_(Buenos_Aires)",
+    "fallback": false
+  },
+  "san-cristobal": {
+    "file": "san-cristobal.jpg",
+    "creditTitle": "San Cristóbal (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_(Buenos_Aires)",
+    "fallback": false
+  },
+  "san-nicolas": {
+    "file": "san-nicolas.jpg",
+    "creditTitle": "San Nicolás (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/San_Nicol%C3%A1s_(Buenos_Aires)",
+    "fallback": false
+  },
+  "san-telmo": {
+    "file": "san-telmo.jpg",
+    "creditTitle": "San Telmo (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/San_Telmo_(Buenos_Aires)",
+    "fallback": false
+  },
+  "velez-sarsfield": {
+    "file": "velez-sarsfield.jpg",
+    "creditTitle": "Vélez Sársfield (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/V%C3%A9lez_S%C3%A1rsfield_(Buenos_Aires)",
+    "fallback": false
+  },
+  "versalles": {
+    "file": "versalles.jpg",
+    "creditTitle": "Versalles (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Versalles_(Buenos_Aires)",
+    "fallback": false
+  },
+  "villa-crespo": {
+    "file": "villa-crespo.jpg",
+    "creditTitle": "Villa Crespo",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Crespo",
+    "fallback": false
+  },
+  "villa-del-parque": {
+    "file": "villa-del-parque.jpg",
+    "creditTitle": "Villa del Parque (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_del_Parque_(Buenos_Aires)",
+    "fallback": false
+  },
+  "villa-devoto": {
+    "file": "villa-devoto.jpg",
+    "creditTitle": "Villa Devoto",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Devoto",
+    "fallback": false
+  },
+  "villa-general-mitre": {
+    "file": "villa-general-mitre.jpg",
+    "creditTitle": "Villa General Mitre",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_General_Mitre",
+    "fallback": false
+  },
+  "villa-lugano": {
+    "file": "villa-lugano.jpg",
+    "creditTitle": "Villa Lugano",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Lugano",
+    "fallback": false
+  },
+  "villa-luro": {
+    "file": "villa-luro.jpg",
+    "creditTitle": "Villa Luro",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Luro",
+    "fallback": false
+  },
+  "villa-ortuzar": {
+    "file": "villa-ortuzar.jpg",
+    "creditTitle": "Villa Ortúzar",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Ort%C3%BAzar",
+    "fallback": false
+  },
+  "villa-pueyrredon": {
+    "file": "villa-pueyrredon.jpg",
+    "creditTitle": "Villa Pueyrredón",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Pueyrred%C3%B3n",
+    "fallback": false
+  },
+  "villa-real": {
+    "file": "villa-real.jpg",
+    "creditTitle": "Villa Real (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Real_(Buenos_Aires)",
+    "fallback": false
+  },
+  "villa-riachuelo": {
+    "file": "villa-riachuelo.jpg",
+    "creditTitle": "Villa Riachuelo",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Riachuelo",
+    "fallback": false
+  },
+  "villa-santa-rita": {
+    "file": "villa-santa-rita.jpg",
+    "creditTitle": "Villa Santa Rita (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Santa_Rita_(Buenos_Aires)",
+    "fallback": false
+  },
+  "villa-soldati": {
+    "file": "villa-soldati.jpg",
+    "creditTitle": "Villa Soldati (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Soldati_(Buenos_Aires)",
+    "fallback": false
+  },
+  "villa-urquiza": {
+    "file": "villa-urquiza.jpg",
+    "creditTitle": "Villa Urquiza (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Urquiza_(Buenos_Aires)",
+    "fallback": false
+  },
+  "adrogue": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "avellaneda": {
+    "file": "avellaneda.jpg",
+    "creditTitle": "Avellaneda (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Avellaneda_(Buenos_Aires)",
+    "fallback": false
+  },
+  "banfield": {
+    "file": "banfield.jpg",
+    "creditTitle": "Banfield",
+    "creditUrl": "https://es.wikipedia.org/wiki/Banfield",
+    "fallback": false
+  },
+  "bernal": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "berazategui": {
+    "file": "berazategui.jpg",
+    "creditTitle": "Berazategui (ciudad)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Berazategui_(ciudad)",
+    "fallback": false
+  },
+  "crucecita": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "florencio-varela": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "gerli": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "lanus": {
+    "file": "lanus.jpg",
+    "creditTitle": "Lanús",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lan%C3%BAs",
+    "fallback": false
+  },
+  "lavallol": {
+    "file": "lavallol.jpg",
+    "creditTitle": "Llavallol",
+    "creditUrl": "https://es.wikipedia.org/wiki/Llavallol",
+    "fallback": false
+  },
+  "lomas-de-zamora": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "quilmes": {
+    "file": "quilmes.jpg",
+    "creditTitle": "Quilmes",
+    "creditUrl": "https://es.wikipedia.org/wiki/Quilmes",
+    "fallback": false
+  },
+  "remedios-de-escalada": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "sarandi": {
+    "file": "sarandi.jpg",
+    "creditTitle": "Sarandí",
+    "creditUrl": "https://es.wikipedia.org/wiki/Sarand%C3%AD",
+    "fallback": false
+  },
+  "temperley": {
+    "file": "temperley.jpg",
+    "creditTitle": "Temperley",
+    "creditUrl": "https://es.wikipedia.org/wiki/Temperley",
+    "fallback": false
+  },
+  "valentin-alsina": {
+    "file": "valentin-alsina.jpg",
+    "creditTitle": "Valentín Alsina (Lanús)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Valent%C3%ADn_Alsina_(Lan%C3%BAs)",
+    "fallback": false
+  },
+  "villa-dominico": {
+    "file": "villa-dominico.jpg",
+    "creditTitle": "Villa Domínico",
+    "creditUrl": "https://es.wikipedia.org/wiki/Villa_Dom%C3%ADnico",
+    "fallback": false
+  },
+  "wilde": {
+    "file": "_fallback-client-2.jpg",
+    "creditTitle": "Lomas de Zamora",
+    "creditUrl": "https://es.wikipedia.org/wiki/Lomas_de_Zamora",
+    "fallback": true
+  },
+  "vicente-lopez": {
+    "file": "vicente-lopez.jpg",
+    "creditTitle": "Vicente López (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Vicente_L%C3%B3pez_(Buenos_Aires)",
+    "fallback": false
+  },
+  "san-isidro": {
+    "file": "san-isidro.jpg",
+    "creditTitle": "San Isidro (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+    "fallback": false
+  },
+  "olivos": {
+    "file": "olivos.jpg",
+    "creditTitle": "Olivos",
+    "creditUrl": "https://es.wikipedia.org/wiki/Olivos",
+    "fallback": false
+  },
+  "martinez": {
+    "file": "martinez.jpg",
+    "creditTitle": "Martínez (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Mart%C3%ADnez_(Buenos_Aires)",
+    "fallback": false
+  },
+  "florida": {
+    "file": "florida.jpg",
+    "creditTitle": "Florida (Vicente López)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Florida_(Vicente_L%C3%B3pez)",
+    "fallback": false
+  },
+  "la-lucila": {
+    "file": "la-lucila.jpg",
+    "creditTitle": "La Lucila",
+    "creditUrl": "https://es.wikipedia.org/wiki/La_Lucila",
+    "fallback": false
+  },
+  "acassuso": {
+    "file": "acassuso.jpg",
+    "creditTitle": "Acassuso (Buenos Aires)",
+    "creditUrl": "https://es.wikipedia.org/wiki/Acassuso_(Buenos_Aires)",
+    "fallback": false
+  }
+}

@@ -1,4 +1,5 @@
 ﻿// import { people01, people02, people03, mapa, instagram, linkedin, telefono, like, shield, star, capitalFederal, zonaSur, zonaNorte, navContacto, navHeladera, navLavarropas, navInicio  } from "../public"
+import { toSlugUrl } from "../utils/slug";
 
 export type NavLink = {
   id: string;
@@ -237,6 +238,11 @@ export const footerLinks: FooterSection[] = [
         id: "",
       },
       {
+        name: "Ubicaciones",
+        link: "/zonas",
+        id: "",
+      },
+      {
         name: "Contacto",
         link: "/contacto",
         id: "",
@@ -349,7 +355,7 @@ export const zoneDetails: Record<string, ZoneDetail> = {
       "Monte Castro",
       "Monserrat",
       "Nueva Pompeya",
-      "Nunez",
+      "Núñez",
       "Palermo",
       "Parque Avellaneda",
       "Parque Chacabuco",
@@ -691,5 +697,93 @@ export const lavarropasFaqItems: FaqItem[] = [
     question: "¿El lavarropas hace ruido fuerte al girar o vibra demasiado?",
     answer:
       "Puede ser carga desbalanceada, amortiguadores, rulemanes, correa o problemas mecánicos. Revisamos y dejamos el equipo estable para evitar daños mayores.",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Modelo de localidades para /zonas y /zonas/[slug].
+// Se deriva de zoneDetails (no duplica data): 73 localidades entre
+// Capital Federal, Zona Sur y Zona Norte.
+// ---------------------------------------------------------------------------
+
+export type Location = {
+  slug: string;
+  name: string;
+  zoneId: string;
+  zoneTitle: string;
+};
+
+let locationsCache: Location[] | null = null;
+
+export const getLocations = (): Location[] => {
+  if (locationsCache) return locationsCache;
+
+  locationsCache = Object.entries(zoneDetails).flatMap(([zoneId, zone]) =>
+    zone.places.map((place) => ({
+      slug: toSlugUrl(place),
+      name: place,
+      zoneId,
+      zoneTitle: zone.title,
+    }))
+  );
+
+  return locationsCache;
+};
+
+export const getLocationBySlug = (slug: string): Location | undefined =>
+  getLocations().find((location) => location.slug === slug);
+
+export const getNearbyLocations = (slug: string, count = 6): Location[] => {
+  const location = getLocationBySlug(slug);
+  if (!location) return [];
+
+  return getLocations()
+    .filter(
+      (candidate) =>
+        candidate.zoneId === location.zoneId && candidate.slug !== slug
+    )
+    .slice(0, count);
+};
+
+export const getLocationsByZone = (): Array<{
+  zoneId: string;
+  zoneTitle: string;
+  locations: Location[];
+}> =>
+  zoneSummaries.map((summary) => ({
+    zoneId: summary.id,
+    zoneTitle: summary.title,
+    locations: getLocations().filter(
+      (location) => location.zoneId === summary.id
+    ),
+  }));
+
+export const locationIntro = (location: Location): string =>
+  `Service técnico de heladeras y lavarropas en ${location.name}, ${location.zoneTitle}. ` +
+  `Técnicos especializados a domicilio, diagnóstico rápido y repuestos originales, con atención prioritaria para tu barrio.`;
+
+export const locationFaqItems = (location: Location): FaqItem[] => [
+  {
+    id: `${location.slug}-faq-1`,
+    question: `¿Hacen service de heladeras y lavarropas en ${location.name}?`,
+    answer: `Sí, atendemos ${location.name} y toda la zona de ${location.zoneTitle} con técnicos especializados a domicilio.`,
+  },
+  {
+    id: `${location.slug}-faq-2`,
+    question: "¿Cuánto tarda la visita técnica?",
+    answer:
+      "En la mayoría de los casos coordinamos la visita el mismo día y resolvemos en una sola vez, según disponibilidad de repuestos.",
+  },
+  {
+    id: `${location.slug}-faq-3`,
+    question: "¿Trabajan con repuestos originales?",
+    answer:
+      "Sí, utilizamos repuestos originales o equivalentes de primera calidad, y todas las reparaciones incluyen garantía escrita.",
+  },
+  {
+    id: `${location.slug}-faq-4`,
+    question: "¿Atienden urgencias en la zona?",
+    answer:
+      "Sí. Si la heladera perdió frío con alimentos o medicación adentro, o el lavarropas pierde agua, priorizamos la visita por WhatsApp o teléfono.",
   },
 ];

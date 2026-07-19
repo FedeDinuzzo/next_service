@@ -4,8 +4,14 @@ import styles, { layout } from "../constants/style";
 import Button from "./animations/Button";
 import Reveal from "./Reveal";
 import blueGradient from "../../public/blueGradient.svg";
+import type { ReactNode } from "react";
 
-const Lavarropas = () => (
+type LavarropasProps = {
+  title?: ReactNode;
+  description?: string;
+};
+
+const Lavarropas = ({ title, description }: LavarropasProps) => (
   <section
     id="product"
     className={`${layout.section} mt-24 md:mt-0 lg:mt-16 lg:-mb-32 xl:-my-20 xl:-mb-56 px-6 xl:px-0`}
@@ -21,12 +27,16 @@ const Lavarropas = () => (
 
     <Reveal variant="text" className="lg:pr-8 relative z-10 ">
       <h2 className={styles.heading2}>
-        Reparación de <br className="sm:block hidden" />
-        Lavarropas Electrolux
+        {title ?? (
+          <>
+            Reparación de <br className="sm:block hidden" />
+            Lavarropas Electrolux
+          </>
+        )}
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Servicio técnico especializado en Lavarropas de Carga frontal y Carga
-        superior Electrolux. Repuestos originales
+        {description ??
+          "Servicio técnico especializado en Lavarropas de Carga frontal y Carga superior Electrolux. Repuestos originales"}
       </p>
       <Button
         link="lavarropas"

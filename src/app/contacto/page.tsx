@@ -9,6 +9,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import ImmediateAttentionBadge from "../components/ImmediateAttentionBadge";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
+import Button from "../components/animations/Button";
 
 export const metadata: Metadata = {
   title: "Contacto | Servicio Técnico Electrolux | Pedir Presupuesto",
@@ -187,6 +188,30 @@ function contacto() {
                 </Reveal>
               </div>
             </section>
+
+            <Reveal variant="cta" className="w-full">
+              <div
+                className={`z-[10] ${styles.flexCenter} ${styles.padding} bg-black-gradient-2 rounded-[20px] box-shadow w-full sm:flex-row flex-col`}
+              >
+                <div className="flex-1 flex flex-col text-center md:text-left mt-5 md:mt-0">
+                  <h2 className={styles.heading2}>¿Cubrimos tu zona?</h2>
+                  <p className={`${styles.paragraph} max-w-[520px] mt-5`}>
+                    Encontrá tu localidad y consultá tiempos de atención,
+                    servicios disponibles y contacto directo.
+                  </p>
+                </div>
+                <div
+                  className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 mb-4 md:mb-0`}
+                >
+                  <Button
+                    link="zonas"
+                    text="Ver zonas de atención"
+                    className="js-track-nav"
+                    data-track-label="contacto_cta_zonas"
+                  />
+                </div>
+              </div>
+            </Reveal>
           </div>
         </div>
       </div>

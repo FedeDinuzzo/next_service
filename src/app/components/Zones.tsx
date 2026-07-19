@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { zoneDetails, zones, zoneSummaries } from "../constants/index";
 import styles from "../constants/style";
 import { getWhatsAppNumber, VALID_WPP_NUMBERS } from "../utils/whatsapp";
@@ -240,7 +241,11 @@ const Zones = () => {
           </div>
 
           <p className="font-poppins text-dimWhite text-[13px] mt-4">
-            Consultanos si tu zona no figura y coordinamos la visita.
+            Consultanos si tu zona no figura y coordinamos la visita.{" "}
+            <Link href="/zonas" className="underline text-secondary">
+              Ver todas las ubicaciones
+            </Link>
+            .
           </p>
 
           <div className="mt-6 flex justify-center">

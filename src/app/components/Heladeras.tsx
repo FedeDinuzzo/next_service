@@ -6,8 +6,14 @@ import pinkGradient from "../../public/pinkGradient.svg";
 import Button from "./animations/Button";
 import ImmediateAttentionBadge from "./ImmediateAttentionBadge";
 import Reveal from "./Reveal";
+import type { ReactNode } from "react";
 
-const Heladeras = () => (
+type HeladerasProps = {
+  title?: ReactNode;
+  description?: string;
+};
+
+const Heladeras = ({ title, description }: HeladerasProps) => (
   <section id="product" className={`${layout.sectionReverse} mt-24 lg:mt-36 xl:mt-0 px-6 xl:px-0 `}>
     <Image
       src={whiteGradient}
@@ -39,11 +45,16 @@ const Heladeras = () => (
 
     <Reveal variant="text" className="lg:pr-8 relative z-10">
       <h2 className={styles.heading2}>
-        Reparación de <br className="sm:block hidden" />
-        Heladeras Electrolux
+        {title ?? (
+          <>
+            Reparación de <br className="sm:block hidden" />
+            Heladeras Electrolux
+          </>
+        )}
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Servicio Técnico Especializado en Heladeras Familiares, Tropicales, No Frost y Freezers. Repuestos originales
+        {description ??
+          "Servicio Técnico Especializado en Heladeras Familiares, Tropicales, No Frost y Freezers. Repuestos originales"}
       </p>
       <Button link="heladeras" text="Service Heladeras" aria-label="Ir a la sección de heladeras" styles="mt-5" />
     </Reveal>

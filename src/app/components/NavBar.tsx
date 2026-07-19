@@ -119,6 +119,11 @@ const NavBar = () => {
                     </Link>
                   </li>
                 ))}
+                <li className="font-poppins font-normal cursor-pointer text-[15px] text-white hover:text-secondary transition-colors">
+                  <Link href="/zonas" aria-label="Ir a zonas de atención">
+                    Ubicaciones
+                  </Link>
+                </li>
               </ul>
 
               <Link
