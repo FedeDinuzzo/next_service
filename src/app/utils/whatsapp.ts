@@ -1,4 +1,4 @@
-export const VALID_WPP_NUMBERS = ["5491136299090", "5491144469930", "5491141879748", "5491136786082"] as const;
+export const VALID_WPP_NUMBERS = ["5491136299090", "5491144469930", "5491141879748"] as const;
 export type WhatsAppNumber = (typeof VALID_WPP_NUMBERS)[number];
 
 export const getWhatsAppNumber = (): WhatsAppNumber => {
