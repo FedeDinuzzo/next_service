@@ -15,8 +15,8 @@ export const getWhatsAppNumber = (): WhatsAppNumber => {
   const isWeekend = weekday === "Sat" || weekday === "Sun";
 
   if (isWeekend) {
-    return "5491136299090";
+    return "5491144469930";
   }
 
-  return hour >= 8 && hour < 17 ? "5491144469930" : "5491144469930";
+  return hour >= 8 && hour < 17 ? "5491136299090" : "5491144469930";
 };
