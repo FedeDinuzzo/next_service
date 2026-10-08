@@ -32,26 +32,26 @@ const LavarropasStructuredData = () => {
         postalCode: "C1019",
         addressCountry: "AR",
       },
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: averageRating.toFixed(1),
-      bestRating: "5",
-      ratingCount: lavarropasReviews.length.toString(),
-    },
-    review: lavarropasReviews.map((r) => ({
-      "@type": "Review",
-      author: {
-        "@type": "Person",
-        name: r.name,
-      },
-      reviewBody: r.content,
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: r.rating.toString(),
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: averageRating.toFixed(1),
         bestRating: "5",
+        ratingCount: lavarropasReviews.length.toString(),
       },
-    })),
+      review: lavarropasReviews.map((r) => ({
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: r.name,
+        },
+        reviewBody: r.content,
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: r.rating.toString(),
+          bestRating: "5",
+        },
+      })),
+    },
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
