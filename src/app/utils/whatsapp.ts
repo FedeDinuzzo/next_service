@@ -18,10 +18,5 @@ export const getWhatsAppNumber = (): WhatsAppNumber => {
     return "5491144469930";
   }
 
-  // TEMPORAL (feriado lun 12/10/2026): la linea de horario laboral no atiende,
-  // asi que lun-vie 08-17 tambien deriva al numero de fuera de horario.
-  // Para revertir, restaurar la linea original:
-  // return hour >= 8 && hour < 17 ? "5491136299090" : "5491144469930";
-  void hour;
-  return "5491144469930";
+  return hour >= 8 && hour < 17 ? "5491136299090" : "5491144469930";
 };
